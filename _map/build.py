@@ -68,9 +68,8 @@ def map(root='.', cat_prefix=''):
             links.append('* [{}]({}/{}) <sup>{}</sup>\n'
                 .format(f['title'], d.lower(), f['file'], f['date']))
 
-    cats.append('\n---\n')
     return({
-        'count': '\n__{}__ and counting...\n\n---'.format(num_files),
-        'cats': '\n\n## Categories\n\n' + ''.join(cats),
+        'count': num_files,
+        'cats': ''.join(cats),
         'links': ''.join(links)
     })
