@@ -16,9 +16,10 @@ def check_filename(filename, ext='.md'):
     return len(filename) > 3 and filename[-3:] == ext \
     and filename[0] != '.'
 
-def clean_filename(filename, date_format='YYYY-MM-DD-'):
-    # remove date prefix and extension
-    return os.path.splitext(filename[len(date_format):])[0]
+def get_file_parts(filename, date_format='YYYY-MM-DD'):
+    # remove date prefix and extension, return list with [date, file]
+    filename = os.path.splitext(filename)[0]
+    return [filename[:len(date_format)], filename[len(date_format)+1:]]
 
 def map(root='.', cat_prefix=''):
     # path is relative to execution directory, not to location of script
@@ -39,7 +40,8 @@ def map(root='.', cat_prefix=''):
             # extract title from frontmatter
             with open('{}/{}'.format(dirpath, filename), 'r') as f:
                 title = frontmatter.loads(f.read())['title']
-                files.append({'file':clean_filename(filename), 'title':title})
+                date, file = get_file_parts(filename)
+                files.append({'date': date, 'file': file, 'title': title})
 
         directories.append({'dir':dirpath, 'files':files})
 
@@ -63,8 +65,8 @@ def map(root='.', cat_prefix=''):
             links.append('\n{} {}\n'.format( header, d.replace('/', ' / ')) )
 
         for f in reversed(files): # display newest posts first
-            links.append('* [{}]({}/{})\n'
-                .format(f['title'], d.lower(), f['file']))
+            links.append('* [{}]({}/{}) <sup>{}</sup>\n'
+                .format(f['title'], d.lower(), f['file'], f['date']))
 
     cats.append('\n---\n')
     return({
