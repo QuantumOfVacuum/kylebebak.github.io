@@ -11,7 +11,9 @@ Done via Git hooks. These live in [_hooks](_hooks), and are deployed to `.git/ho
 cd .git/hooks && ln -s -f ../../_hooks/* ./
 ~~~
 
-After commits, `site-map.md` and `_includes/sidebar.md` are regenerated, and [Linklint](http://www.linklint.org/) runs against the site served by the local Jekyll server. This doesn't prevent me from committing, but rather alerts me about defective links before I push to the remote. After pushing to `master`, the subdirectory `_site` is automatically pushed to `gh-pages`, which regenerates <http://kylebebak.github.io/posts/>.
+After commits, `site-map.md` and `_includes/sidebar.md` are regenerated. Before pushing to `master`, the subdirectory `_site` is automatically pushed to `gh-pages`, which regenerates <http://kylebebak.github.io/posts/>.
+
+To check links, I run [Linklint](http://www.linklint.org/) against the site, using `linklint -http -host kylebebak.github.io/posts/ /@`. I don't use `linklint` in Git hooks because it takes a while to run.
 
 ## About
 
