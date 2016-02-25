@@ -13,7 +13,16 @@ cd .git/hooks && ln -s -f ../../_hooks/* ./
 
 After commits, `site-map.md` and `_includes/sidebar.md` are regenerated. Before pushing to `master`, the subdirectory `_site` is automatically pushed to `gh-pages`, which regenerates <http://kylebebak.github.io/posts/>.
 
-To check links, I run [LinkChecker](https://github.com/wummel/linkchecker/) against the site, using `linkchecker --no-warnings http://kylebebak.github.io/posts/` or `linkchecker --no-warnings http://127.0.0.1:4000/posts/`. I don't use `LinkChecker` in Git hooks because it takes a while to run. The relevant field in the output is `Parent URL`, which points to the file containing a broken link.
+To check links, I run [LinkChecker](https://github.com/wummel/linkchecker/) against the site, using:
+
+~~~sh
+# local
+linkchecker --no-warnings http://127.0.0.1:4000/posts/
+# production
+linkchecker --no-warnings http://kylebebak.github.io/posts/
+~~~
+
+I don't use `LinkChecker` in Git hooks because it takes a while to run. The relevant field in the output is `Parent URL`, which points to the file containing a broken link.
 
 ## About
 
