@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "SublimeLinter for code linting in any language"
-categories: code sublime_text
+categories: code sublime-text
 ---
 
 [SublimeLinter](https://github.com/SublimeLinter/SublimeLinter3) is a code linting framework for Sublime Text. Its design is straightforward and very effective, and I feel like writing about it.

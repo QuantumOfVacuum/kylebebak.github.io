@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Sublime Text packages I've used"
-categories: code sublime_text
+categories: code sublime-text
 ---
 
 | Package | Description |
