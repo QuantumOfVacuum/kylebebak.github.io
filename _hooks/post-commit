@@ -1,0 +1,3 @@
+#!/bin/bash
+python _map/map.py _posts > site-map.md
+python _map/sidebar.py _posts > _includes/sidebar.md

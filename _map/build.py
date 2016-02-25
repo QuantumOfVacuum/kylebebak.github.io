@@ -14,8 +14,8 @@ def parse_filename(filename, ext='.md'):
     if extension == ext:
         try:
             datetime.datetime.strptime(date, '%Y-%m-%d')
-        except ValueError:
-            raise ValueError("Invalid date prefix, format is YYYY-MM-DD")
+        except Exception:
+            raise ValueError("The date prefix for {} is INVALID".format(filename)) from None
         return [date, file]
     return [None, None]
 
@@ -25,7 +25,7 @@ def parse_base_cats(cat, sep='/'):
     return [sep.join(cats[:i]) for i in range(1, len(cats))]
 
 
-def map(root='.'):
+def map(root='.', sidebar=False):
     # path is relative to execution directory, not to location of script
     os.chdir(root)
 
@@ -60,8 +60,13 @@ def map(root='.'):
 
         # for github in-page header anchors, '/' -> '' and ' ' -> '-'
         count = '<sup>({})</sup>'.format(len(files)) if len(files) else ''
-        categories.append('{}* [{}](#{}) {}\n'
-            .format( indent*level, cats[-1], cat.replace('/', '--'), count ))
+        category = '{}* [{}](#{}) {}\n'.format(
+            indent*level, cats[-1], cat.replace('/', '--'), count)
+        if sidebar:
+            category = '{}* [{}]({{{{ \'/site-map#{}\' | prepend: site.baseurl }}}})\n'.format(
+                indent*level, cats[-1], cat.replace('/', '--'))
+
+        categories.append(category)
         header = h_sub if level > 0 else h
         # with sub-directory headers, pad '/' with spaces for readability
         links.append('\n{} {}\n'.format( header, cat.replace('/', ' / ')) )
