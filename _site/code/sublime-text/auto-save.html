@@ -59,19 +59,25 @@
 
 <p>One annoying side effect of saving is that it closes the <strong>autocomplete</strong> window if it’s open. Since you only have a second between when you stop typing and <code class="highlighter-rouge">save</code> is called, it renders autocomplete sort of useless. So I added an option to the plugin that avoids calling <code class="highlighter-rouge">save</code>. Instead, it grabs the text in the open file and writes it to another file in the same directory, with <code class="highlighter-rouge">.autosave</code> appended before the file extension.</p>
 
-<p>For editing HTML, here’s the workflow I use:<br />
-- Install <code class="highlighter-rouge">auto-save</code> via Package Control.
-- Open <code class="highlighter-rouge">&lt;file&gt;.html</code> in ST, and from the Command Palette run <code class="highlighter-rouge">Toggle AutoSave Backup: current file only</code>.
-- Install <a href="https://www.npmjs.com/package/gulp-server-livereload#command-line">gulp-server-livereload</a> or something similar via <code class="highlighter-rouge">npm</code>, and have it watch your current directory.
-- Fire up your browser and head to wherever <code class="highlighter-rouge">gulp-server-livereload</code> is serving your files. Open <code class="highlighter-rouge">&lt;file&gt;.autosave.html</code>, in the browser, go back to ST and edit away.</p>
+<p>For editing HTML, here’s the workflow I use:</p>
+
+<ul>
+  <li>Install <code class="highlighter-rouge">auto-save</code> via Package Control.</li>
+  <li>Open <code class="highlighter-rouge">&lt;file&gt;.html</code> in ST, and from the Command Palette run <code class="highlighter-rouge">Toggle AutoSave Backup: current file only</code>.</li>
+  <li>Install <a href="https://www.npmjs.com/package/gulp-server-livereload#command-line">gulp-server-livereload</a> or something similar via <code class="highlighter-rouge">npm</code>, and have it watch your current directory.</li>
+  <li>Fire up your browser and head to wherever <code class="highlighter-rouge">gulp-server-livereload</code> is serving your files. Open <code class="highlighter-rouge">&lt;file&gt;.autosave.html</code>, in the browser, go back to ST and edit away.</li>
+</ul>
 
 <p>You’re editing HTML and seeing how it looks in your browser, with style sheets and all, <strong>in real time</strong>. Magic! Having two monitors, one for ST and one for your browser, makes this even sweeter.</p>
 
-<p>To get a live preview of Markdown, there are a few extra steps:<br />
-- Install <code class="highlighter-rouge">MarkdownEditing</code>, or something similar, via Package Control.
-- Install <a href="https://www.npmjs.com/package/markdown-html">markdown-html</a>.
-- Use it in <code class="highlighter-rouge">watch</code> mode: <code class="highlighter-rouge">markdown-html -w &lt;file&gt;.autosave.md -o &lt;file&gt;.html</code>. As you edit <code class="highlighter-rouge">&lt;file&gt;.md</code>, <strong>auto-save</strong> continually writes it to <code class="highlighter-rouge">&lt;file&gt;.autosave.md</code>, and <strong>markdown-html</strong> continually compiles this to <code class="highlighter-rouge">&lt;file&gt;.html</code>.
-- Fire up your browser and head to wherever <code class="highlighter-rouge">gulp-server-livereload</code> is serving your files. Open <code class="highlighter-rouge">&lt;file&gt;.html</code>, go back to ST and edit away.</p>
+<p>To get a live preview of Markdown, there are a few extra steps:</p>
+
+<ul>
+  <li>Install <code class="highlighter-rouge">MarkdownEditing</code>, or something similar, via Package Control.</li>
+  <li>Install <a href="https://www.npmjs.com/package/markdown-html">markdown-html</a>.</li>
+  <li>Use it in <code class="highlighter-rouge">watch</code> mode: <code class="highlighter-rouge">markdown-html -w &lt;file&gt;.autosave.md -o &lt;file&gt;.html</code>. As you edit <code class="highlighter-rouge">&lt;file&gt;.md</code>, <strong>auto-save</strong> continually writes it to <code class="highlighter-rouge">&lt;file&gt;.autosave.md</code>, and <strong>markdown-html</strong> continually compiles this to <code class="highlighter-rouge">&lt;file&gt;.html</code>.</li>
+  <li>Fire up your browser and head to wherever <code class="highlighter-rouge">gulp-server-livereload</code> is serving your files. Open <code class="highlighter-rouge">&lt;file&gt;.html</code>, go back to ST and edit away.</li>
+</ul>
 
 <p><code class="highlighter-rouge">markdown-html</code> is a beauty. The documentation is an ode to simplicity, and the plugin even supports injecting custom CSS and JS into the HTML output. Although it’s harder to set up, this workflow is superior to using a Markdown editor like Byword or Macdown. You get to edit text with a real text editor, and your “preview” is anything but - it’s literally the browser’s rendering of the document!</p>
 

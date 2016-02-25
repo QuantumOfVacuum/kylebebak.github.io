@@ -6,8 +6,8 @@
 </description>
     <link>http://kylebebak.github.io/posts/</link>
     <atom:link href="http://kylebebak.github.io/posts/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 25 Feb 2016 14:54:43 -0600</pubDate>
-    <lastBuildDate>Thu, 25 Feb 2016 14:54:43 -0600</lastBuildDate>
+    <pubDate>Thu, 25 Feb 2016 14:59:07 -0600</pubDate>
+    <lastBuildDate>Thu, 25 Feb 2016 14:59:07 -0600</lastBuildDate>
     <generator>Jekyll v3.1.1</generator>
     
       <item>
@@ -441,19 +441,25 @@ brew install notes
 
 &lt;p&gt;One annoying side effect of saving is that it closes the &lt;strong&gt;autocomplete&lt;/strong&gt; window if it’s open. Since you only have a second between when you stop typing and &lt;code class=&quot;highlighter-rouge&quot;&gt;save&lt;/code&gt; is called, it renders autocomplete sort of useless. So I added an option to the plugin that avoids calling &lt;code class=&quot;highlighter-rouge&quot;&gt;save&lt;/code&gt;. Instead, it grabs the text in the open file and writes it to another file in the same directory, with &lt;code class=&quot;highlighter-rouge&quot;&gt;.autosave&lt;/code&gt; appended before the file extension.&lt;/p&gt;
 
-&lt;p&gt;For editing HTML, here’s the workflow I use:&lt;br /&gt;
-- Install &lt;code class=&quot;highlighter-rouge&quot;&gt;auto-save&lt;/code&gt; via Package Control.
-- Open &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;file&amp;gt;.html&lt;/code&gt; in ST, and from the Command Palette run &lt;code class=&quot;highlighter-rouge&quot;&gt;Toggle AutoSave Backup: current file only&lt;/code&gt;.
-- Install &lt;a href=&quot;https://www.npmjs.com/package/gulp-server-livereload#command-line&quot;&gt;gulp-server-livereload&lt;/a&gt; or something similar via &lt;code class=&quot;highlighter-rouge&quot;&gt;npm&lt;/code&gt;, and have it watch your current directory.
-- Fire up your browser and head to wherever &lt;code class=&quot;highlighter-rouge&quot;&gt;gulp-server-livereload&lt;/code&gt; is serving your files. Open &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;file&amp;gt;.autosave.html&lt;/code&gt;, in the browser, go back to ST and edit away.&lt;/p&gt;
+&lt;p&gt;For editing HTML, here’s the workflow I use:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Install &lt;code class=&quot;highlighter-rouge&quot;&gt;auto-save&lt;/code&gt; via Package Control.&lt;/li&gt;
+  &lt;li&gt;Open &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;file&amp;gt;.html&lt;/code&gt; in ST, and from the Command Palette run &lt;code class=&quot;highlighter-rouge&quot;&gt;Toggle AutoSave Backup: current file only&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Install &lt;a href=&quot;https://www.npmjs.com/package/gulp-server-livereload#command-line&quot;&gt;gulp-server-livereload&lt;/a&gt; or something similar via &lt;code class=&quot;highlighter-rouge&quot;&gt;npm&lt;/code&gt;, and have it watch your current directory.&lt;/li&gt;
+  &lt;li&gt;Fire up your browser and head to wherever &lt;code class=&quot;highlighter-rouge&quot;&gt;gulp-server-livereload&lt;/code&gt; is serving your files. Open &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;file&amp;gt;.autosave.html&lt;/code&gt;, in the browser, go back to ST and edit away.&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;You’re editing HTML and seeing how it looks in your browser, with style sheets and all, &lt;strong&gt;in real time&lt;/strong&gt;. Magic! Having two monitors, one for ST and one for your browser, makes this even sweeter.&lt;/p&gt;
 
-&lt;p&gt;To get a live preview of Markdown, there are a few extra steps:&lt;br /&gt;
-- Install &lt;code class=&quot;highlighter-rouge&quot;&gt;MarkdownEditing&lt;/code&gt;, or something similar, via Package Control.
-- Install &lt;a href=&quot;https://www.npmjs.com/package/markdown-html&quot;&gt;markdown-html&lt;/a&gt;.
-- Use it in &lt;code class=&quot;highlighter-rouge&quot;&gt;watch&lt;/code&gt; mode: &lt;code class=&quot;highlighter-rouge&quot;&gt;markdown-html -w &amp;lt;file&amp;gt;.autosave.md -o &amp;lt;file&amp;gt;.html&lt;/code&gt;. As you edit &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;file&amp;gt;.md&lt;/code&gt;, &lt;strong&gt;auto-save&lt;/strong&gt; continually writes it to &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;file&amp;gt;.autosave.md&lt;/code&gt;, and &lt;strong&gt;markdown-html&lt;/strong&gt; continually compiles this to &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;file&amp;gt;.html&lt;/code&gt;.
-- Fire up your browser and head to wherever &lt;code class=&quot;highlighter-rouge&quot;&gt;gulp-server-livereload&lt;/code&gt; is serving your files. Open &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;file&amp;gt;.html&lt;/code&gt;, go back to ST and edit away.&lt;/p&gt;
+&lt;p&gt;To get a live preview of Markdown, there are a few extra steps:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Install &lt;code class=&quot;highlighter-rouge&quot;&gt;MarkdownEditing&lt;/code&gt;, or something similar, via Package Control.&lt;/li&gt;
+  &lt;li&gt;Install &lt;a href=&quot;https://www.npmjs.com/package/markdown-html&quot;&gt;markdown-html&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Use it in &lt;code class=&quot;highlighter-rouge&quot;&gt;watch&lt;/code&gt; mode: &lt;code class=&quot;highlighter-rouge&quot;&gt;markdown-html -w &amp;lt;file&amp;gt;.autosave.md -o &amp;lt;file&amp;gt;.html&lt;/code&gt;. As you edit &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;file&amp;gt;.md&lt;/code&gt;, &lt;strong&gt;auto-save&lt;/strong&gt; continually writes it to &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;file&amp;gt;.autosave.md&lt;/code&gt;, and &lt;strong&gt;markdown-html&lt;/strong&gt; continually compiles this to &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;file&amp;gt;.html&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Fire up your browser and head to wherever &lt;code class=&quot;highlighter-rouge&quot;&gt;gulp-server-livereload&lt;/code&gt; is serving your files. Open &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;file&amp;gt;.html&lt;/code&gt;, go back to ST and edit away.&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;markdown-html&lt;/code&gt; is a beauty. The documentation is an ode to simplicity, and the plugin even supports injecting custom CSS and JS into the HTML output. Although it’s harder to set up, this workflow is superior to using a Markdown editor like Byword or Macdown. You get to edit text with a real text editor, and your “preview” is anything but - it’s literally the browser’s rendering of the document!&lt;/p&gt;
 
