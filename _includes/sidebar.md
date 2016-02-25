@@ -6,7 +6,6 @@
     * [random]({{ '/site-map#code--random' | prepend: site.baseurl }})
     * [shell]({{ '/site-map#code--shell' | prepend: site.baseurl }})
     * [sublimetext]({{ '/site-map#code--sublimetext' | prepend: site.baseurl }})
-        * [balls]({{ '/site-map#code--sublimetext--balls' | prepend: site.baseurl }})
 * [footy]({{ '/site-map#footy' | prepend: site.baseurl }})
 * [mexico]({{ '/site-map#mexico' | prepend: site.baseurl }})
     * [restaurantes]({{ '/site-map#mexico--restaurantes' | prepend: site.baseurl }})
