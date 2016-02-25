@@ -16,7 +16,8 @@ __20__ and counting...
     * [mac](#code--mac) <sup>(1)</sup>
     * [random](#code--random) <sup>(4)</sup>
     * [shell](#code--shell) <sup>(2)</sup>
-    * [sublimetext](#code--sublimetext) <sup>(4)</sup>
+    * [sublimetext](#code--sublimetext) <sup>(3)</sup>
+        * [balls](#code--sublimetext--balls) <sup>(1)</sup>
 * [footy](#footy) <sup>(1)</sup>
 * [mexico](#mexico) 
     * [restaurantes](#mexico--restaurantes) <sup>(2)</sup>
@@ -51,10 +52,12 @@ __20__ and counting...
 * [A custom shell function (userbin) for simplifying development of CL tools](code/shell/userbin) <sup>2016-02-04</sup>
 
 #### code / sublimetext
-* [Simple plugin for chaining Sublime Text API calls](code/sublimetext/multiple-commands) <sup>2016-02-24</sup>
 * [SublimeLinter for code linting in any language](code/sublimetext/sublime-linter) <sup>2016-02-21</sup>
 * [Sublime Text packages I've used](code/sublimetext/useful-packages) <sup>2016-02-20</sup>
 * [Live HTML and Markdown preview in Sublime Text with auto-save](code/sublimetext/auto-save) <sup>2016-02-18</sup>
+
+#### code / sublimetext / balls
+* [Simple plugin for chaining Sublime Text API calls](code/sublimetext/balls/multiple-commands) <sup>2016-02-24</sup>
 
 ## footy
 * [Voting for the 2015 Ballon d'or](footy/ballon-dor-2015) <sup>2016-01-14</sup>
