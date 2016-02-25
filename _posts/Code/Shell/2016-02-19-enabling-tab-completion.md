@@ -10,7 +10,7 @@ He bases his tutorial on the tab completions offered by [rbenv](https://github.c
 
 When I type in `notes` at the command line and hit tab, a function is invoked that builds and displays a list of notes.
 
-![notes tab completion](https://raw.githubusercontent.com/kylebebak/posts/master/Code/Shell/notes_tab_completion.gif)
+![notes tab completion](https://raw.githubusercontent.com/kylebebak/posts/master/_assets/img/notes_tab_completion.gif)
 
 The completions I wrote work for __Bash__ and __Zsh__. When the shell starts up, a shell-specific completion function is defined, and hooked into the shell with one of the following commands:
 
