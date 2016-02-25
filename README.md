@@ -24,10 +24,6 @@ linkchecker --no-warnings http://kylebebak.github.io/posts/
 
 I don't use `LinkChecker` in Git hooks because it takes a while to run. The relevant field in the output is `Parent URL`, which points to the file containing a broken link.
 
-## About
-
-I stole the idea for TILs, and most of the formatting for the site map, from [jbranchaud/til](https://github.com/jbranchaud/til).
-
 ## License
 
 Everything in this repo is licensed under the [MIT License](https://opensource.org/licenses/MIT).
