@@ -59,4 +59,4 @@ brew tap kylebebak/notes
 brew install notes
 ~~~
 
-Tab completion is crucial to __notes__' usability. Enabling it was the trickiest part of writing notes; I explain how in [this post](../Shell/enabling-tab-completion).
+Tab completion is crucial to __notes__' usability. Enabling it was the trickiest part of writing notes; I explain how in [this post](../shell/enabling-tab-completion).

@@ -20,7 +20,7 @@ In 1970 soul was [Al Green](http://www.robertchristgau.com/xg/music/green-76.php
 
 In 1965 the biggest act in the world was the Beatles. In 1820 it was Beethoven. In 2016 its Beyoncé, whose hits are written by a [pair of Norwegians armed with Auto-Tune](http://www.newyorker.com/magazine/2012/03/26/the-song-machine).
 
-In 1965 Palo Alto produced The Grateful Dead and a year later San Francisco produced Sly Stone, musicians that tried to experience life and death, that joined "the fatalism of the physical frontier with the wonder of the psychedelic one". In 2016 SF produces Uber and [120 million dollar mayonnaise](../Code/Random/software-eating-the-world).
+In 1965 Palo Alto produced The Grateful Dead and a year later San Francisco produced Sly Stone, musicians that tried to experience life and death, that joined "the fatalism of the physical frontier with the wonder of the psychedelic one". In 2016 SF produces Uber and [120 million dollar mayonnaise](../code/random/software-eating-the-world).
 
 Ask yourself: 50 years from now, will people regard Beyoncé like they regard the Beatles? Or like they regard Beethoven?
 

@@ -6,9 +6,26 @@
 </description>
     <link>http://kylebebak.github.io/posts/</link>
     <atom:link href="http://kylebebak.github.io/posts/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 25 Feb 2016 13:28:59 -0600</pubDate>
-    <lastBuildDate>Thu, 25 Feb 2016 13:28:59 -0600</lastBuildDate>
+    <pubDate>Thu, 25 Feb 2016 14:32:49 -0600</pubDate>
+    <lastBuildDate>Thu, 25 Feb 2016 14:32:49 -0600</lastBuildDate>
     <generator>Jekyll v3.1.1</generator>
+    
+      <item>
+        <title>Blogging like a hacker with Jekyll</title>
+        <description>&lt;p&gt;Jekyll is awesome.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://gist.github.com/cobyism/4730490&quot;&gt;https://gist.github.com/cobyism/4730490&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 25 Feb 2016 00:00:00 -0600</pubDate>
+        <link>http://kylebebak.github.io/posts/code/jekyll/blogging-for-hackers</link>
+        <guid isPermaLink="true">http://kylebebak.github.io/posts/code/jekyll/blogging-for-hackers</guid>
+        
+        
+        <category>code</category>
+        
+        <category>jekyll</category>
+        
+      </item>
     
       <item>
         <title>Simple plugin for chaining Sublime Text API calls</title>
@@ -158,9 +175,9 @@ My &lt;a href=&quot;https://github.com/kylebebak/dotfiles.git&quot;&gt;dotfiles&
 
 &lt;p&gt;The SublimeLinter &lt;strong&gt;linters&lt;/strong&gt; I mentioned above are separate packages that must be installed with Package Control. SublimeLinter manages delegation details, like displaying errors and managing the queue of lint requests, but does no linting on its own. If you were paying attention above, you noticed that &lt;strong&gt;linters&lt;/strong&gt; don’t lint either; they delegate lint requests to their command line linter of choice.&lt;/p&gt;
 
-&lt;p&gt;This modular design makes SublimeLinter easy to extend. To add linting for a new syntax, e.g. &lt;a href=&quot;../JavaScript/eslint&quot;&gt;ES6 JS or JSX&lt;/a&gt;, you don’t even touch SublimeLinter. You create a package that calls a linting executable and passes the results to SublimeLinter, basing your code on the many existing linting packages.&lt;/p&gt;
+&lt;p&gt;This modular design makes SublimeLinter easy to extend. To add linting for a new syntax, e.g. &lt;a href=&quot;../javascript/eslint&quot;&gt;ES6 JS or JSX&lt;/a&gt;, you don’t even touch SublimeLinter. You create a package that calls a linting executable and passes the results to SublimeLinter, basing your code on the many existing linting packages.&lt;/p&gt;
 
-&lt;p&gt;SublimeLinter settings are specified in &lt;code class=&quot;highlighter-rouge&quot;&gt;~/Library/Application Support/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings&lt;/code&gt;. Here you can change the “debounce” &lt;code class=&quot;highlighter-rouge&quot;&gt;delay&lt;/code&gt;, the &lt;code class=&quot;highlighter-rouge&quot;&gt;lint_mode&lt;/code&gt;, configure individual linters, and define a &lt;code class=&quot;highlighter-rouge&quot;&gt;syntax_map&lt;/code&gt; to make sure your linters are called for files with specialized syntax.&lt;/p&gt;
+&lt;p&gt;SublimeLinter settings are specified in &lt;code class=&quot;highlighter-rouge&quot;&gt;~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/SublimeLinter.sublime-settings&lt;/code&gt;. Here you can change the “debounce” &lt;code class=&quot;highlighter-rouge&quot;&gt;delay&lt;/code&gt;, the &lt;code class=&quot;highlighter-rouge&quot;&gt;lint_mode&lt;/code&gt;, configure individual linters, and define a &lt;code class=&quot;highlighter-rouge&quot;&gt;syntax_map&lt;/code&gt; to make sure your linters are called for files with specialized syntax.&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
     &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;user&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
@@ -403,7 +420,7 @@ brew install notes
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;Tab completion is crucial to &lt;strong&gt;notes&lt;/strong&gt;’ usability. Enabling it was the trickiest part of writing notes; I explain how in &lt;a href=&quot;../Shell/enabling-tab-completion&quot;&gt;this post&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Tab completion is crucial to &lt;strong&gt;notes&lt;/strong&gt;’ usability. Enabling it was the trickiest part of writing notes; I explain how in &lt;a href=&quot;../shell/enabling-tab-completion&quot;&gt;this post&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Fri, 19 Feb 2016 00:00:00 -0600</pubDate>
         <link>http://kylebebak.github.io/posts/code/homebrew/distribute-program-via-homebrew</link>
@@ -418,7 +435,7 @@ brew install notes
     
       <item>
         <title>Live HTML and Markdown preview in Sublime Text with auto-save</title>
-        <description>&lt;p&gt;I found &lt;a href=&quot;https://github.com/jamesfzhang/auto-save&quot;&gt;auto-save&lt;/a&gt; when I decided I was going to write my resume in HTML and &lt;a href=&quot;../ms-word-is-terrible&quot;&gt;never use MS Word again&lt;/a&gt;. Hopefully.&lt;/p&gt;
+        <description>&lt;p&gt;I found &lt;a href=&quot;https://github.com/jamesfzhang/auto-save&quot;&gt;auto-save&lt;/a&gt; when I decided I was going to write my resume in HTML and &lt;a href=&quot;../random/ms-word-is-terrible&quot;&gt;never use MS Word again&lt;/a&gt;. Hopefully.&lt;/p&gt;
 
 &lt;p&gt;Props to &lt;a href=&quot;https://github.com/jamesfzhang&quot;&gt;James Zhang&lt;/a&gt; for writing this plugin. When you enable it, it automatically saves the currently open file after each edit. Calls to &lt;code class=&quot;highlighter-rouge&quot;&gt;save&lt;/code&gt; are &lt;a href=&quot;https://css-tricks.com/the-difference-between-throttling-and-debouncing/&quot;&gt;debounced&lt;/a&gt; by 1 second to avoid overworking the Sublime Text API.&lt;/p&gt;
 
@@ -450,41 +467,6 @@ brew install notes
         <category>code</category>
         
         <category>sublimetext</category>
-        
-      </item>
-    
-      <item>
-        <title>MS Word is terrible</title>
-        <description>&lt;p&gt;&lt;a href=&quot;http://fluff.info/terrible/&quot;&gt;MS Word is terrible&lt;/a&gt;. And it’s not just Word. It’s OpenOffice, Pages, and all the other programs that were designed to edit documents instead of text - the so-called &lt;a href=&quot;https://en.wikipedia.org/wiki/Word_processor&quot;&gt;word processors&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Word processors are &lt;strong&gt;&lt;em&gt;designed&lt;/em&gt;&lt;/strong&gt; to conflate the data they manipulate with the representation of that data, to conflate markup and style. They can’t be used for editing text. For a document produced by a word processor, this means a lot of things, all of them negative. Here are a few:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;It can’t be checked into version control
-    &lt;ul&gt;
-      &lt;li&gt;No Github, so no collaborative editing&lt;/li&gt;
-      &lt;li&gt;No authoritative version&lt;/li&gt;
-      &lt;li&gt;It will get lost sooner or later&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;It can’t be published online
-    &lt;ul&gt;
-      &lt;li&gt;No good way to distribute it to employees&lt;/li&gt;
-      &lt;li&gt;No good way to share it with the world&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Cloud word processors like Google Docs overcome the sharing problems, but like their desktop counterparts they allow only one view of the document, and in one place. For a company with any technical chops their use is justifiable only for editing spreadsheets. I worked at a tech consulting company that was addicted to Word, which was a big drain on productivity. They should have been using Github and Markdown, but that’s for &lt;a href=&quot;Github/github-markdown-for-company-docs&quot;&gt;another post&lt;/a&gt;…&lt;/p&gt;
-</description>
-        <pubDate>Thu, 18 Feb 2016 00:00:00 -0600</pubDate>
-        <link>http://kylebebak.github.io/posts/code/random/ms-word-is-terrible</link>
-        <guid isPermaLink="true">http://kylebebak.github.io/posts/code/random/ms-word-is-terrible</guid>
-        
-        
-        <category>code</category>
-        
-        <category>random</category>
         
       </item>
     

@@ -63,9 +63,9 @@
 
 <p>The SublimeLinter <strong>linters</strong> I mentioned above are separate packages that must be installed with Package Control. SublimeLinter manages delegation details, like displaying errors and managing the queue of lint requests, but does no linting on its own. If you were paying attention above, you noticed that <strong>linters</strong> don’t lint either; they delegate lint requests to their command line linter of choice.</p>
 
-<p>This modular design makes SublimeLinter easy to extend. To add linting for a new syntax, e.g. <a href="../JavaScript/eslint">ES6 JS or JSX</a>, you don’t even touch SublimeLinter. You create a package that calls a linting executable and passes the results to SublimeLinter, basing your code on the many existing linting packages.</p>
+<p>This modular design makes SublimeLinter easy to extend. To add linting for a new syntax, e.g. <a href="../javascript/eslint">ES6 JS or JSX</a>, you don’t even touch SublimeLinter. You create a package that calls a linting executable and passes the results to SublimeLinter, basing your code on the many existing linting packages.</p>
 
-<p>SublimeLinter settings are specified in <code class="highlighter-rouge">~/Library/Application Support/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings</code>. Here you can change the “debounce” <code class="highlighter-rouge">delay</code>, the <code class="highlighter-rouge">lint_mode</code>, configure individual linters, and define a <code class="highlighter-rouge">syntax_map</code> to make sure your linters are called for files with specialized syntax.</p>
+<p>SublimeLinter settings are specified in <code class="highlighter-rouge">~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/SublimeLinter.sublime-settings</code>. Here you can change the “debounce” <code class="highlighter-rouge">delay</code>, the <code class="highlighter-rouge">lint_mode</code>, configure individual linters, and define a <code class="highlighter-rouge">syntax_map</code> to make sure your linters are called for files with specialized syntax.</p>
 
 <div class="highlighter-rouge"><pre class="highlight"><code><span class="p">{</span><span class="w">
     </span><span class="nt">"user"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
