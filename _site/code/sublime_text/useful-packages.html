@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Live HTML and Markdown preview in Sublime Text with auto-save</title>
-  <meta name="description" content="I found auto-save when I decided I was going to write my resume in HTML and never use MS Word again. Hopefully.">
+  <title>Sublime Text packages I&#39;ve used</title>
+  <meta name="description" content="            Package      Description                  AdvancedNewFile      File creation plugin.              Alignment      Easy alignment of multiple selec...">
 
   <link rel="stylesheet" href="/posts/css/main.css">
-  <link rel="canonical" href="http://kylebebak.github.io/posts/code/sublime-text/auto-save">
+  <link rel="canonical" href="http://kylebebak.github.io/posts/code/sublime_text/useful-packages">
   <link rel="alternate" type="application/rss+xml" title="dronfelipe" href="http://kylebebak.github.io/posts/feed.xml">
 </head>
 
@@ -48,34 +48,97 @@
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">Live HTML and Markdown preview in Sublime Text with auto-save</h1>
-    <p class="post-meta"><time datetime="2016-02-18T00:00:00-06:00" itemprop="datePublished">Feb 18, 2016</time></p>
+    <h1 class="post-title" itemprop="name headline">Sublime Text packages I've used</h1>
+    <p class="post-meta"><time datetime="2016-02-20T00:00:00-06:00" itemprop="datePublished">Feb 20, 2016</time></p>
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    <p>I found <a href="https://github.com/jamesfzhang/auto-save">auto-save</a> when I decided I was going to write my resume in HTML and <a href="../random/ms-word-is-terrible">never use MS Word again</a>. Hopefully.</p>
+    <table>
+  <thead>
+    <tr>
+      <th>Package</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://github.com/skuroda/Sublime-AdvancedNewFile">AdvancedNewFile</a></td>
+      <td>File creation plugin.</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/wbond/sublime_alignment">Alignment</a></td>
+      <td>Easy alignment of multiple selections and multi-line selections.</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/facelessuser/ApplySyntax">ApplySyntax</a></td>
+      <td>ApplySyntax is a plugin for Sublime Text 2 and 3 that allows you to detect and apply the syntax of files that might not otherwise be detected properly.</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/Pleasurazy/Sublime-Better-Completion">Better Completion</a></td>
+      <td>Provides a simpler way to define your own auto-completions. Comes with API completions for JavaScript, jQuery, Lodash, Underscore, HTML5, CSS3 and Bootstrap Classes, React.js, etc.</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/facelessuser/BracketHighlighter">Bracket Highlighter</a></td>
+      <td>Bracket and tag highlights appear in gutter.</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/squ1b3r/Djaneiro">Djaneiro</a></td>
+      <td>Django snippets and completions.</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/spadgos/sublime-jsdocs">DocBlockr</a></td>
+      <td>Makes writing Java and JS documentation a lot easier.</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/sergeche/emmet-sublime">Emmet</a></td>
+      <td>An incredible plugin for writing HTML and CSS.</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/jbrooksuk/Sublime-Evaluate">Evaluate</a></td>
+      <td>Evaluate the selection with the Python interpreter.</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/SublimeText-Markdown/MarkdownEditing">Markdown Editing</a></td>
+      <td>Powerful Markdown support with better syntax understanding and good color schemes.</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/skuroda/PackageResourceViewer">PackageResourceViewer</a></td>
+      <td>Plugin to assist viewing and editing package resources.</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/gerardroche/sublime-phpck">PHP Completions</a></td>
+      <td>PHP snippets and completions.</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/titoBouzout/SideBarEnhancements">Side Bar</a></td>
+      <td>Provides enhancements to the operations on files and folders available from the side bar.</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/jamesfzhang/auto-save">auto-save</a></td>
+      <td>Automatically save files after every edit.</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/babel/babel-sublime">Babel</a></td>
+      <td>Language definitions for ES6+ JavaScript with React JSX syntax extensions.</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/srusskih/SublimeJEDI">Jedi</a></td>
+      <td>Python snippets and completions.</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/SublimeLinter/SublimeLinter3">SublimeLinter</a></td>
+      <td>Interactive code linting framework. <sup><a href="#first">(1)</a></sup></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/facelessuser/ScopeHunter">ScopeHunter</a></td>
+      <td>Get the scope under the cursor.</td>
+    </tr>
+  </tbody>
+</table>
 
-<p>Props to <a href="https://github.com/jamesfzhang">James Zhang</a> for writing this plugin. When you enable it, it automatically saves the currently open file after each edit. Calls to <code class="highlighter-rouge">save</code> are <a href="https://css-tricks.com/the-difference-between-throttling-and-debouncing/">debounced</a> by 1 second to avoid overworking the Sublime Text API.</p>
+<hr />
 
-<p>One annoying side effect of saving is that it closes the <strong>autocomplete</strong> window if it’s open. Since you only have a second between when you stop typing and <code class="highlighter-rouge">save</code> is called, it renders autocomplete sort of useless. So I added an option to the plugin that avoids calling <code class="highlighter-rouge">save</code>. Instead, it grabs the text in the open file and writes it to another file in the same directory, with <code class="highlighter-rouge">.autosave</code> appended before the file extension.</p>
-
-<p>For editing HTML, here’s the workflow I use:<br />
-- Install <code class="highlighter-rouge">auto-save</code> via Package Control.
-- Open <code class="highlighter-rouge">&lt;file&gt;.html</code> in ST, and from the Command Palette run <code class="highlighter-rouge">Toggle AutoSave Backup: current file only</code>.
-- Install <a href="https://www.npmjs.com/package/gulp-server-livereload#command-line">gulp-server-livereload</a> or something similar via <code class="highlighter-rouge">npm</code>, and have it watch your current directory.
-- Fire up your browser and head to wherever <code class="highlighter-rouge">gulp-server-livereload</code> is serving your files. Open <code class="highlighter-rouge">&lt;file&gt;.autosave.html</code>, in the browser, go back to ST and edit away.</p>
-
-<p>You’re editing HTML and seeing how it looks in your browser, with style sheets and all, <strong>in real time</strong>. Magic! Having two monitors, one for ST and one for your browser, makes this even sweeter.</p>
-
-<p>To get a live preview of Markdown, there are a few extra steps:<br />
-- Install <code class="highlighter-rouge">MarkdownEditing</code>, or something similar, via Package Control.
-- Install <a href="https://www.npmjs.com/package/markdown-html">markdown-html</a>.
-- Use it in <code class="highlighter-rouge">watch</code> mode: <code class="highlighter-rouge">markdown-html -w &lt;file&gt;.autosave.md -o &lt;file&gt;.html</code>. As you edit <code class="highlighter-rouge">&lt;file&gt;.md</code>, <strong>auto-save</strong> continually writes it to <code class="highlighter-rouge">&lt;file&gt;.autosave.md</code>, and <strong>markdown-html</strong> continually compiles this to <code class="highlighter-rouge">&lt;file&gt;.html</code>.
-- Fire up your browser and head to wherever <code class="highlighter-rouge">gulp-server-livereload</code> is serving your files. Open <code class="highlighter-rouge">&lt;file&gt;.html</code>, go back to ST and edit away.</p>
-
-<p><code class="highlighter-rouge">markdown-html</code> is a beauty. The documentation is an ode to simplicity, and the plugin even supports injecting custom CSS and JS into the HTML output. Although it’s harder to set up, this workflow is superior to using a Markdown editor like Byword or Macdown. You get to edit text with a real text editor, and your “preview” is anything but - it’s literally the browser’s rendering of the document!</p>
-
-<p>Setup aside, for serious editing of static HTML docs this is a no-brainer, and I think that’s true for Markdown as well. Let me know what you think…</p>
+<p><a name="first"><sup>(1)</sup></a> More on <a href="./sublime-linter">SublimeLinter</a>.</p>
 
   </div>
 
