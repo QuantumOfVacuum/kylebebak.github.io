@@ -4,7 +4,7 @@ title: "How to distribute your program via Homebrew"
 categories: code homebrew
 ---
 
-I recently packaged a program I wrote called [notes](github.com/kylebebak/notes) for distribution via `Homebrew`, following this [excellent tutorial](http://formalfriday.club/2015/01/05/creating-your-own-homebrew-tap-and-formula.html).
+I recently packaged a program I wrote called [notes](https://github.com/kylebebak/notes) for distribution via `Homebrew`, following this [excellent tutorial](http://formalfriday.club/2015/01/05/creating-your-own-homebrew-tap-and-formula.html).
 
 To make your package installable via Homebrew, you put it in a Github repo and create a release. Then you create a __tap__, a repo containing at least one __formula__. The formula is a Ruby file pointing to a downloadable tarball of the package, with instructions on how to build and install it.
 

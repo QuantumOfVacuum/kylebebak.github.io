@@ -1,75 +1,78 @@
 import os
 import frontmatter
+from collections import OrderedDict
+import datetime
 
-def clean_dirpath(dirpath):
-    # remove './' prefix
-    if len(dirpath) > 1 and dirpath[:2] == './':
-        dirpath = dirpath[2:]
-    return dirpath
+def parse_filename(filename, ext='.md'):
+    """
+    Remove and validate date prefix and extension,
+    return list with [date, file].
+    """
+    filename, extension = os.path.splitext(filename)
+    date, file = filename[:10], filename[11:]
 
-def check_dirpath(dirpath):
-    # make sure dirpath doesn't start with '.'
-    return len(dirpath) == 1 or dirpath[0] != '.'
+    if extension == ext:
+        try:
+            datetime.datetime.strptime(date, '%Y-%m-%d')
+        except ValueError:
+            raise ValueError("Invalid date prefix, format is YYYY-MM-DD")
+        return [date, file]
+    return [None, None]
 
-def check_filename(filename, ext='.md'):
-    # ignore dotfiles, README, check for extension
-    return len(filename) > 3 and filename[-3:] == ext \
-    and filename[0] != '.'
 
-def get_file_parts(filename, date_format='YYYY-MM-DD'):
-    # remove date prefix and extension, return list with [date, file]
-    filename = os.path.splitext(filename)[0]
-    return [filename[:len(date_format)], filename[len(date_format)+1:]]
+def parse_base_cats(cat, sep='/'):
+    cats = cat.split(sep)
+    return [sep.join(cats[:i]) for i in range(1, len(cats))]
 
-def map(root='.', cat_prefix=''):
+
+def map(root='.'):
     # path is relative to execution directory, not to location of script
     os.chdir(root)
 
-    directories = []
+    site_map = OrderedDict() # cat -> [files]
     num_files = 0
     for (dirpath, dirnames, filenames) in os.walk('.'):
-        dirpath = clean_dirpath(dirpath)
-        if not check_dirpath(dirpath):
-            continue
-
-        files = []
         for filename in filenames:
-            if not check_filename(filename):
+            date, file = parse_filename(filename)
+            if not date or not file:
                 continue
             num_files += 1
-            # extract title from frontmatter
+            # extract title and categories from frontmatter
             with open('{}/{}'.format(dirpath, filename), 'r') as f:
-                title = frontmatter.loads(f.read())['title']
-                date, file = get_file_parts(filename)
-                files.append({'date': date, 'file': file, 'title': title})
+                fm = frontmatter.loads(f.read())
+                title, cat = fm['title'], fm['categories'].replace(' ', '/')
+                file = {'date': date, 'file': file, 'title': title}
+                for base_cat in parse_base_cats(cat):
+                    if not base_cat in site_map:
+                        site_map[base_cat] = []
+                if cat in site_map:
+                    site_map[cat].append(file)
+                else:
+                    site_map[cat] = [file]
 
-        directories.append({'dir':dirpath, 'files':files})
+    # generate markdown from categories dict
+    categories, links = [], [] # lists that will later be joined into strings
+    indent, h, h_sub = ' '*4, '##', '####'
 
-    # generate markdown from directories list
-    cats, links = [], [] # lists that will later be joined into strings
-    indent, h, h_sub = '    ', '##', '####'
+    for cat, files in site_map.items():
+        cats = cat.split('/')
+        level = len(cats)-1
 
-    for directory in directories:
-        d, files = directory['dir'], directory['files']
-        d_segments = d.split('/')
-        level = len(d_segments)-1
+        # for github in-page header anchors, '/' -> '' and ' ' -> '-'
+        count = '<sup>({})</sup>'.format(len(files)) if len(files) else ''
+        categories.append('{}* [{}](#{}) {}\n'
+            .format( indent*level, cats[-1], cat.replace('/', '--'), count ))
+        header = h_sub if level > 0 else h
+        # with sub-directory headers, pad '/' with spaces for readability
+        links.append('\n{} {}\n'.format( header, cat.replace('/', ' / ')) )
 
-        if d != '.':
-            # for github in-page header anchors, '/' -> '' and ' ' -> '-'
-            count = '<sup>({})</sup>'.format(len(files)) if len(files) else ''
-            cats.append('{}* [{}{}](#{}) {}\n'
-                .format( indent*level, cat_prefix, d_segments[-1],
-                d.lower().replace(' ', '-').replace('/', '--'), count ))
-            header = h_sub if level > 0 else h
-            # with directory headers, pad '/' with spaces for readability
-            links.append('\n{} {}\n'.format( header, d.replace('/', ' / ')) )
-
-        for f in reversed(files): # display newest posts first
+        files.sort(key=lambda x:x['date'])
+        for f in reversed(files):  # files in each cat in reverse date order
             links.append('* [{}]({}/{}) <sup>{}</sup>\n'
-                .format(f['title'], d.lower(), f['file'], f['date']))
+                .format(f['title'], cat, f['file'], f['date']))
 
     return({
         'count': num_files,
-        'cats': ''.join(cats),
+        'categories': ''.join(categories),
         'links': ''.join(links)
     })

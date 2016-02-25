@@ -10,10 +10,10 @@ title: dronfelipe
 description: > # this means to ignore newlines until "baseurl:"
   Code, TILs, and other stuff.
 baseurl: "/posts" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site
+url: "http://kylebebak.github.io" # the base hostname & protocol for your site
 twitter_username: KyleBebak
 github_username: kylebebak
-# makes sure links are the same as they are in github repo
+# no date or extension in url
 permalink: /:categories/:title
 
 # Build settings

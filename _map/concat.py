@@ -13,5 +13,5 @@ permalink: /site-map\n\
 ---\n'
 
 print('{}\n__{}__ and counting...\n\n---\n\n## Categories\n\n{}\n---\n{}'
-    .format(fm, site_map['count'], site_map['cats'], site_map['links']))
+    .format(fm, site_map['count'], site_map['categories'], site_map['links']))
 
