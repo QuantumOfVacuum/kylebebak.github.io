@@ -6,8 +6,8 @@
 </description>
     <link>http://kylebebak.github.io/posts/</link>
     <atom:link href="http://kylebebak.github.io/posts/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 25 Feb 2016 14:33:51 -0600</pubDate>
-    <lastBuildDate>Thu, 25 Feb 2016 14:33:51 -0600</lastBuildDate>
+    <pubDate>Thu, 25 Feb 2016 14:41:45 -0600</pubDate>
+    <lastBuildDate>Thu, 25 Feb 2016 14:41:45 -0600</lastBuildDate>
     <generator>Jekyll v3.1.1</generator>
     
       <item>
@@ -32,13 +32,13 @@
         <description>&lt;p&gt;Sublime Text is awesome.&lt;/p&gt;
 </description>
         <pubDate>Wed, 24 Feb 2016 00:00:00 -0600</pubDate>
-        <link>http://kylebebak.github.io/posts/code/sublimetext/multiple-commands</link>
-        <guid isPermaLink="true">http://kylebebak.github.io/posts/code/sublimetext/multiple-commands</guid>
+        <link>http://kylebebak.github.io/posts/code/sublime-text/multiple-commands</link>
+        <guid isPermaLink="true">http://kylebebak.github.io/posts/code/sublime-text/multiple-commands</guid>
         
         
         <category>code</category>
         
-        <category>sublimetext</category>
+        <category>sublime-text</category>
         
       </item>
     
@@ -147,7 +147,7 @@ My &lt;a href=&quot;https://github.com/kylebebak/dotfiles.git&quot;&gt;dotfiles&
 &lt;p&gt;By default, I can lint JS written for the browser or written for Node, with general support for ES6, and specific &lt;code class=&quot;highlighter-rouge&quot;&gt;ecmaFeatures&lt;/code&gt; such as &lt;code class=&quot;highlighter-rouge&quot;&gt;jsx&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;modules&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;forOf&lt;/code&gt; loops enabled.&lt;/p&gt;
 
 &lt;h2 id=&quot;jsx-and-other-syntaxes&quot;&gt;JSX and other syntaxes&lt;/h2&gt;
-&lt;p&gt;If you want to lint JSX, an additional npm package, &lt;code class=&quot;highlighter-rouge&quot;&gt;eslint-plugin-react&lt;/code&gt;. If you want to be sure this is in your path (for example, so that &lt;a href=&quot;../Sublime%20Text/sublime-linter&quot;&gt;SublimeLinter&lt;/a&gt; can see it), install it globally. If you set up a new project with &lt;code class=&quot;highlighter-rouge&quot;&gt;eslint --init&lt;/code&gt; and indicate that you want to lint JSX, eslint will automatically install this plugin locally.&lt;/p&gt;
+&lt;p&gt;If you want to lint JSX, an additional npm package, &lt;code class=&quot;highlighter-rouge&quot;&gt;eslint-plugin-react&lt;/code&gt;. If you want to be sure this is in your path (for example, so that &lt;a href=&quot;../sublime-text/sublime-linter&quot;&gt;SublimeLinter&lt;/a&gt; can see it), install it globally. If you set up a new project with &lt;code class=&quot;highlighter-rouge&quot;&gt;eslint --init&lt;/code&gt; and indicate that you want to lint JSX, eslint will automatically install this plugin locally.&lt;/p&gt;
 
 &lt;h2 id=&quot;one-linter-to-rule-them-all&quot;&gt;One linter to rule them all&lt;/h2&gt;
 &lt;p&gt;Very few linters offer the customizability of eslint. Back in the day, before the profusion of frameworks, being able to configure a linter might have seemed like overkill. If you don’t like how &lt;code class=&quot;highlighter-rouge&quot;&gt;pyflakes&lt;/code&gt; does things, you just install a different linter, like &lt;code class=&quot;highlighter-rouge&quot;&gt;pep8&lt;/code&gt;. Modern JavaScript, however, is a different beast. It’s used to build nearly anything - single page web apps, servers, APIs, mobile apps, command line tools, etc - and syntax and coding conventions vary accordingly. A linter dealing with these use cases needs to be customizable, and that’s why eslint is the JS linter to rule them all.&lt;/p&gt;
@@ -210,13 +210,13 @@ My &lt;a href=&quot;https://github.com/kylebebak/dotfiles.git&quot;&gt;dotfiles&
 &lt;p&gt;I find IDEs clunky and bloated; they’re designed for many things, but not for editing text. Text is the raw material of all programs, &lt;strong&gt;which for me is enough to make IDEs an anti-pattern&lt;/strong&gt;. Code linting, however, has always been one of their strong points. SublimeLinter gives you industrial strength code linting in a lean, mean text editor, which, if this applies to you, is one more reason to drop your IDE.&lt;/p&gt;
 </description>
         <pubDate>Sun, 21 Feb 2016 00:00:00 -0600</pubDate>
-        <link>http://kylebebak.github.io/posts/code/sublimetext/sublime-linter</link>
-        <guid isPermaLink="true">http://kylebebak.github.io/posts/code/sublimetext/sublime-linter</guid>
+        <link>http://kylebebak.github.io/posts/code/sublime-text/sublime-linter</link>
+        <guid isPermaLink="true">http://kylebebak.github.io/posts/code/sublime-text/sublime-linter</guid>
         
         
         <category>code</category>
         
-        <category>sublimetext</category>
+        <category>sublime-text</category>
         
       </item>
     
@@ -310,13 +310,13 @@ My &lt;a href=&quot;https://github.com/kylebebak/dotfiles.git&quot;&gt;dotfiles&
 &lt;p&gt;&lt;a name=&quot;first&quot;&gt;&lt;sup&gt;(1)&lt;/sup&gt;&lt;/a&gt; More on &lt;a href=&quot;./sublime-linter&quot;&gt;SublimeLinter&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Sat, 20 Feb 2016 00:00:00 -0600</pubDate>
-        <link>http://kylebebak.github.io/posts/code/sublimetext/useful-packages</link>
-        <guid isPermaLink="true">http://kylebebak.github.io/posts/code/sublimetext/useful-packages</guid>
+        <link>http://kylebebak.github.io/posts/code/sublime-text/useful-packages</link>
+        <guid isPermaLink="true">http://kylebebak.github.io/posts/code/sublime-text/useful-packages</guid>
         
         
         <category>code</category>
         
-        <category>sublimetext</category>
+        <category>sublime-text</category>
         
       </item>
     
@@ -460,13 +460,13 @@ brew install notes
 &lt;p&gt;Setup aside, for serious editing of static HTML docs this is a no-brainer, and I think that’s true for Markdown as well. Let me know what you think…&lt;/p&gt;
 </description>
         <pubDate>Thu, 18 Feb 2016 00:00:00 -0600</pubDate>
-        <link>http://kylebebak.github.io/posts/code/sublimetext/auto-save</link>
-        <guid isPermaLink="true">http://kylebebak.github.io/posts/code/sublimetext/auto-save</guid>
+        <link>http://kylebebak.github.io/posts/code/sublime-text/auto-save</link>
+        <guid isPermaLink="true">http://kylebebak.github.io/posts/code/sublime-text/auto-save</guid>
         
         
         <category>code</category>
         
-        <category>sublimetext</category>
+        <category>sublime-text</category>
         
       </item>
     
