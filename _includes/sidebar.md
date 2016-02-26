@@ -1,4 +1,5 @@
 * [code]({{ '/site-map#code' | prepend: site.baseurl }})
+    * [algorithms]({{ '/site-map#code--algorithms' | prepend: site.baseurl }})
     * [automation]({{ '/site-map#code--automation' | prepend: site.baseurl }})
     * [github]({{ '/site-map#code--github' | prepend: site.baseurl }})
     * [homebrew]({{ '/site-map#code--homebrew' | prepend: site.baseurl }})

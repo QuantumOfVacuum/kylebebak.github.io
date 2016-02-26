@@ -3,13 +3,14 @@ layout: page
 permalink: /site-map
 ---
 
-__22__ and counting...
+__23__ and counting...
 
 ---
 
 ## Categories
 
 * [code](#code) 
+    * [algorithms](#code--algorithms) <sup>(1)</sup>
     * [automation](#code--automation) <sup>(1)</sup>
     * [github](#code--github) <sup>(2)</sup>
     * [homebrew](#code--homebrew) <sup>(1)</sup>
@@ -28,6 +29,9 @@ __22__ and counting...
 ---
 
 ## code
+
+#### code / algorithms
+* [Counting Events in a Moving Time Window](code/algorithms/counting-events-in-a-moving-window) <sup>2014-09-20</sup>
 
 #### code / automation
 * [Vagrant, Ansible and GitHub for automated development and deployment](code/automation/automating-development-deployment) <sup>2016-01-07</sup>
