@@ -11,7 +11,7 @@ Done via Git hooks. These live in [_hooks](_hooks), and are deployed to `.git/ho
 cd .git/hooks && ln -s -f ../../_hooks/* ./
 ~~~
 
-After commits, `site-map.md` and `_includes/sidebar.md` are regenerated. Before pushing to `master`, the subdirectory `_site` is automatically pushed to `gh-pages`, which regenerates <http://kylebebak.github.io/posts/>.
+Before commits, `site-map.md` and `_includes/sidebar.md` are regenerated. Before pushing to `master`, the subdirectory `_site` is automatically pushed to `gh-pages`, which regenerates <http://kylebebak.github.io/posts/>.
 
 To check links, I run [LinkChecker](https://github.com/wummel/linkchecker/) against the site, using:
 
