@@ -6,8 +6,8 @@
 </description>
     <link>http://kylebebak.github.io/posts/</link>
     <atom:link href="http://kylebebak.github.io/posts/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 26 Feb 2016 09:22:05 -0600</pubDate>
-    <lastBuildDate>Fri, 26 Feb 2016 09:22:05 -0600</lastBuildDate>
+    <pubDate>Fri, 26 Feb 2016 10:05:30 -0600</pubDate>
+    <lastBuildDate>Fri, 26 Feb 2016 10:05:30 -0600</lastBuildDate>
     <generator>Jekyll v3.1.1</generator>
     
       <item>
@@ -150,7 +150,7 @@ My &lt;a href=&quot;https://github.com/kylebebak/dotfiles.git&quot;&gt;dotfiles&
 &lt;p&gt;If you want to lint JSX, an additional npm package, &lt;code class=&quot;highlighter-rouge&quot;&gt;eslint-plugin-react&lt;/code&gt;. If you want to be sure this is in your path (for example, so that &lt;a href=&quot;../sublime-text/sublime-linter&quot;&gt;SublimeLinter&lt;/a&gt; can see it), install it globally. If you set up a new project with &lt;code class=&quot;highlighter-rouge&quot;&gt;eslint --init&lt;/code&gt; and indicate that you want to lint JSX, eslint will automatically install this plugin locally.&lt;/p&gt;
 
 &lt;h2 id=&quot;one-linter-to-rule-them-all&quot;&gt;One linter to rule them all&lt;/h2&gt;
-&lt;p&gt;Very few linters offer the customizability of eslint. Back in the day, before the profusion of frameworks, being able to configure a linter might have seemed like overkill. If you don’t like how &lt;code class=&quot;highlighter-rouge&quot;&gt;pyflakes&lt;/code&gt; does things, you just install a different linter, like &lt;code class=&quot;highlighter-rouge&quot;&gt;pep8&lt;/code&gt;. Modern JavaScript, however, is a different beast. It’s used to build nearly anything - single page web apps, servers, APIs, mobile apps, command line tools, etc - and syntax and coding conventions vary accordingly. A linter dealing with these use cases needs to be customizable, and that’s why eslint is the JS linter to rule them all.&lt;/p&gt;
+&lt;p&gt;Very few linters offer the customizability of eslint. Back in the day, before the profusion of frameworks, being able to configure a linter might have seemed like overkill. If you don’t like how &lt;code class=&quot;highlighter-rouge&quot;&gt;pyflakes&lt;/code&gt; does things, you just install a different linter, like &lt;code class=&quot;highlighter-rouge&quot;&gt;pep8&lt;/code&gt;. Modern JavaScript, however, is a different beast. It’s used to build nearly anything — single page web apps, servers, APIs, mobile apps, command line tools, etc — and syntax and coding conventions vary accordingly. A linter dealing with these use cases needs to be customizable, and that’s why eslint is the JS linter to rule them all.&lt;/p&gt;
 </description>
         <pubDate>Mon, 22 Feb 2016 00:00:00 -0600</pubDate>
         <link>http://kylebebak.github.io/posts/code/javascript/eslint</link>
@@ -373,7 +373,7 @@ which notes &amp;gt;/dev/null &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;
 
 &lt;p&gt;To make writing formulae easier, you can use &lt;a href=&quot;https://github.com/Homebrew/homebrew/blob/master/share/doc/homebrew/Formula-Cookbook.md#variables-for-directory-locations&quot;&gt;variables for directory locations&lt;/a&gt;. For example, &lt;code class=&quot;highlighter-rouge&quot;&gt;bin.install foo&lt;/code&gt; will create &lt;code class=&quot;highlighter-rouge&quot;&gt;/usr/local/Cellar/&amp;lt;pkg&amp;gt;/&amp;lt;version&amp;gt;/bin/foo&lt;/code&gt;, use &lt;code class=&quot;highlighter-rouge&quot;&gt;chmod&lt;/code&gt; to make sure foo is executable, and create a symlink from &lt;code class=&quot;highlighter-rouge&quot;&gt;/usr/local/bin/foo&lt;/code&gt; to foo in the cellar.&lt;/p&gt;
 
-&lt;p&gt;They say &lt;a href=&quot;https://news.ycombinator.com/item?id=7811482&quot;&gt;the right example is worth 1000 lines of documentation&lt;/a&gt;. Enough beating around the bush - here is notes’ directory tree, courtesy of &lt;a href=&quot;https://en.wikipedia.org/wiki/Tree_(Unix)&quot;&gt;tree&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;They say &lt;a href=&quot;https://news.ycombinator.com/item?id=7811482&quot;&gt;the right example is worth 1000 lines of documentation&lt;/a&gt;. Enough beating around the bush — here is notes’ directory tree, courtesy of &lt;a href=&quot;https://en.wikipedia.org/wiki/Tree_(Unix)&quot;&gt;tree&lt;/a&gt;:&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;.
 ├── LICENSE
@@ -461,7 +461,7 @@ brew install notes
   &lt;li&gt;Fire up your browser and head to wherever &lt;code class=&quot;highlighter-rouge&quot;&gt;gulp-server-livereload&lt;/code&gt; is serving your files. Open &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;file&amp;gt;.html&lt;/code&gt;, go back to ST and edit away.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;markdown-html&lt;/code&gt; is a beauty. The documentation is an ode to simplicity, and the plugin even supports injecting custom CSS and JS into the HTML output. Although it’s harder to set up, this workflow is superior to using a Markdown editor like Byword or Macdown. You get to edit text with a real text editor, and your “preview” is anything but - it’s literally the browser’s rendering of the document!&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;markdown-html&lt;/code&gt; is a beauty. The documentation is an ode to simplicity, and the plugin even supports injecting custom CSS and JS into the HTML output. Although it’s harder to set up, this workflow is superior to using a Markdown editor like Byword or Macdown. You get to edit text with a real text editor, and your “preview” is anything but — it’s literally the browser’s rendering of the document!&lt;/p&gt;
 
 &lt;p&gt;Setup aside, for serious editing of static HTML docs this is a no-brainer, and I think that’s true for Markdown as well. Let me know what you think…&lt;/p&gt;
 </description>

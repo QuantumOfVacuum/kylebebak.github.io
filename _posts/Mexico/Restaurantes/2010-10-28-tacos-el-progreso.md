@@ -20,5 +20,5 @@ I'm a big eater, and part of what attracted me to el Progreso at first was the p
 
 My friend Shaun is coming from Korea to visit me in 10 days, and he expects me to show him all sorts of Mexican food in the short week he's here. I think I'll take him to Tacos el Progreso the day he arrives.
 
-**Tacos El Progreso, Antonio Caso 30**  
-**Open Monday-Saturday, 7am-10pm, Closed Sunday**
+__Tacos El Progreso, Antonio Caso 30__  
+__Open Monday-Saturday, 7am-10pm, Closed Sunday__

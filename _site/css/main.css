@@ -166,6 +166,10 @@ pre {
   .site-title, .site-title:visited {
     color: #424242; }
 
+.image {
+  text-align: center;
+  padding: 0em 0em 1em; }
+
 .sidebar {
   float: right;
   font-size: 12.6px; }

@@ -12,7 +12,7 @@ When a user downloads your package, the tarball is saved to `/Library/Caches/Hom
 
 To make writing formulae easier, you can use [variables for directory locations](https://github.com/Homebrew/homebrew/blob/master/share/doc/homebrew/Formula-Cookbook.md#variables-for-directory-locations). For example, `bin.install foo` will create `/usr/local/Cellar/<pkg>/<version>/bin/foo`, use `chmod` to make sure foo is executable, and create a symlink from `/usr/local/bin/foo` to foo in the cellar.
 
-They say [the right example is worth 1000 lines of documentation](https://news.ycombinator.com/item?id=7811482). Enough beating around the bush - here is notes' directory tree, courtesy of [tree](https://en.wikipedia.org/wiki/Tree_(Unix)):
+They say [the right example is worth 1000 lines of documentation](https://news.ycombinator.com/item?id=7811482). Enough beating around the bush &mdash; here is notes' directory tree, courtesy of [tree](https://en.wikipedia.org/wiki/Tree_(Unix)):
 
 ~~~
 .

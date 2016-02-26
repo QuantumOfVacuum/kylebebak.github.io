@@ -74,7 +74,7 @@
 
 <p>So, I built my deploy playbook locally, testing it against the Vagrant VM. I won’t go into details, beyond mentioning that I deploy site files by installing Git and cloning my site’s GitHub repo. Once <strong>dronfelipe.dev</strong> was working as expected, I spun up a new AWS box running Ubuntu 14.04 and <strong>configured it with the same playbook</strong>. The screenshot below shows the output of this moment of truth. I admit I had my fingers crossed, but there was no need. After all, the AWS machine was probably indistinguishable from the VM running on my computer. After 5 or 10 minutes the playbook finished. I went to the box’s public IP and there was my site!</p>
 
-<p><a href="https://raw.githubusercontent.com/kylebebak/posts/master/_assets/img/dronfelipe_ansible.png"><img src="https://raw.githubusercontent.com/kylebebak/posts/master/_assets/img/thumbs/dronfelipe_ansible.png" /></a></p>
+<div class="image"><a href="https://raw.githubusercontent.com/kylebebak/posts/master/_assets/img/dronfelipe_ansible.png"><img src="https://raw.githubusercontent.com/kylebebak/posts/master/_assets/img/thumbs/dronfelipe_ansible.png" /></a></div>
 
 <p>To finish up, I disassociated my Elastic IP from the old Amazon Linux box and associated it with the new one, which took less than a minute.</p>
 

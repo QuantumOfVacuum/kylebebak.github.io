@@ -4,7 +4,7 @@ title: "MS Word is terrible"
 categories: code random
 ---
 
-[MS Word is terrible](http://fluff.info/terrible/). And it's not just Word. It's OpenOffice, Pages, and all the other programs that were designed to edit documents instead of text - the so-called [word processors](https://en.wikipedia.org/wiki/Word_processor).
+[MS Word is terrible](http://fluff.info/terrible/). And it's not just Word. It's OpenOffice, Pages, and all the other programs that were designed to edit documents instead of text &mdash; the so-called [word processors](https://en.wikipedia.org/wiki/Word_processor).
 
 Word processors are ___designed___ to conflate the data they manipulate with the representation of that data, to conflate markup and style. They can't be used for editing text. For a document produced by a word processor, this means a lot of things, all of them negative. Here are a few:
 
