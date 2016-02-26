@@ -22,7 +22,7 @@ linkchecker --no-warnings http://127.0.0.1:4000/posts/
 linkchecker --no-warnings http://kylebebak.github.io/posts/
 ~~~
 
-I don't use `LinkChecker` in Git hooks because it takes a while to run. The relevant field in the output is `Parent URL`, which points to the file containing a broken link.
+I don't use `LinkChecker` in Git hooks because the scripts in [_map](_map) are written for Python 3, while `LinkChecker` is written for Python 2. The relevant field in the output is `Parent URL`, which points to the file containing a broken link.
 
 ## License
 
