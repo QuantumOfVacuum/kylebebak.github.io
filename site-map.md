@@ -3,14 +3,14 @@ layout: page
 permalink: /site-map
 ---
 
-__23__ and counting...
+__24__ and counting...
 
 ---
 
 ## Categories
 
 * [code](#code) 
-    * [algorithms](#code--algorithms) <sup>(1)</sup>
+    * [algorithms](#code--algorithms) <sup>(2)</sup>
     * [automation](#code--automation) <sup>(1)</sup>
     * [github](#code--github) <sup>(2)</sup>
     * [homebrew](#code--homebrew) <sup>(1)</sup>
@@ -31,6 +31,7 @@ __23__ and counting...
 ## code
 
 #### code / algorithms
+* [Clustering location history records: How and Why](code/algorithms/clustering-location-history-records) <sup>2015-12-03</sup>
 * [Counting Events in a Moving Time Window](code/algorithms/counting-events-in-a-moving-window) <sup>2014-09-20</sup>
 
 #### code / automation
