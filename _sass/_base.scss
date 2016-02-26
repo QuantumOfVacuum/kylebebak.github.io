@@ -95,15 +95,11 @@ h1, h2, h3, h4, h5, h6 {
  */
 a {
   color: $brand-color;
+  font-weight: bold;
   text-decoration: none;
-
-  &:visited {
-    color: darken($brand-color, 15%);
-  }
 
   &:hover {
     color: $text-color;
-    text-decoration: underline;
   }
 }
 
@@ -139,6 +135,7 @@ code {
 }
 
 code {
+  color: $inline-code-color;
   padding: 1px 5px;
 }
 
@@ -147,6 +144,7 @@ pre {
   overflow-x: auto;
 
   > code {
+    color: $text-color;
     border: 0;
     padding-right: 0;
     padding-left: 0;

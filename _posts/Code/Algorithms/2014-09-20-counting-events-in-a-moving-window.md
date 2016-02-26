@@ -20,7 +20,7 @@ But this inefficient solution leads to an insight. __Namely, we need an hour-lon
 The algorithm is dead simple. We stream the events out of the database and enqueue them in chronological order. As we enqueue each event, we compare it to the event on the front of the queue (the oldest event on the queue). If the difference in their timestamps is more than `1h`, we dequeue the oldest event. We repeat this process until the oldest event on the queue is within `1h` of the newest event of the queue. After this, we just count the events on the queue, __because they all occurred within a span of one hour__. If the count exceeds 50, well, you get the idea. Also, if we want to find hour-long intervals where the count is __below__ 50, we just reverse our inequality. Here's what the code looks like:
 
 
-~~~python
+~~~py
 q = Queue()
 flagged_events = list()
 

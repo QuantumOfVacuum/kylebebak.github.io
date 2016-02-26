@@ -41,7 +41,7 @@ We also exploit our classification scheme: we are looking for an alternating seq
 
 Here's how it works. In the first pass through the data, each record is compared to the most recently instantiated __potential visit__, whose latitude and longitude are the average coordinates of the records it contains. If the record is within a distance `R` of the visit, it gets added to the visit, and the visit's latitude and longitude are recalculated to reflect the addition of the record. If the record is not within `R` of the visit, a new potential visit is instantiated containing only this record. In Python:
 
-~~~python
+~~~py
 visit = None
 for each record in records:
 # records sorted from oldest to newest

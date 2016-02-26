@@ -11,7 +11,7 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-  font: 400 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 400 16px/1.5 "Garamond", Georgia, Serif;
   color: #111;
   background-color: #fdfdfd;
   -webkit-text-size-adjust: 100%;
@@ -69,13 +69,11 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: #2a7ae2;
+  color: #0F90BE;
+  font-weight: bold;
   text-decoration: none; }
-  a:visited {
-    color: #1756a9; }
   a:hover {
-    color: #111;
-    text-decoration: underline; }
+    color: #111; }
 
 /**
  * Blockquotes
@@ -101,12 +99,14 @@ code {
   background-color: #eef; }
 
 code {
+  color: #c7254e;
   padding: 1px 5px; }
 
 pre {
   padding: 8px 12px;
   overflow-x: auto; }
   pre > code {
+    color: #111;
     border: 0;
     padding-right: 0;
     padding-left: 0; }
@@ -163,7 +163,7 @@ pre {
   letter-spacing: -1px;
   margin-bottom: 0;
   float: left; }
-  .site-title, .site-title:visited {
+  .site-title:visited {
     color: #424242; }
 
 .image {
