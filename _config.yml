@@ -7,6 +7,7 @@
 
 # Site settings
 title: dronfelipe
+email: kylebebak@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Code, TILs, and other stuff.
 baseurl: "/posts" # the subpath of your site, e.g. /blog
@@ -15,6 +16,7 @@ twitter_username: KyleBebak
 github_username: kylebebak
 # no date or extension in url
 permalink: /:categories/:title
+home: "http://dronfelipe.com"
 
 # Build settings
 markdown: kramdown
