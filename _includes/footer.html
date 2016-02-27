@@ -6,15 +6,13 @@
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
 
+          <li>
+            {% include icon-rss.html %}
+          </li>
+
           {% if site.home %}
           <li>
             {% include icon-home.html %}
-          </li>
-          {% endif %}
-
-          {% if site.email %}
-          <li>
-            {% include icon-envelope-closed.html %}
           </li>
           {% endif %}
 
@@ -34,6 +32,13 @@
             {% include icon-twitter.html username=site.twitter_username %}
           </li>
           {% endif %}
+
+          {% if site.email %}
+          <li>
+            {% include icon-envelope-closed.html %}
+          </li>
+          {% endif %}
+
         </ul>
       </div>
 

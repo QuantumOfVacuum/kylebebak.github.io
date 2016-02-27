@@ -10,6 +10,7 @@ site_map = build.map(root)
 fm ='---\n\
 layout: page\n\
 permalink: /site-map\n\
+custom_css: site-map\n\
 ---\n'
 
 print('{}\n__{}__ and counting...\n\n---\n\n## Categories\n\n{}\n---\n{}'

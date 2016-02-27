@@ -1,6 +1,7 @@
 ---
 layout: page
 permalink: /site-map
+custom_css: site-map
 ---
 
 __24__ and counting...

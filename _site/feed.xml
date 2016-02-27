@@ -6,8 +6,8 @@
 </description>
     <link>http://kylebebak.github.io/posts/</link>
     <atom:link href="http://kylebebak.github.io/posts/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 27 Feb 2016 15:03:41 -0600</pubDate>
-    <lastBuildDate>Sat, 27 Feb 2016 15:03:41 -0600</lastBuildDate>
+    <pubDate>Sat, 27 Feb 2016 16:04:29 -0600</pubDate>
+    <lastBuildDate>Sat, 27 Feb 2016 16:04:29 -0600</lastBuildDate>
     <generator>Jekyll v3.1.1</generator>
     
       <item>
@@ -297,6 +297,14 @@ My &lt;a href=&quot;https://github.com/kylebebak/dotfiles.git&quot;&gt;dotfiles&
       &lt;td&gt;ApplySyntax is a plugin for Sublime Text 2 and 3 that allows you to detect and apply the syntax of files that might not otherwise be detected properly.&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
+      &lt;td&gt;&lt;a href=&quot;https://github.com/jamesfzhang/auto-save&quot;&gt;auto-save&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;Automatically save files after every edit.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;a href=&quot;https://github.com/babel/babel-sublime&quot;&gt;Babel&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;Language definitions for ES6+ JavaScript with React JSX syntax extensions.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
       &lt;td&gt;&lt;a href=&quot;https://github.com/Pleasurazy/Sublime-Better-Completion&quot;&gt;Better Completion&lt;/a&gt;&lt;/td&gt;
       &lt;td&gt;Provides a simpler way to define your own auto-completions. Comes with API completions for JavaScript, jQuery, Lodash, Underscore, HTML5, CSS3 and Bootstrap Classes, React.js, etc.&lt;/td&gt;
     &lt;/tr&gt;
@@ -321,6 +329,10 @@ My &lt;a href=&quot;https://github.com/kylebebak/dotfiles.git&quot;&gt;dotfiles&
       &lt;td&gt;Evaluate the selection with the Python interpreter.&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
+      &lt;td&gt;&lt;a href=&quot;https://github.com/srusskih/SublimeJEDI&quot;&gt;Jedi&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;Python snippets and completions.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
       &lt;td&gt;&lt;a href=&quot;https://github.com/SublimeText-Markdown/MarkdownEditing&quot;&gt;Markdown Editing&lt;/a&gt;&lt;/td&gt;
       &lt;td&gt;Powerful Markdown support with better syntax understanding and good color schemes.&lt;/td&gt;
     &lt;/tr&gt;
@@ -329,32 +341,20 @@ My &lt;a href=&quot;https://github.com/kylebebak/dotfiles.git&quot;&gt;dotfiles&
       &lt;td&gt;Plugin to assist viewing and editing package resources.&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;a href=&quot;https://github.com/gerardroche/sublime-phpck&quot;&gt;PHP Completions&lt;/a&gt;&lt;/td&gt;
-      &lt;td&gt;PHP snippets and completions.&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://github.com/facelessuser/ScopeHunter&quot;&gt;ScopeHunter&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;Get the scope under the cursor.&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt;&lt;a href=&quot;https://github.com/titoBouzout/SideBarEnhancements&quot;&gt;Side Bar&lt;/a&gt;&lt;/td&gt;
       &lt;td&gt;Provides enhancements to the operations on files and folders available from the side bar.&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;a href=&quot;https://github.com/jamesfzhang/auto-save&quot;&gt;auto-save&lt;/a&gt;&lt;/td&gt;
-      &lt;td&gt;Automatically save files after every edit.&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;a href=&quot;https://github.com/babel/babel-sublime&quot;&gt;Babel&lt;/a&gt;&lt;/td&gt;
-      &lt;td&gt;Language definitions for ES6+ JavaScript with React JSX syntax extensions.&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;a href=&quot;https://github.com/srusskih/SublimeJEDI&quot;&gt;Jedi&lt;/a&gt;&lt;/td&gt;
-      &lt;td&gt;Python snippets and completions.&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
       &lt;td&gt;&lt;a href=&quot;https://github.com/SublimeLinter/SublimeLinter3&quot;&gt;SublimeLinter&lt;/a&gt;&lt;/td&gt;
       &lt;td&gt;Interactive code linting framework. &lt;sup&gt;&lt;a href=&quot;#first&quot;&gt;(1)&lt;/a&gt;&lt;/sup&gt;&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;a href=&quot;https://github.com/facelessuser/ScopeHunter&quot;&gt;ScopeHunter&lt;/a&gt;&lt;/td&gt;
-      &lt;td&gt;Get the scope under the cursor.&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://github.com/P233/Syntax-highlighting-for-Sass&quot;&gt;Syntax Highlighting for Sass&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;The only one I’ve found that handles &lt;code class=&quot;highlighter-rouge&quot;&gt;Goto Symbol&lt;/code&gt; correctly.&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
