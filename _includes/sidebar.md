@@ -4,7 +4,7 @@
     * [github]({{ '/site-map#code--github' | prepend: site.baseurl }})
     * [homebrew]({{ '/site-map#code--homebrew' | prepend: site.baseurl }})
     * [javascript]({{ '/site-map#code--javascript' | prepend: site.baseurl }})
-    * [jekyll]({{ '/site-map#code--jekyll' | prepend: site.baseurl }})
+    * [jekylll]({{ '/site-map#code--jekylll' | prepend: site.baseurl }})
     * [mac]({{ '/site-map#code--mac' | prepend: site.baseurl }})
     * [random]({{ '/site-map#code--random' | prepend: site.baseurl }})
     * [shell]({{ '/site-map#code--shell' | prepend: site.baseurl }})

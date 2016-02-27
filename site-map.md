@@ -15,7 +15,7 @@ __24__ and counting...
     * [github](#code--github) <sup>(2)</sup>
     * [homebrew](#code--homebrew) <sup>(1)</sup>
     * [javascript](#code--javascript) <sup>(1)</sup>
-    * [jekyll](#code--jekyll) <sup>(1)</sup>
+    * [jekylll](#code--jekylll) <sup>(1)</sup>
     * [mac](#code--mac) <sup>(1)</sup>
     * [random](#code--random) <sup>(4)</sup>
     * [shell](#code--shell) <sup>(2)</sup>
@@ -47,8 +47,8 @@ __24__ and counting...
 #### code / javascript
 * [Eslint, the configurable next-gen (ES6, JSX) JavaScript linter](code/javascript/eslint) <sup>2016-02-22</sup>
 
-#### code / jekyll
-* [Blogging like a hacker with Jekyll](code/jekyll/blogging-for-hackers) <sup>2016-02-25</sup>
+#### code / jekylll
+* [Blogging like a hacker with Jekyll](code/jekylll/blogging-for-hackers) <sup>2016-02-25</sup>
 
 #### code / mac
 * [Screencasts and GIFs with free OSX software](code/mac/osx-screencast-gif) <sup>2016-02-13</sup>
