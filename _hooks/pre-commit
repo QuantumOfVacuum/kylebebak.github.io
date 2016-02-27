@@ -3,4 +3,7 @@
 # build site-map and sidebar before every commit
 python _map/map.py _posts > site-map.md
 python _map/sidebar.py _posts > _includes/sidebar.md
-git add site-map.md _includes/sidebar.md _site/index.html _site/site-map.html
+git add site-map.md _includes/sidebar.md
+
+sleep 1
+git add _site/index.html _site/site-map.html

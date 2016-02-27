@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Blogging like a hacker with Jekyll"
-categories: code jekylll
+title: "Blogging like a boss sss with Jekyll"
+categories: code jekyll
 ---
 
 Jekyll is awesome.
