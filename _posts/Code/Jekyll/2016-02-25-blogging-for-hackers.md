@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Blogging like a boss sss with Jekyll"
+title: "Blogging like a hacker with Jekyll"
 categories: code jekyll
 ---
 

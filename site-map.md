@@ -48,7 +48,7 @@ __24__ and counting...
 * [Eslint, the configurable next-gen (ES6, JSX) JavaScript linter](code/javascript/eslint) <sup>2016-02-22</sup>
 
 #### code / jekyll
-* [Blogging like a boss sss with Jekyll](code/jekyll/blogging-for-hackers) <sup>2016-02-25</sup>
+* [Blogging like a hacker with Jekyll](code/jekyll/blogging-for-hackers) <sup>2016-02-25</sup>
 
 #### code / mac
 * [Screencasts and GIFs with free OSX software](code/mac/osx-screencast-gif) <sup>2016-02-13</sup>
