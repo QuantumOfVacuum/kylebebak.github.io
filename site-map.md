@@ -64,7 +64,7 @@ __24__ and counting...
 * [A custom shell function (userbin) for simplifying development of CL tools](code/shell/userbin) <sup>2016-02-04</sup>
 
 #### code / sublime-text
-* [Simple plugin for chaining Sublime Text API calls](code/sublime-text/multiple-commands) <sup>2016-02-24</sup>
+* [Exponential navigation, and chaining Sublime Text API calls](code/sublime-text/exponential-navigation) <sup>2016-02-24</sup>
 * [SublimeLinter for code linting in any language](code/sublime-text/sublime-linter) <sup>2016-02-21</sup>
 * [Sublime Text packages I've used](code/sublime-text/useful-packages) <sup>2016-02-20</sup>
 * [Live HTML and Markdown preview in Sublime Text with auto-save](code/sublime-text/auto-save) <sup>2016-02-18</sup>

@@ -5,7 +5,7 @@ categories: code mac
 ---
 
 ## OSX for screencasts
-The easiest, freest way is to use QuickTime Player, which comes pre-installed. Go to __File > New Screen Recording__ or press <kbd>Ctrl</kbd>+<kbd>⌘</kbd>+<kbd>N</kbd>. The __Screen Recording__ window pops up. There are options to choose your microphone, and "Show Mouse Clicks in Recording", which is useful if you're doing a tutorial.
+The easiest, freest way is to use QuickTime Player, which comes pre-installed. Go to __File > New Screen Recording__ or press <kbd>ctrl</kbd>+<kbd>⌘</kbd>+<kbd>N</kbd>. The __Screen Recording__ window pops up. There are options to choose your microphone, and "Show Mouse Clicks in Recording", which is useful if you're doing a tutorial.
 
 You can select a region of the screen or record all of it. To stop recording, you click on the recording icon that appears in the OSX menu bar. QuickTime will open the video you just recorded, which you can either discard or save as a `.mov`. If you want to trim junk off the beginning or end of the recording, hit <kbd>⌘</kbd>+<kbd>T</kbd>.
 
