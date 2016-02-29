@@ -64,7 +64,7 @@ def map(root='.', sidebar=False):
         category = '{}* [{}](#{}) {}\n'.format(
             indent*level, cats[-1], cat.replace('/', '--'), count)
         if sidebar:
-            category = '{}* [{}]({{{{ \'/site-map#{}\' | prepend: site.baseurl }}}})\n'.format(
+            category = '{}* [{}]({{{{ \'/cats#{}\' | prepend: site.baseurl }}}})\n'.format(
                 indent*level, cats[-1], cat.replace('/', '--'))
 
         categories.append(category)
