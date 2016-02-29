@@ -4,15 +4,19 @@
 
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
-        <ul class="contact-list">
+        <ul class="icon-list">
 
           <li>
-            {% include icon-rss.html %}
+          <a href="{{ site.baseurl }}/feed.xml">
+            {% include icon.html text="subscribe via RSS" icon="icons/icon-rss.svg" %}
+          </a>
           </li>
 
           {% if site.home %}
           <li>
-            {% include icon-home.html %}
+          <a href="{{ site.home }}">
+            {% include icon.html text=site.home icon="icons/icon-home.svg" %}
+          </a>
           </li>
           {% endif %}
 
@@ -20,22 +24,29 @@
       </div>
 
       <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
+        <ul class="icon-list">
+
           {% if site.github_username %}
           <li>
-            {% include icon-github.html username=site.github_username %}
+          <a href="https://github.com/{{ site.github_username }}">
+            {% include icon.html text=site.github_username icon="icons/icon-github.svg" %}
+          </a>
           </li>
           {% endif %}
 
           {% if site.twitter_username %}
           <li>
-            {% include icon-twitter.html username=site.twitter_username %}
+          <a href="https://twitter.com/{{ site.twitter_username }}">
+            {% include icon.html text=site.twitter_username icon="icons/icon-twitter.svg" %}
+          </a>
           </li>
           {% endif %}
 
           {% if site.email %}
           <li>
-            {% include icon-envelope-closed.html %}
+          <a href="mailto:{{ site.email }}">
+            {% include icon.html text=site.email icon="icons/icon-envelope-closed.svg" %}
+          </a>
           </li>
           {% endif %}
 

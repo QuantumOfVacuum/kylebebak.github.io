@@ -48,11 +48,10 @@
   .page-link {
     color: $text-color;
     line-height: $base-line-height;
-    margin-top: 20px;
 
     // Gaps between nav items, but not on the last one
     &:not(:last-child) {
-      margin-right: 20px;
+      margin-right: 1.5em;
     }
   }
 
@@ -121,8 +120,7 @@
   margin-bottom: $spacing-unit / 2;
 }
 
-.contact-list,
-.social-media-list {
+.icon-list {
   list-style: none;
   margin-left: 0;
 }

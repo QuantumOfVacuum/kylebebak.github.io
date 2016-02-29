@@ -26,11 +26,11 @@ def parse_base_cats(cat, sep='/'):
     return [sep.join(cats[:i]) for i in range(1, len(cats))]
 
 
-def map(root='.', sidebar=False):
+def build(root='.', sidebar=False):
     # path is relative to execution directory, not to location of script
     os.chdir(root)
 
-    site_map = OrderedDict() # cat -> [files]
+    cats_dict = OrderedDict() # cat -> [files]
     num_files = 0
     for (dirpath, dirnames, filenames) in os.walk('.'):
         for filename in filenames:
@@ -44,18 +44,18 @@ def map(root='.', sidebar=False):
                 title, cat = fm['title'], fm['categories'].replace(' ', '/')
                 file = {'date': date, 'file': file, 'title': title}
                 for base_cat in parse_base_cats(cat):
-                    if not base_cat in site_map:
-                        site_map[base_cat] = []
-                if cat in site_map:
-                    site_map[cat].append(file)
+                    if not base_cat in cats_dict:
+                        cats_dict[base_cat] = []
+                if cat in cats_dict:
+                    cats_dict[cat].append(file)
                 else:
-                    site_map[cat] = [file]
+                    cats_dict[cat] = [file]
 
     # generate markdown from categories dict
     categories, links = [], [] # lists that will later be joined into strings
     indent, h, h_sub = ' '*4, '##', '####'
 
-    for cat, files in site_map.items():
+    for cat, files in cats_dict.items():
         cats = cat.split('/')
         level = len(cats)-1
 
@@ -64,8 +64,10 @@ def map(root='.', sidebar=False):
         category = '{}* [{}](#{}) {}\n'.format(
             indent*level, cats[-1], cat.replace('/', '--'), count)
         if sidebar:
-            category = '{}* [{}]({{{{ \'/cats#{}\' | prepend: site.baseurl }}}})\n'.format(
+            category = '{}* [{}](#{})\n'.format(
                 indent*level, cats[-1], cat.replace('/', '--'))
+            # category = '{}* [{}]({{{{ \'/categories#{}\' | prepend: site.baseurl }}}})\n'.format(
+            #     indent*level, cats[-1], cat.replace('/', '--'))
 
         categories.append(category)
         header = h_sub if level > 0 else h
@@ -74,8 +76,8 @@ def map(root='.', sidebar=False):
 
         files.sort(key=lambda x:x['date'])
         for f in reversed(files):  # files in each cat in reverse date order
-            links.append('* [{}]({}/{}) <sup>{}</sup>\n'
-                .format(f['title'], cat, f['file'], f['date']))
+            links.append('* [{}](../posts/{}) <sup>{}</sup>\n'
+                .format(f['title'], f['file'], f['date']))
 
     return({
         'count': num_files,

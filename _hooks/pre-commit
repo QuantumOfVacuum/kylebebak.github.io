@@ -1,10 +1,6 @@
 #!/bin/bash
 
-# build site-map and sidebar before every commit
-python _map/map.py _posts > cats.md
-python _map/sidebar.py _posts > _includes/sidebar.md
-git add cats.md _includes/sidebar.md
-
-# give jekyll time to regenerate the files before adding them to commit
-sleep 2
-git add _site/index.html _site/site-map.html _site/feed.xml
+# build categories and sidebar before every commit
+python _categories/categories.py _posts > categories.md
+python _categories/sidebar.py _posts > _includes/sidebar.md
+git add categories.md _includes/sidebar.md
