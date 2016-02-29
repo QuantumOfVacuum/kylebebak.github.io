@@ -5,7 +5,8 @@ layout: default
 <div class="home">
 
   <div class="sidebar">
-    {% markdown sidebar.md %}
+    {% capture sidebar %}{% include sidebar.md %}{% endcapture %}
+    {{ sidebar | markdownify }}
   </div>
 
   <h1 class="section-title">Posts</h1>
