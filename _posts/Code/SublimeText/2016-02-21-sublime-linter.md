@@ -12,7 +12,7 @@ On each modification of a view, a lint request is enqueued. After a delay, the r
 
 The SublimeLinter __linters__ I mentioned above are separate packages that must be installed with Package Control. SublimeLinter manages delegation details, like displaying errors and managing the queue of lint requests, but does no linting on its own. If you were paying attention above, you noticed that __linters__ don't lint either; they delegate lint requests to their command line linter of choice.
 
-This modular design makes SublimeLinter easy to extend. To add linting for a new syntax, e.g. [ES6 JS or JSX](../javascript/eslint), you don't even touch SublimeLinter. You create a package that calls a linting executable and passes the results to SublimeLinter, basing your code on the many existing linting packages.
+This modular design makes SublimeLinter easy to extend. To add linting for a new syntax, e.g. [ES6 JS or JSX](./eslint), you don't even touch SublimeLinter. You create a package that calls a linting executable and passes the results to SublimeLinter, basing your code on the many existing linting packages.
 
 SublimeLinter settings are specified in `~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/SublimeLinter.sublime-settings`. Here you can change the "debounce" `delay`, the `lint_mode`, configure individual linters, and define a `syntax_map` to make sure your linters are called for files with specialized syntax.
 
