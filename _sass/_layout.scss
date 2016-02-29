@@ -8,6 +8,11 @@
 
   // Positioning context for the mobile navigation icon
   position: relative;
+
+  svg {
+    transform:scale(1.6);
+    -webkit-transform:scale(1.6);
+  }
 }
 
 .site-title {
@@ -51,7 +56,7 @@
 
     // Gaps between nav items, but not on the last one
     &:not(:last-child) {
-      margin-right: 1.5em;
+      margin-right: 2.5em;
     }
   }
 
@@ -215,6 +220,7 @@
   margin-bottom: $spacing-unit;
 }
 
+.section-title,
 .post-title {
   font-size: 42px;
   letter-spacing: -1px;

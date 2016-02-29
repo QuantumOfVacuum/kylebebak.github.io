@@ -3,12 +3,7 @@ layout: page
 permalink: /categories
 custom_css: categories
 ---
-
-__24__ and counting...
-
----
-
-## Categories
+<h1 class="section-title">Categories</h1>
 
 * [code](#code) 
     * [algorithms](#code--algorithms) <sup>(2)</sup>
@@ -26,6 +21,8 @@ __24__ and counting...
     * [restaurantes](#mexico--restaurantes) <sup>(2)</sup>
 * [music](#music) <sup>(1)</sup>
 * [science](#science) <sup>(1)</sup>
+
+__24__ and counting...
 
 ---
 

@@ -1,6 +1,6 @@
 #!/bin/bash
 
 # build categories and sidebar before every commit
-python _categories/categories.py _posts > categories.md
-python _categories/sidebar.py _posts > _includes/sidebar.md
+python _build/categories.py _posts > categories.md
+python _build/sidebar.py _posts > _includes/sidebar.md
 git add categories.md _includes/sidebar.md

@@ -26,7 +26,7 @@ def parse_base_cats(cat, sep='/'):
     return [sep.join(cats[:i]) for i in range(1, len(cats))]
 
 
-def build(root='.', sidebar=False):
+def categories(root='.', sidebar=False):
     # path is relative to execution directory, not to location of script
     os.chdir(root)
 
@@ -64,10 +64,8 @@ def build(root='.', sidebar=False):
         category = '{}* [{}](#{}) {}\n'.format(
             indent*level, cats[-1], cat.replace('/', '--'), count)
         if sidebar:
-            category = '{}* [{}](#{})\n'.format(
+            category = '{}* [{}]({{{{ site.baseurl }}}}/categories#{})\n'.format(
                 indent*level, cats[-1], cat.replace('/', '--'))
-            # category = '{}* [{}]({{{{ \'/categories#{}\' | prepend: site.baseurl }}}})\n'.format(
-            #     indent*level, cats[-1], cat.replace('/', '--'))
 
         categories.append(category)
         header = h_sub if level > 0 else h

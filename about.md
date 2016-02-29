@@ -2,6 +2,7 @@
 layout: page
 title: About
 permalink: /about
+custom_css: page
 ---
 
 Code, __TILs__, inspired by [jbranchaud/til](https://github.com/jbranchaud/til), and rants. I stole the idea for TILs, and most of the formatting for the [map]({{ '/site-map' | prepend: site.baseurl }}), from [jbranchaud/til](https://github.com/jbranchaud/til).
