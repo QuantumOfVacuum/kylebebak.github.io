@@ -2,7 +2,7 @@
 layout: post
 title: "Vagrant, Ansible and GitHub for automated development and deployment"
 categories: code automation
-tags: [vagrant, ansible, github, dev-hacks, automation]
+tags: [vagrant, github, dev-hacks, automation]
 ---
 
 The big purpose of code, and technology in general, is minimizing effort. Depending on the [definition](http://www.oxforddictionaries.com/us/definition/american_english/convenience), this is the same as maximizing convenience.
