@@ -3,7 +3,7 @@ layout: page
 permalink: /categories
 custom_css: categories
 ---
-<h1 class="section-title">Categories</h1>
+<h1>Categories</h1>
 
 * [code](#code) 
     * [algorithms](#code--algorithms) <sup>(2)</sup>

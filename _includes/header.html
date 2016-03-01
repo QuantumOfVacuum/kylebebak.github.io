@@ -3,7 +3,7 @@
   <div class="wrapper">
 
     <a class="site-title" href="{{ site.baseurl }}/">
-      {% include icon.html icon="icons/icon-home.svg" %}
+      {% include icon.html icon="icons/home.svg" %}
     </a>
 
     <nav class="site-nav">
@@ -12,7 +12,7 @@
         {% assign nav_pages = "categories|tags|code|about" | split: "|" %}
         {% for nav_page in nav_pages %}
           <a class="page-link" href="{{ site.baseurl }}/{{ nav_page }}">
-            {% capture icon %}icons/icon-{{ nav_page }}.svg{% endcapture %}
+            {% capture icon %}icons/{{ nav_page }}.svg{% endcapture %}
             {% include icon.html icon=icon %}
           </a>
         {% endfor %}

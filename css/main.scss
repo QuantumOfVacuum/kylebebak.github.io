@@ -5,30 +5,31 @@
 
 
 // Our variables
-$base-font-family: "Garamond", Georgia, Serif;
-$base-font-size:   16px;
-$base-font-weight: 400;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
-$nav-height: 60px;
+$base-font-family         : "Garamond", Georgia, Serif;
+$base-font-size           : 16px;
+$base-font-weight         : 400;
+$small-font-size          : $base-font-size * 0.875;
+$base-line-height         : 1.5;
+$nav-height               : 60px;
 
-$spacing-unit:   30px;
+$spacing-unit             : 30px;
 
-$text-color:     #111;
-$inline-code-color:     #c7254e;
-$background-color: #fdfdfd;
-$brand-color:    #0F90BE;
-$code-background-color: #242a3a;
+$text-color               : #111;
+$inline-code-color        : #c7254e;
+$background-color         : #fdfdfd;
+$brand-color              : #0F90BE;
+$code-background-color    : #242a3a;
+$category-background-color: #1aac8c;
 
-$grey-color:     #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+$grey-color               : #828282;
+$grey-color-light         : lighten($grey-color, 40%);
+$grey-color-dark          : darken($grey-color, 25%);
 
 // Width of the content area
-$content-width:  800px;
+$content-width            : 800px;
 
-$on-palm:      600px;
-$on-laptop:    800px;
+$on-palm                  : 600px;
+$on-laptop                : 800px;
 
 
 

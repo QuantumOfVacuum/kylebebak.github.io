@@ -1,0 +1,18 @@
+<span style="margin-right:.5em;" class="categories">
+{% for category in include.post.categories %}
+  {% if forloop.last == true %}
+    {{ category }}
+  {% else %}
+    {{ category }} /
+  {% endif %}
+{% endfor %}
+</span>
+
+{% for tag in include.post.tags %}
+  {% if site.tags[tag] %}
+    {% capture tag %}{{ tag }}{% endcapture %}
+    <a href="{{ site.baseurl }}/tag/{{ tag }}">
+      {% include icon.html icon="icons/tag.svg" text=tag text-classes="tag" %}
+    </a>
+  {% endif %}
+{% endfor %}

@@ -204,7 +204,7 @@
   list-style: none;
 
   > li {
-    margin-bottom: $spacing-unit / 2;
+    margin-bottom: $spacing-unit * .75;
   }
 }
 
@@ -227,8 +227,7 @@
   margin-bottom: $spacing-unit;
 }
 
-.section-title,
-.post-title {
+h1, .post-title {
   font-size: 42px;
   letter-spacing: -1px;
   line-height: 1;
@@ -264,4 +263,28 @@
       font-size: 18px;
     }
   }
+}
+
+
+/**
+ * Post preview
+ */
+.categories {
+    background-color: $category-background-color;
+    display: inline;
+    padding: .2em .6em .3em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+}
+
+.icon-text.tag {
+  font-size: $small-font-size;
+  font-weight: bold;
+  color: $code-background-color;
 }

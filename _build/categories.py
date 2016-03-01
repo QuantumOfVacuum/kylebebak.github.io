@@ -15,7 +15,7 @@ custom_css: categories\n\
 
 print(
 '{}\n\
-<h1 class="section-title">Categories</h1>\n\n\
+<h1>Categories</h1>\n\n\
 {}\n\
 __{}__ and counting...\n\n---\n\
 {}'
