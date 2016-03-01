@@ -10,8 +10,8 @@
   position: relative;
 
   svg {
-    transform:scale(1.6);
-    -webkit-transform:scale(1.6);
+    transform:scale(1.65);
+    -webkit-transform:scale(1.65);
   }
 }
 
@@ -35,10 +35,17 @@
 
 .sidebar {
   float: right;
-  font-size: $small-font-size * .9;
+  font-size: $small-font-size * .85;
 
   li {
     list-style: none;
+
+    a {
+      color: #dd1111;
+      &:hover {
+        color: $text-color;
+      }
+    }
   }
 }
 
