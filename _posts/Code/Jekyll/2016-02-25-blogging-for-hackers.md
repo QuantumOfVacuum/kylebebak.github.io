@@ -2,6 +2,7 @@
 layout: post
 title: "Blogging like a hacker with Jekyll"
 categories: code jekyll
+tags: [github, github-pages, jekyll]
 ---
 
 Jekyll is awesome.
@@ -9,6 +10,7 @@ Jekyll is awesome.
 <https://gist.github.com/cobyism/4730490>
 
 `_hooks/pre-commit`
+
 ~~~sh
 #!/bin/bash -e
 
