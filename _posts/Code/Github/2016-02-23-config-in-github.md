@@ -2,6 +2,7 @@
 layout: post
 title: "Configuration files that deserve Github repos"
 categories: code github
+tags: [github, sublime-text, dotfiles]
 ---
 
 Having these in version control is nice, especially for configuring a new dev machine.

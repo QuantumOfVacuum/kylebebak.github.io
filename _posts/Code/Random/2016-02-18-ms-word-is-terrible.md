@@ -2,6 +2,7 @@
 layout: post
 title: "MS Word is terrible"
 categories: code random
+tags: [ms-word, github]
 ---
 
 [MS Word is terrible](http://fluff.info/terrible/). And it's not just Word. It's OpenOffice, Pages, and all the other programs that were designed to edit documents instead of text &mdash; the so-called [word processors](https://en.wikipedia.org/wiki/Word_processor).

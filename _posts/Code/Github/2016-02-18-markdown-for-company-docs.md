@@ -2,6 +2,7 @@
 layout: post
 title: "Github and Markdown for company documents"
 categories: code github
+tags: [github, markdown, ms-word]
 ---
 
 Companies with any technical chops should use online code repositories filled with HTML or something that compiles to HTML for nearly all of their documents.
@@ -21,8 +22,7 @@ Later, when I started using Git and then Github, I realized how clumsy the onboa
 - links to forms for annual evaluations
 - links to project logging tools, and instructions on how to use them
 
-One email instead of 10, no missing or outdated information... And this system would have have required no Herculean feats of coordination.
-
+One email instead of 10, no missing or outdated information... This system would have have required no Herculean feats of coordination.
 
 
 Likely they would still have preferred to stick with Word for inter-company documents, because, after all, Word is a standard in the corporate world. But using Word for this suffers from the same weaknesses as using it for docs within the company. Anyway, these days everyone accepts a business doc as a PDF. They may even prefer it this way, as it ensures it's going to look the same on their machine as it does on yours. Markdown trivially compiles to HTML, which can be trivially exported to PDF. I imagine company-wide HTML or Markdown templates and stylesheets in the central repo, and collaboratively edited docs in individual project repos. We would have been able to send our clients docs that actually looked consistent and professional...

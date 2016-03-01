@@ -2,6 +2,7 @@
 layout: post
 title: "Add Bash and Zsh tab completion to your shell script"
 categories: code shell
+tags: [shell, ui, software-design]
 ---
 
 Tab completion can be a big usability win for CL tools, but building it into your program isn't straightforward, and there aren't many how-to resources online. Luckily, I found [this excellent tutorial](https://blog.jcoglan.com/2013/02/12/tab-completion-for-your-command-line-apps/) written by James Coglan, and used it to build tab completion for my program [notes](https://github.com/kylebebak/notes).

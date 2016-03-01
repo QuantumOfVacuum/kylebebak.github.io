@@ -2,6 +2,7 @@
 layout: post
 title: "El Tapatío"
 categories: mexico restaurantes
+tags: [mexico-city, food]
 ---
 
 There's a restaurant in Sherman Oaks where my family has been going for maybe 10 years, a Mexican restaurant called Tony's Mexican Grill. We call it Mexican just like we call nearby Taste of India Indian. With the way they've named their restaurants, the owners aren't helping us be culturally or regionally sensitive in describing their food. This is common wherever food is sold far from its origins, so it's super common in LA. It's especially hard to imagine Taste of India, excellent and varied as it is, representing the cuisine of more than a billion people.
@@ -26,5 +27,5 @@ While I listened I thought what he said was generic and simple, and I couldn't h
 
 With regard to the fickleness of today's youth, it's nothing new in urban America. It's been true for a couple of generations at least, and it's definitely true for me. In America we have experts of all stripes, but we aren't born into our expertise, we don't inherit it. We study on our own, we go to college or cooking school as the case may be, we earn it. What follows probably applies to any skill passed from parent to child, but I'll limit it to cooking. Imagine a young American who goes to cooking school, works in restaurants for 10 years, and finally opens his own. He's an expert, and his food is unquestionably good. It's gourmet. Then imagine Eriberto and Andrea and their decades of experience, and their restaurant which has been successful for 40 years, pleasing palates in a country with an old and vibrant food culture. After living a bit in Mexico to even think of the word gourmet to describe their food is absurd, especially with regard to the price. But to be honest, exotic ingredients aside, gourmet's not such a bad word after all.
 
-__El Tapatío, Serapio Rendón 88__  
+__El Tapatío, Serapio Rendón 88, Colonia San Rafael__  
 __Open every day 12-10pm__

@@ -2,6 +2,7 @@
 layout: post
 title: "How to distribute your program via Homebrew"
 categories: code homebrew
+tags: [homebrew, shell, distribution, github]
 ---
 
 I recently packaged a program I wrote called [notes](https://github.com/kylebebak/notes) for distribution via `Homebrew`, following this [excellent tutorial](http://formalfriday.club/2015/01/05/creating-your-own-homebrew-tap-and-formula.html).

@@ -2,6 +2,7 @@
 layout: post
 title: "Philosophy of science"
 categories: science
+tags: [science, philosophy, empiricism]
 ---
 
 ### Questions

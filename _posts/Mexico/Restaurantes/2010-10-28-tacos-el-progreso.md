@@ -2,6 +2,7 @@
 layout: post
 title: "Tacos el Progreso"
 categories: mexico restaurantes
+tags: [mexico-city, food, tacos]
 ---
 
 Tacos in Mexico are something like burgers in the states, and even more common. Busy subway stations have taco stands outside, some open 24 hours, as do most parks and plazas. They're simple and more or less standardized. They're delicious and unhealthy. And they're appealing to Mexicans from all walks of life. Eating tacos at the stand next to my apartment I'm as likely to sit with a pair of businessmen as a group of police officers.
@@ -20,5 +21,5 @@ I'm a big eater, and part of what attracted me to el Progreso at first was the p
 
 My friend Shaun is coming from Korea to visit me in 10 days, and he expects me to show him all sorts of Mexican food in the short week he's here. I think I'll take him to Tacos el Progreso the day he arrives.
 
-__Tacos El Progreso, Antonio Caso 30__  
+__Tacos El Progreso, Antonio Caso 30, Colonia Tabacalera__  
 __Open Monday-Saturday, 7am-10pm, Closed Sunday__

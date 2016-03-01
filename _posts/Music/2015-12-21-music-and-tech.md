@@ -2,6 +2,7 @@
 layout: post
 title: "Music, money, and tech"
 categories: music
+tags: [music, startups]
 ---
 
 Robert Christgau is the only music critic I've ever read compulsively. His enormous online catalog of reviews makes binging easy. Here he is in a recent interview:

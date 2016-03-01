@@ -1,5 +1,5 @@
 ---
 layout: tag
 tag: github-pages
-permalink: /tags/github-pages/
+permalink: /tag/github-pages/
 ---

@@ -26,7 +26,7 @@ def parse_base_cats(cat, sep='/'):
     return [sep.join(cats[:i]) for i in range(1, len(cats))]
 
 
-def categories(root='.', sidebar=False):
+def categories(root='.', base_dir='post', sidebar=False):
     # path is relative to execution directory, not to location of script
     os.chdir(root)
 
@@ -74,8 +74,8 @@ def categories(root='.', sidebar=False):
 
         files.sort(key=lambda x:x['date'])
         for f in reversed(files):  # files in each cat in reverse date order
-            links.append('* [{}](../posts/{}) <sup>{}</sup>\n'
-                .format(f['title'], f['file'], f['date']))
+            links.append('* [{}](../{}/{}) <sup>{}</sup>\n'
+                .format(f['title'], base_dir, f['file'], f['date']))
 
     return({
         'count': num_files,

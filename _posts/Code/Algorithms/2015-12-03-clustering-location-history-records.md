@@ -2,6 +2,7 @@
 layout: post
 title: "Clustering location history records: How and Why"
 categories: code algorithms
+tags: [algorithms, google, location-history, clustering, privacy]
 ---
 
 ## Motivation

@@ -2,6 +2,7 @@
 layout: post
 title: "Things software doesn't eat, and software not worth eating"
 categories: code random
+tags: [startups, food]
 ---
 
 Hampton Creek, aka Beyond Eggs, has raised [$120M in the last 4 years](https://www.crunchbase.com/organization/hampton-creek-foods#/entity).

@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "Screencasts and GIFs with free OSX software"
-categories: code mac
+categories: code osx
+tags: [tutorials, osx]
 ---
 
 ## OSX for screencasts

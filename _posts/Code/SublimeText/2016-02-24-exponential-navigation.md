@@ -2,6 +2,7 @@
 layout: post
 title: 'Exponential navigation, and chaining Sublime Text API calls'
 categories: code sublime-text
+tags: [sublime-text, dev-hacks]
 ---
 
 I've never been much of a Vim user, but people I respect swear by it. Among its "super powers" is lightning fast navigation in normal mode. I like being able to hit <kbd>5</kbd>,<kbd>j</kbd> and move up 5 lines, because often one line at a time is too slow, and ~40 lines with <kbd>Page Up</kbd> is too fast.

@@ -2,6 +2,7 @@
 layout: post
 title: "Sublime Text packages I've used"
 categories: code sublime-text
+tags: [sublime-text, dev-hacks]
 ---
 
 | Package | Description |

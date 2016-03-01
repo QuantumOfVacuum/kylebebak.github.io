@@ -2,6 +2,7 @@
 layout: post
 title: "Too much Twitter"
 categories: code random
+tags: [twitter]
 ---
 
 Here's a good article, written by Farhad Manjoo. The slug says it all: [twitter-to-save-itself-must-scale-back-world-swallowing-ambitions](http://www.nytimes.com/2016/02/11/technology/twitter-to-save-itself-must-scale-back-world-swallowing-ambitions.html).

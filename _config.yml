@@ -15,7 +15,7 @@ url: "http://kylebebak.github.io" # the base hostname & protocol for your site
 twitter_username: KyleBebak
 github_username: kylebebak
 # no date or extension in url
-permalink: /posts/:title
+permalink: /post/:title
 home: "http://dronfelipe.com"
 
 # Build settings

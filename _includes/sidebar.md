@@ -5,7 +5,7 @@
     * [homebrew]({{ site.baseurl }}/categories#code--homebrew)
     * [javascript]({{ site.baseurl }}/categories#code--javascript)
     * [jekyll]({{ site.baseurl }}/categories#code--jekyll)
-    * [mac]({{ site.baseurl }}/categories#code--mac)
+    * [osx]({{ site.baseurl }}/categories#code--osx)
     * [random]({{ site.baseurl }}/categories#code--random)
     * [shell]({{ site.baseurl }}/categories#code--shell)
     * [sublime-text]({{ site.baseurl }}/categories#code--sublime-text)

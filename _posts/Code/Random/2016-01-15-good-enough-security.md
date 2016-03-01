@@ -2,6 +2,7 @@
 layout: post
 title: "Good enough security, backup, encryption"
 categories: code random
+tags: [security, backup, lastpass]
 ---
 
 My security and backup, for anyone that wants to hack me, consists of the following:
