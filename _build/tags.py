@@ -10,7 +10,7 @@ tags_dict = build.tags(root)
 
 
 r_weak = lambda: random.randint(0, 95)
-r_strong = lambda: random.randint(64, 191)
+r_strong = lambda: random.randint(128, 191)
 r = [r_strong, r_weak, r_weak]
 
 tags = []
