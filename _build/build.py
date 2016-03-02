@@ -34,8 +34,7 @@ def traverse_posts(root):
     its subdirectories. Root is relative to directory from
     which build.py is executed.
     """
-    os.chdir(root)
-    for (dirpath, dirnames, filenames) in os.walk('.'):
+    for (dirpath, dirnames, filenames) in os.walk(root):
         for filename in filenames:
             date, file = parse_filename(filename)
             if not date or not file:
