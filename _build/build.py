@@ -22,6 +22,8 @@ def parse_filename(filename, ext='.md'):
 
 
 def parse_base_cats(cat, sep='/'):
+    """Helper function to ensure empty parent categories are
+    included, and in correct hierarchical order."""
     cats = cat.split(sep)
     return [sep.join(cats[:i]) for i in range(1, len(cats))]
 
@@ -42,7 +44,8 @@ def traverse_posts(root):
 
 
 def tags(root='.'):
-    tags_dict = dict() # tag -> [files]
+    """Build and return tag -> [files] dict."""
+    tags_dict = dict()
     for dirpath, filename, file, date in traverse_posts(root):
         # extract tags from frontmatter
         with open('{}/{}'.format(dirpath, filename), 'r') as f:
@@ -56,11 +59,10 @@ def tags(root='.'):
     return OrderedDict(reversed(sorted(tags_dict.items(), key=lambda x: len(x[1]))))
 
 
-def categories(root='.', base_dir='post'):
-    cats_dict = OrderedDict() # cat -> [files]
-    num_files = 0
+def categories(root='.'):
+    """Build and return cat -> [files] dict."""
+    cats_dict = OrderedDict()
     for dirpath, filename, file, date in traverse_posts(root):
-        num_files += 1
         # extract title and categories from frontmatter
         with open('{}/{}'.format(dirpath, filename), 'r') as f:
             fm = frontmatter.loads(f.read())
@@ -74,31 +76,4 @@ def categories(root='.', base_dir='post'):
             else:
                 cats_dict[cat] = [file]
 
-    # generate markdown from categories dict
-    categories, links = [], [] # lists that will later be joined into strings
-    indent, h, h_sub = ' '*4, '##', '####'
-
-    for cat, files in cats_dict.items():
-        cats = cat.split('/')
-        level = len(cats)-1
-
-        # for github in-page header anchors, '/' -> '' and ' ' -> '-'
-        count = '<sup>({})</sup>'.format(len(files)) if len(files) else ''
-        category = '{}* [{}](#{}) {}\n'.format(
-            indent*level, cats[-1], cat.replace('/', '--'), count)
-
-        categories.append(category)
-        header = h_sub if level > 0 else h
-        # with sub-directory headers, pad '/' with spaces for readability
-        links.append('\n{} {}\n'.format( header, cat.replace('/', ' / ')) )
-
-        files.sort(key=lambda x:x['date'])
-        for f in reversed(files):  # files in each cat in reverse date order
-            links.append('* [{}](../{}/{}) <sup>{}</sup>\n'
-                .format(f['title'], base_dir, f['file'], f['date']))
-
-    return({
-        'count': num_files,
-        'categories': ''.join(categories),
-        'links': ''.join(links)
-    })
+    return cats_dict
