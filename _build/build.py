@@ -41,7 +41,7 @@ def traverse_posts(root):
             yield tuple([dirpath, filename, file, date])
 
 
-def tags(root='.', base_dir='post', sidebar=False):
+def tags(root='.'):
     tags_dict = dict() # tag -> [files]
     for dirpath, filename, file, date in traverse_posts(root):
         # extract tags from frontmatter
@@ -56,7 +56,7 @@ def tags(root='.', base_dir='post', sidebar=False):
     return OrderedDict(reversed(sorted(tags_dict.items(), key=lambda x: len(x[1]))))
 
 
-def categories(root='.', base_dir='post', sidebar=False):
+def categories(root='.', base_dir='post'):
     cats_dict = OrderedDict() # cat -> [files]
     num_files = 0
     for dirpath, filename, file, date in traverse_posts(root):
@@ -86,9 +86,6 @@ def categories(root='.', base_dir='post', sidebar=False):
         count = '<sup>({})</sup>'.format(len(files)) if len(files) else ''
         category = '{}* [{}](#{}) {}\n'.format(
             indent*level, cats[-1], cat.replace('/', '--'), count)
-        if sidebar:
-            category = '{}* [{}]({{{{ site.baseurl }}}}/categories#{})\n'.format(
-                indent*level, cats[-1], cat.replace('/', '--'))
 
         categories.append(category)
         header = h_sub if level > 0 else h
