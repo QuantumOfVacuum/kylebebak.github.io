@@ -101,6 +101,14 @@ a {
     color: $text-color;
   }
 
+  .post-list &:visited {
+    color: $brand-color-visited;
+
+    &:hover {
+      color: $text-color;
+    }
+  }
+
   .post-content & {
     font-weight: bold;
   }
