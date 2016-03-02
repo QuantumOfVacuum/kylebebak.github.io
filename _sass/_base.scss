@@ -101,18 +101,16 @@ a {
     color: $text-color;
   }
 
-  .post-list &:visited {
-    color: $brand-color-visited;
-
-    &:hover {
-      color: $text-color;
-    }
+  .post-list &:visited span.check-mark {
+    color: $text-color !important;
   }
 
   .post-content & {
     font-weight: bold;
   }
 }
+
+
 
 /**
  * Blockquotes
