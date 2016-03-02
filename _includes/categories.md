@@ -20,7 +20,7 @@
 ---
 <section id="links" markdown="1">
 
-## code
+### code
 
 #### code / algorithms
 * [Clustering location history records: How and Why](../post/clustering-location-history-records) <sup>2015-12-03</sup>
@@ -61,19 +61,19 @@
 * [Sublime Text packages I've used](../post/useful-packages) <sup>2016-02-20</sup>
 * [Live HTML and Markdown preview in Sublime Text with auto-save](../post/auto-save) <sup>2016-02-18</sup>
 
-## footy
+### footy
 * [Voting for the 2015 Ballon d'or](../post/ballon-dor-2015) <sup>2016-01-14</sup>
 
-## mexico
+### mexico
 
 #### mexico / restaurantes
 * [El Tapatío](../post/el-tapatio) <sup>2010-11-25</sup>
 * [Tacos el Progreso](../post/tacos-el-progreso) <sup>2010-10-28</sup>
 
-## music
+### music
 * [Music, money, and tech](../post/music-and-tech) <sup>2015-12-21</sup>
 
-## science
+### science
 * [Philosophy of science](../post/philosophy-of-science) <sup>2013-04-05</sup>
 
 </section>

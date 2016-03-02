@@ -8,7 +8,7 @@ def categories(posts_dir, categories_file):
     cats_dict = build.categories(posts_dir)
     # generate markdown from categories dict
     categories, links = [], [] # lists that will later be joined into strings
-    indent, h, h_sub = ' '*4, '##', '####'
+    indent, h, h_sub = ' '*4, '###', '####'
 
     for cat, files in cats_dict.items():
         cats = cat.split('/')
