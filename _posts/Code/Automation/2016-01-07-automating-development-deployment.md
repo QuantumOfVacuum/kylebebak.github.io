@@ -26,7 +26,7 @@ Vagrant makes it easy to spin up and tear down local VMs, and lets you provision
 
 So, I built my deploy playbook locally, testing it against the Vagrant VM. I won't go into details, beyond mentioning that I deploy site files by installing Git and cloning my site's GitHub repo. Once __dronfelipe.dev__ was working as expected, I spun up a new AWS box running Ubuntu 14.04 and __configured it with the same playbook__. The screenshot below shows the output of this moment of truth. I admit I had my fingers crossed, but there was no need. After all, the AWS machine was probably indistinguishable from the VM running on my computer. After 5 or 10 minutes the playbook finished. I went to the box's public IP and there was my site!
 
-<div class="image"><a href="https://raw.githubusercontent.com/kylebebak/posts/master/_assets/img/dronfelipe_ansible.png"><img src="https://raw.githubusercontent.com/kylebebak/posts/master/_assets/img/thumbs/dronfelipe_ansible.png"></a></div>
+<div class="image"><a href="https://raw.githubusercontent.com/kylebebak/kylebebak.github.io/master/_assets/img/dronfelipe_ansible.png"><img src="https://raw.githubusercontent.com/kylebebak/kylebebak.github.io/master/_assets/img/thumbs/dronfelipe_ansible.png"></a></div>
 
 To finish up, I disassociated my Elastic IP from the old Amazon Linux box and associated it with the new one, which took less than a minute.
 

@@ -1,6 +1,12 @@
 /**
  * Syntax highlighting styles
  */
+
+// prevent inline code from wrapping to next line
+code.highlighter-rouge {
+  white-space: nowrap;
+}
+
 .highlight, .highlighter-rouge {
   @extend %vertical-rhythm;
 

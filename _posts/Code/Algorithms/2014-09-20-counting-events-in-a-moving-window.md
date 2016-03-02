@@ -10,7 +10,7 @@ Imagine you're writing a program that reads a series of transactions in real tim
 
 This post doesn't explain DES &mdash; there are good explanations on the web, for example [this one](http://algs4.cs.princeton.edu/61event/). But here's the gist of it: DES contrasts with __continuous simulation__ by only examining and updating the state of the system when an event occurs. This model is perfectly suited for the counting problem, which is one of the simplest problems DES can address.
 
-## The (Not) Moving Window
+## The (Im)Mobile Window
 Let's say the transactions (henceforth events) of the previous month are in a relational database. As above, we want to flag every instance in which there were more than 50 events in an hour. One approach is to select the count of events and group them by hour, but this is flawed. __Let's say between 10 and 10:30 there are no events, and between 10:30 and 11 there are forty. Between 11 and 11:30 there are forty more, and again there are none between 11:30 and 12.__ The query would flag neither 10-11 nor 11-12 as suspicious, because the number of events in both hours is below the threshold. But the query would fail to notice that between 10:30 and 11:30 there were eighty events, and the threshold was exceeded.
 
 Clearly, we can't group by hour to count events. We need more precision, so we consider the following: for each event, we take its timestamp `T` and select the count of events that fall between `T` and `T + 1h`. This will definitely work, but it requires one query per event. This is infeasible if there are lots of events.
