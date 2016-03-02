@@ -286,5 +286,9 @@ h1, .post-title {
 .icon-text.tag {
   font-size: $small-font-size;
   font-weight: bold;
-  color: $code-background-color;
+  color: $inline-code-color;
+
+  &:hover {
+    color: black;
+  }
 }

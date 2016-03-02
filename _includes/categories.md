@@ -1,3 +1,4 @@
+<section id="categories" markdown="1">
 * [code](#code) 
     * [algorithms](#code--algorithms) <sup>(2)</sup>
     * [automation](#code--automation) <sup>(1)</sup>
@@ -15,9 +16,9 @@
 * [music](#music) <sup>(1)</sup>
 * [science](#science) <sup>(1)</sup>
 
-__40__ and counting...
-
+</section>
 ---
+<section id="links" markdown="1">
 
 ## code
 
@@ -74,3 +75,5 @@ __40__ and counting...
 
 ## science
 * [Philosophy of science](../post/philosophy-of-science) <sup>2013-04-05</sup>
+
+</section>

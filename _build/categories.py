@@ -33,10 +33,10 @@ for cat, files in cats_dict.items():
 
 
 categories_template = \
-'{}\n\
-__{}__ and counting...\n\n---\n\
-{}'
+'<section id="categories" markdown="1">\n{}\n</section>\
+\n---\n\
+<section id="links" markdown="1">\n{}\n</section>'
 
 with open('{}/../_includes/categories.md'.format(path), 'w') as f:
     f.write(categories_template.format(
-        ''.join(categories), len(links), ''.join(links)) )
+        ''.join(categories), ''.join(links)) )
