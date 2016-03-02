@@ -33,22 +33,6 @@
   padding: 0em 0em 1em;
 }
 
-.sidebar {
-  float: right;
-  font-size: $small-font-size * .85;
-
-  li {
-    list-style: none;
-
-    a {
-      color: #dd1111;
-      &:hover {
-        color: $text-color;
-      }
-    }
-  }
-}
-
 .site-nav {
   float: right;
   line-height: $nav-height;

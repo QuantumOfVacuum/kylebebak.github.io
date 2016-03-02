@@ -2,13 +2,14 @@
 # Front matter
 ---
 @charset "utf-8";
+@import "constants";
 
 #links a {
   font-weight: normal !important;
 }
 
 h2, h4 {
-  background-color: #1aac8c;
+  background-color: $category-background-color;
   display: table;
   padding: .2em .6em .3em;
   font-size: 75%;
