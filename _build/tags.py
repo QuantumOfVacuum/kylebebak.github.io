@@ -9,11 +9,14 @@ tags_dict = build.tags(root)
 
 
 
-r = lambda: random.randint(0, 160)
-tags = []
+r_weak = lambda: random.randint(0, 95)
+r_strong = lambda: random.randint(64, 191)
+r = [r_strong, r_weak, r_weak]
 
+tags = []
 for tag, items in tags_dict.items():
-    color = '#%02X%02X%02X' % ( r(), r(), r() )
+    colors = [c() for c in sorted(r, key=lambda k: random.random())]
+    color = '#%02X%02X%02X' % tuple(colors)
     size = pow(len(items), .4)
     style = 'style="background-color:{};font-size:{}em;"'.format(color, size)
 
@@ -26,6 +29,7 @@ with open('{}/../_includes/tags.html'.format(path), 'w') as f:
 
 
 
+# front matter for all files in tags/
 fm ='---\n\
 layout: tag\n\
 tag: {}\n\
