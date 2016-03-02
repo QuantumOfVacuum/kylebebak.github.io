@@ -10,4 +10,5 @@ git add categories.md _includes/sidebar.md
 rm tags/*
 python _build/tags.py _posts
 # the -u flag updates and removes index entries, but adds nothing
-git add -u :/ && git add tags/*
+git add -u :/
+git add _includes/tags.html tags/*

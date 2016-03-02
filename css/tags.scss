@@ -1,3 +1,14 @@
 ---
 # Front matter
 ---
+
+.tag-list {
+  padding: 0 5em 0;
+}
+
+.resizing-tag {
+  display: inline-block !important;
+  word-wrap: normal;
+  margin-right: .4em;
+  margin-bottom: .25em;
+}
