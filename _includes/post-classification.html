@@ -1,12 +1,19 @@
-<span style="margin-right:.5em;" class="categories">
+{% assign cat = '' %}
+{% capture url %}{{ site.baseurl }}/categories#{% endcapture %}
+
 {% for category in include.post.categories %}
-  {% if forloop.last == true %}
-    {{ category }}
+  {% if forloop.first == true %}
+    {% capture cat %}{{ category }}{% endcapture %}
+    {% capture url %}{{ url }}{{ category }}{% endcapture %}
   {% else %}
-    {{ category }} /
+    {% capture cat %}{{ cat }}/{{ category }}{% endcapture %}
+    {% capture url %}{{ url }}--{{ category }}{% endcapture %}
   {% endif %}
 {% endfor %}
-</span>
+
+<a href="{{ url }}"><span style="margin-right:.5em;" class="categories">
+{{ cat }}
+</span></a>
 
 {% for tag in include.post.tags %}
   {% if site.tags[tag] %}
