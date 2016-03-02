@@ -2,7 +2,6 @@
 
 # the -e flag in the shebang line ensures that this hook exits if any of its commands exits with a non-zero exit status
 
-# build categories and sidebar before every commit
 python _build/categories.py --posts_dir="_posts" --categories_file="_includes/categories.md"
 git add _includes/categories.md
 
