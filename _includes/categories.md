@@ -9,7 +9,7 @@
     * [osx](#code--osx) <sup>(1)</sup>
     * [random](#code--random) <sup>(4)</sup>
     * [shell](#code--shell) <sup>(2)</sup>
-    * [sublime-text](#code--sublime-text) <sup>(4)</sup>
+    * [sublime-text](#code--sublime-text) <sup>(5)</sup>
 * [footy](#footy) <sup>(1)</sup>
 * [mexico](#mexico) 
     * [restaurantes](#mexico--restaurantes) <sup>(2)</sup>
@@ -56,6 +56,7 @@
 * [A custom shell function (userbin) for simplifying development of CL tools](../post/userbin) <sup>2016-02-04</sup>
 
 #### code / sublime-text
+* [How to quickly cycle between Sublime Text color schemes](../post/cycle-color-theme) <sup>2016-03-03</sup>
 * [Exponential navigation, and chaining Sublime Text API calls](../post/exponential-navigation) <sup>2016-02-24</sup>
 * [SublimeLinter for code linting in any language](../post/sublime-linter) <sup>2016-02-21</sup>
 * [Sublime Text packages I've used](../post/useful-packages) <sup>2016-02-20</sup>
