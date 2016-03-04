@@ -18,6 +18,7 @@ tags: [sublime-text, dev-hacks]
 | [DocBlockr](https://github.com/spadgos/sublime-jsdocs) | Makes writing Java and JS documentation a lot easier. |
 | [Emmet](https://github.com/sergeche/emmet-sublime) | An incredible plugin for writing HTML and CSS. |
 | [Evaluate](https://github.com/jbrooksuk/Sublime-Evaluate) | Evaluate the selection with the Python interpreter. |
+| [GitGitter](https://github.com/jisaacks/GitGutter) | See lines that have changed since previous commit in ST gutter. |
 | [Jedi](https://github.com/srusskih/SublimeJEDI) | Python snippets and completions. |
 | [Markdown Editing](https://github.com/SublimeText-Markdown/MarkdownEditing) | Powerful Markdown support with better syntax understanding and good color schemes. |
 | [PackageResourceViewer](https://github.com/skuroda/PackageResourceViewer) | Plugin to assist viewing and editing package resources. |
