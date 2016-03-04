@@ -23,4 +23,8 @@ markdown: kramdown
 kramdown:
   input: GFM
 
-exclude: [README.md, LICENSE]
+exclude: [README.md, LICENSE, requirements.txt, Gemfile]
+
+gems:
+  - jekyll-sitemap
+  - jekyll-seo-tag
