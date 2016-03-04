@@ -1,1 +1,2 @@
 User-agent: *
+Sitemap: http://kylebebak.github.io/sitemap.xml
