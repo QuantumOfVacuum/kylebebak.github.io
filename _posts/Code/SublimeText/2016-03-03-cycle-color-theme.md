@@ -2,25 +2,17 @@
 layout: post
 title: "How to quickly cycle between Sublime Text color schemes"
 categories: code sublime-text
-tags: [sublime-text, dev-hacks, color-schemes]
+tags: [sublime-text, sublime-linter, dev-hacks, color-schemes]
 ---
 
-~~~json
-{
-    "keys": ["super+shift+c"], "command": "toggle_color_scheme",
-    "args": { "color_schemes": [
-        "Packages/User/SublimeLinter/Solarized (Light) (SL).tmTheme",
-        "Packages/User/SublimeLinter/Solarized (Dark) (SL).tmTheme",
-        "Packages/User/SublimeLinter/Monokai (SL).tmTheme"
-      ]
-    }
-}
-~~~
+If you use more than one color scheme in Sublime Text, for example `Solarized (Light)` during the day and `Solarized (Dark)` at night, here's a simple plugin to make switching between them as painless as possible. Instead of having to click and hover through `Sublime Text > Preferences > Color Scheme > Color Scheme - Default > {your_color_scheme}`, you can simply bind some keys to cycle through a series of color schemes of your choice.
+
+First, create a file called `cycle_color_scheme.py`, and put it in `Packages/User`. Here's mine:
 
 ~~~python
 import sublime, sublime_plugin
 
-class ToggleColorSchemeCommand(sublime_plugin.TextCommand):
+class CycleColorSchemeCommand(sublime_plugin.TextCommand):
     def run(self, edit, **kwargs):
 
         preferences = sublime.load_settings('Preferences.sublime-settings')
@@ -37,45 +29,22 @@ class ToggleColorSchemeCommand(sublime_plugin.TextCommand):
             print("Something went wrong.")
 ~~~
 
-
-
-http://www.sublimelinter.com/en/latest/usage.html#choosing-color-schemes
-`Packages/User/SublimeLinter`
-
-improving solarized dark
-
-~~~xml
-...
-<key>lineHighlight</key>
-<string>#074652</string>
-<key>selection</key>
-<string>#074652</string>
-...
-~~~
-
-
-`Packages/Seti_UI/Main/Widget - Seti.stTheme`
-
-~~~xml
-...
-    <key>background</key>
-    <string>#313131</string>
-...
-    <key>selection</key>
-    <string>#00a3a3</string>
-...
-~~~
-
-`Packages/Seti_UI/Seti.sublime-theme`
+Then, add the following to your `Default (OSX).sublime-keymap`, also in the `Packages/User` directory. Put your favorite color schemes in the `color_schmes` list. These need to be entered as relative paths, starting with `Packages`, to color scheme files: `{color_scheme}.tmTheme`.
 
 ~~~json
-...
 {
-    "class": "sidebar_tree",
-    "settings": ["Seti_sb_small_padding"],
-    "row_padding": [8,4]
-},
-...
+    // ...
+    
+    "keys": ["super+shift+c"], "command": "cycle_color_scheme",
+    "args": { "color_schemes": [
+        "Packages/User/SublimeLinter/Solarized (Light) (SL).tmTheme",
+        "Packages/User/SublimeLinter/Solarized (Dark) (SL).tmTheme",
+        "Packages/User/SublimeLinter/Monokai (SL).tmTheme"
+      ]
+    }
+
+    // ...
+}
 ~~~
 
-and then insert `"Seti_sb_small_padding": true,` into your `Preferences.sublime-settings`
+If you use [SublimeLinter](./sublime-linter), any color scheme you use will get copied into `Packages/User/SublimeLinter`, and you're set. If not, you can use something like [Colorsublime](http://colorsublime.com/) to download themes, and put them somewhere in `Packages/User`. 

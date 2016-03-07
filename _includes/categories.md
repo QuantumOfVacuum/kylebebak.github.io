@@ -5,11 +5,11 @@
     * [github](#code--github) <sup>(2)</sup>
     * [homebrew](#code--homebrew) <sup>(1)</sup>
     * [javascript](#code--javascript) <sup>(1)</sup>
-    * [jekyll](#code--jekyll) <sup>(1)</sup>
+    * [jekyll](#code--jekyll) <sup>(2)</sup>
     * [osx](#code--osx) <sup>(1)</sup>
     * [random](#code--random) <sup>(4)</sup>
     * [shell](#code--shell) <sup>(2)</sup>
-    * [sublime-text](#code--sublime-text) <sup>(5)</sup>
+    * [sublime-text](#code--sublime-text) <sup>(7)</sup>
 * [footy](#footy) <sup>(1)</sup>
 * [mexico](#mexico) 
     * [restaurantes](#mexico--restaurantes) <sup>(2)</sup>
@@ -40,7 +40,8 @@
 * [Eslint, the configurable next-gen (ES6, JSX) JavaScript linter](../post/eslint) <sup>2016-02-22</sup>
 
 #### code / jekyll
-* [Blogging like a hacker with Jekyll](../post/blogging-for-hackers) <sup>2016-02-25</sup>
+* [Blogging like a hacker with Jekyll](../post/blogging-for-hackers) <sup>2016-03-10</sup>
+* [Building your GitHub Pages site alongside your code](../post/site-alongside-code) <sup>2016-03-01</sup>
 
 #### code / osx
 * [Screencasts and GIFs with free OSX software](../post/osx-screencast-gif) <sup>2016-02-13</sup>
@@ -56,6 +57,8 @@
 * [A custom shell function (userbin) for simplifying development of CL tools](../post/userbin) <sup>2016-02-04</sup>
 
 #### code / sublime-text
+* [Setting up the Seti UI theme in Sublime Text](../post/seti-ui) <sup>2016-03-06</sup>
+* [Getting GitGutter to play nice with SublimeLinter](../post/git-gutter) <sup>2016-03-04</sup>
 * [How to quickly cycle between Sublime Text color schemes](../post/cycle-color-theme) <sup>2016-03-03</sup>
 * [Exponential navigation, and chaining Sublime Text API calls](../post/exponential-navigation) <sup>2016-02-24</sup>
 * [SublimeLinter for code linting in any language](../post/sublime-linter) <sup>2016-02-21</sup>
