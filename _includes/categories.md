@@ -14,6 +14,7 @@
 * [mexico](#mexico) 
     * [restaurantes](#mexico--restaurantes) <sup>(2)</sup>
 * [music](#music) <sup>(1)</sup>
+* [random](#random) <sup>(1)</sup>
 * [science](#science) <sup>(1)</sup>
 
 </section>
@@ -76,6 +77,9 @@
 
 ### music
 * [Music, money, and tech](../post/music-and-tech) <sup>2015-12-21</sup>
+
+### random
+* [Some YouTube gems](../post/youtube-gems) <sup>2016-02-28</sup>
 
 ### science
 * [Philosophy of science](../post/philosophy-of-science) <sup>2013-04-05</sup>
