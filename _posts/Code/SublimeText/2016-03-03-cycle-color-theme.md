@@ -5,7 +5,7 @@ categories: code sublime-text
 tags: [sublime-text, sublime-linter, dev-hacks, color-schemes]
 ---
 
-If you use more than one color scheme in Sublime Text, for example `Solarized (Light)` during the day and `Solarized (Dark)` at night, here's a simple plugin to make switching between them as painless as possible. Instead of having to click and hover through `Sublime Text > Preferences > Color Scheme > Color Scheme - Default > {your_color_scheme}`, you can simply bind some keys to cycle through a series of color schemes of your choice.
+If you use more than one color scheme in Sublime Text, for example `Solarized (Light)` during the day and `Solarized (Dark)` at night, here's a simple plugin to make switching between them as painless as possible. Instead of having to click and hover through __Sublime Text > Preferences > Color Scheme > Color Scheme - Default > {your_color_scheme}__, you can simply bind some keys to cycle through a series of color schemes of your choice.
 
 First, create a file called `cycle_color_scheme.py`, and put it in `Packages/User`. Here's mine:
 
@@ -29,7 +29,7 @@ class CycleColorSchemeCommand(sublime_plugin.TextCommand):
             print("Something went wrong.")
 ~~~
 
-Then, add the following to your `Default (OSX).sublime-keymap`, also in the `Packages/User` directory. Put your favorite color schemes in the `color_schmes` list. These need to be entered as relative paths, starting with `Packages`, to color scheme files: `{color_scheme}.tmTheme`.
+Then, add the following to your `Default (OSX).sublime-keymap`, also in the `Packages/User` directory. Put your favorite color schemes in the `color_schmes` list. These need to be entered as relative paths to color scheme files: `{color_scheme}.tmTheme`.
 
 ~~~json
 {

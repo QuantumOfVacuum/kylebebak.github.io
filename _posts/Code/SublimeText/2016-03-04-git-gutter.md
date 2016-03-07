@@ -9,11 +9,11 @@ tags: [sublime-text, git, git-gutter, sublime-linter]
 
 Calls to `git diff` are debounced in the same way that [SublimeLinter](./sublime-linter) debounces calls to linting executables.
 
-The only thing that bothered me is that the GitGutter icons and SublimeLinter icons compete for that primo gutter real estate. It's a race condition: whichever plugin renders its icons first gets overwritten moments later by the other. I'd rather know that my code will blow up at runtime than know if it's been modified, so I wanted SublimeLinter to have precedence.
+The only thing that bothered me is that __GitGutter__ icons and __SublimeLinter__ icons compete for that primo gutter real estate. It's a race condition: whichever plugin renders its icons first gets overwritten moments later by the other. I'd rather know that my code will blow up at runtime than know if it's been modified, so I wanted SublimeLinter to have precedence.
 
-Luckily, GitGutter's API allows you to specified __"protected_regions"__ of the gutter that are off limits to the plugin, and [buried in here](https://github.com/jisaacks/GitGutter/issues/113) are the regions corresponding to SublimeLinter.
+Luckily, GitGutter's API allows you to specify __"protected_regions"__ of the gutter that are off limits to the plugin, and [buried in here](https://github.com/jisaacks/GitGutter/issues/113) are the regions corresponding to SublimeLinter.
 
-Simply make your own `GitGutter.sublime-settings` in `Packages/User`, and edit the `protected_regions` as follows:
+Simply make or copy your own `GitGutter.sublime-settings` in `Packages/User`, and edit the `protected_regions` as follows:
 
 ~~~json
 // ...
