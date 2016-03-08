@@ -1,2 +1,3 @@
 User-agent: *
+Disallow:
 Sitemap: http://kylebebak.github.io/sitemap.xml
