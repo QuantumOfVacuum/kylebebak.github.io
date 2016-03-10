@@ -60,7 +60,7 @@ def tags(root='.'):
 
 def categories(root='.'):
     """Build and return cat -> [files] dict."""
-    cats_dict = OrderedDict()
+    cats_dict = dict()
     for dirpath, filename, file, date in traverse_posts(root):
         # extract title and categories from frontmatter
         with open('{}/{}'.format(dirpath, filename), 'r') as f:
@@ -75,4 +75,4 @@ def categories(root='.'):
             else:
                 cats_dict[cat] = [file]
 
-    return cats_dict
+    return OrderedDict(sorted(cats_dict.items(), key=lambda x: x[0]))
