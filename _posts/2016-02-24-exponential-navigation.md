@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Exponential navigation, and chaining Sublime Text API calls'
+title: 'Exponential Navigation, and Chaining Sublime Text API Calls'
 categories: code sublime-text
 tags: [sublime-text, dev-hacks]
 ---
@@ -39,7 +39,7 @@ If you want to chain calls to the ST API in your __keymap__, it helps to know wh
 },
 ~~~
 
-## Exponential navigation
+## Exponential Navigation
 I can hit <kbd>alt</kbd>+<kbd>up/down</kbd> to move 5 lines up or down, adding <kbd>shift</kbd> to highlight these lines, and I can do the same with <kbd>ctrl</kbd>+<kbd>alt</kbd>+<kbd>left/right</kbd> to move 3 words left or right.
 
 I've been using this system for over a year. Arriving at 5 lines for vertical movement and 3 words for lateral movement was part intuition and part trial and error. The intuition behind it was enabling navigation whose sensitivity struck a __exponential middle ground__ between:

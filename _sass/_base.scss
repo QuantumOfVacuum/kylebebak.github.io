@@ -38,7 +38,11 @@ ul, ol, dl, figure,
 }
 
 hr {
-  margin-bottom: $spacing-unit;
+  margin: $spacing-unit auto $spacing-unit;
+  border: none;
+  height: 3px;
+  background-color: #666;
+  width: 65%;
 }
 
 
@@ -46,11 +50,10 @@ hr {
  * Images
  */
 img {
-  max-width: 100%;
-  vertical-align: middle;
+  display: block;
+  margin: 1em auto;
+  max-width: 85%;
 }
-
-
 
 /**
  * Figures
@@ -118,10 +121,9 @@ a {
 blockquote {
   color: $grey-color;
   border-left: 4px solid $grey-color-light;
-  padding-left: $spacing-unit / 2;
+  padding-left: $spacing-unit;
   font-size: 18px;
   letter-spacing: -1px;
-  font-style: italic;
 
   > :last-child {
     margin-bottom: 0;

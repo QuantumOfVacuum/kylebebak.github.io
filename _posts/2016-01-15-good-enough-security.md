@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Good enough security, backup, encryption"
+title: "Good Enough Security, Backup, Encryption"
 categories: code random
 tags: [security, backup, lastpass]
 ---

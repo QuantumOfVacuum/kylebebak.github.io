@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Music, money, and tech"
+title: "Music, Money, and Tech"
 categories: music
 tags: [music, startups]
 ---

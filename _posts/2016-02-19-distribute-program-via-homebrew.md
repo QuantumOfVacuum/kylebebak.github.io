@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to distribute your program via Homebrew"
+title: "How to Distribute Your Program via Homebrew"
 categories: code homebrew
 tags: [homebrew, shell, distribution, github]
 ---

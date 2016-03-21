@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Things software doesn't eat, and software not worth eating"
+title: "Things Software Doesn't Eat, and Software Not Worth Eating"
 categories: code random
 tags: [startups, food]
 ---

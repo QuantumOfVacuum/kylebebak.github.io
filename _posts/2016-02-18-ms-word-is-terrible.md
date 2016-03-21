@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "MS Word is terrible"
+title: "MS Word is Terrible"
 categories: code random
 tags: [ms-word, github]
 ---

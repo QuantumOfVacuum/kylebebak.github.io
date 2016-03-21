@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Philosophy of science"
+title: "Philosophy of Science"
 categories: science
 tags: [science, philosophy, empiricism]
 ---

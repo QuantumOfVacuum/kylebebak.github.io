@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Getting GitGutter to play nice with SublimeLinter"
+title: "Getting GitGutter to Play Nice with SublimeLinter"
 categories: code sublime-text
 tags: [sublime-text, git, git-gutter, sublime-linter]
 ---

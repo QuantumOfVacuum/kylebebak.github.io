@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Github and Markdown for company documents"
+title: "Github and Markdown for Company Documents"
 categories: code github
 tags: [github, markdown, ms-word]
 ---

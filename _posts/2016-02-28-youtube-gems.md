@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Some YouTube gems"
+title: "Some YouTube Gems"
 categories: random
 tags: [youtube, booze]
 ---

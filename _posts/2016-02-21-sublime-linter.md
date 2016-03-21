@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "SublimeLinter for code linting in any language"
+title: "SublimeLinter for Code Linting in Any Language"
 categories: code sublime-text
 tags: [sublime-text, sublime-linter, linting, software-design]
 ---

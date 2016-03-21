@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to quickly cycle between Sublime Text color schemes"
+title: "How to Quickly Cycle Between Sublime Text Color Schemes"
 categories: code sublime-text
 tags: [sublime-text, sublime-linter, dev-hacks, color-schemes]
 ---

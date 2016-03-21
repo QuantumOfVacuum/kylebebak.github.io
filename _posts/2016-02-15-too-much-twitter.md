@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Too much Twitter"
+title: "Too Much Twitter"
 categories: code random
 tags: [twitter]
 ---
