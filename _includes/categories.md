@@ -41,7 +41,7 @@
 * [Eslint, the configurable next-gen (ES6, JSX) JavaScript linter](../post/eslint) <sup>2016-02-22</sup>
 
 #### code / jekyll
-* [Blogging like a hacker with Jekyll](../post/blogging-for-hackers) <sup>2016-03-10</sup>
+* [Implementing Tags and Categories with Jekyll and GitHub Pages](../post/tags-categories-jekyll) <sup>2016-03-10</sup>
 * [Building your GitHub Pages site alongside your code](../post/site-alongside-code) <sup>2016-03-01</sup>
 
 #### code / osx

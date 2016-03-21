@@ -30,8 +30,8 @@ def parse_base_cats(cat, sep='/'):
 
 def traverse_posts(root):
     """
-    Returns generator that returns all posts within root and
-    its subdirectories. Root is relative to directory from
+    Returns generator that iterates over all posts within root
+    and its subdirectories. Root is relative to directory from
     which build.py is executed.
     """
     for (dirpath, dirnames, filenames) in os.walk(root):
