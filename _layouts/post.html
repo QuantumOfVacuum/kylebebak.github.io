@@ -16,4 +16,18 @@ layout: default
     {% include post-classification.html post=page %}
   </div>
 
+  <div class="post-navigation">
+    {% if page.previous.url %}
+      <a class="prev" href="{{ page.previous.url }}">{% include icon.html icon="icons/chevron-left.svg" %} {{ page.previous.title }}</a>
+    {% else %}
+      <a class="prev"></a>
+    {% endif %}
+
+    {% if page.next.url %}
+      <a class="next" href="{{ page.next.url }}">{{ page.next.title }} {% include icon.html icon="icons/chevron-right.svg" %}</a>
+    {% else %}
+      <a class="next"></a>
+    {% endif %}
+  </div>
+
 </article>

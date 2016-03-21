@@ -14,7 +14,7 @@
 * [mexico](#mexico) 
     * [restaurantes](#mexico--restaurantes) <sup>(2)</sup>
 * [music](#music) <sup>(1)</sup>
-* [random](#random) <sup>(1)</sup>
+* [random](#random) <sup>(2)</sup>
 * [science](#science) <sup>(1)</sup>
 
 </section>
@@ -79,6 +79,7 @@
 * [Music, money, and tech](../post/music-and-tech) <sup>2015-12-21</sup>
 
 ### random
+* [The Comments Section of the New York Times](../post/nytimes-comments) <sup>2016-03-18</sup>
 * [Some YouTube gems](../post/youtube-gems) <sup>2016-02-28</sup>
 
 ### science
