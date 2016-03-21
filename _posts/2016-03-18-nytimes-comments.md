@@ -5,7 +5,7 @@ categories: random
 tags: [nytimes, web-2.0, comments, news]
 ---
 
-I think the people at the New York Times were among the first in their business to realize that for newspapers, comments are the best user generated content. Good comments make reading a lot more addictive, and they're in the foundation of any good online community.
+I think the people at the New York Times were among the first in their business to realize that for newspapers, comments are the best user generated content. Not that this is ground-breaking &mdash; __good comments have always made reading more addictive__, and they're in the foundation of all online communities.
 
 Instead of citing a bunch of numbers to make my case, I decided to compare what was published in the [New York Times](http://www.nytimes.com/2016/02/14/us/antonin-scalia-death.html) and the [Los Angeles Times](http://www.latimes.com/local/lanow/la-me-antonin-scalia-20160213-story.html) after a recent high-profile event: the death of Antonin Scalia.
 
@@ -19,15 +19,17 @@ Instead of citing a bunch of numbers to make my case, I decided to compare what 
 
 ---
 
-On the top is the NYT comments section, and then the same comments section in the LAT. Let's ignore for a moment that one looks slick and the other looks like shit, and focus on the comments themselves. More than 10 times as many people commented on the New York Times' article. When you open the comments section, the comments are sensibly sorted, and the "best" ones, both according to the readers and to the NYT, are easy to find. If you compare the __NYT Picks__ with the __Readers' Picks__, you'll notice that the first group is more diverse. The paper has a liberal reputation, but it intentionally calls attention to well-written comments that are unpopular to its readers, because at the very least it might get them riled up. Geez... It's almost like they ___thought___ about online communities and made a plan to start their own!
+On the top is the NYT comments section, and then the same comments section in the LAT. Let's ignore for a moment that one looks slick and the other looks like shit, and focus on how the comments are organized.
+
+More than 10 times as many people commented on the New York Times' article. But when you open the comments section, the comments are sensibly sorted, and the "best" ones, both according to the readers and to the NYT, are easy to find. If you compare the __NYT Picks__ with the __Readers' Picks__, you'll notice that the first group is more diverse. The paper has a liberal reputation, but it intentionally calls attention to well-written comments that are unpopular to its readers, because at the very least it might get them riled up. Geez... It's almost like they ___thought___ about what they were doing!
 
 The LA Times, on the other hand, is hopeless. It looks like they picked the first comment widget they could find, threw it into their article template, and called it a day.
 
-Comparing these two papers is interesting because in the past, before the news and everything else moved online, they probably weren't separated by such a wide gulf. Since the year 2000, for example, the The LA Times has won 18 Pulitzers to the NY Times 15! But prizes aside, newspapers will either find a way to get readers to pay for content online, or they'll go out of business. And any paper that isn't leveraging users to generate content in the famed __Web 2.0__ style isn't doing itself any favors.
+Comparing these two papers is interesting because in the past, before the news and everything else moved online, the distance between them probably wasn't so big. Since the year 2000, for example, the The LA Times has won 18 Pulitzers to the NY Times 15! But prizes aside, newspapers will either find a way to get readers to pay for content online, or they'll go out of business. And any paper that isn't leveraging users to generate content in the famed __Web 2.0__ style isn't doing itself any favors.
 
 ---
 
-To close, here's [another article](http://www.nytimes.com/2016/02/27/world/middleeast/woman-81-to-sue-israeli-airline-over-seat-switch.html) with comments in the thousands, and one particular NYT Pick with more than 3000 upvotes:
+To close, here's [another article](http://www.nytimes.com/2016/02/27/world/middleeast/woman-81-to-sue-israeli-airline-over-seat-switch.html) with comments in the thousands, and an NYT Pick with more than 3000 upvotes:
 
 >Whether it's Jewish men demanding that their personal religious views take precedence over the right of women airline passengers to enjoy their flights in peace, or Christian men in legislatures and courts demanding that their personal religious views take precedence over the right of women in their childbearing years to control their own bodies, or Islamic men demanding that their personal religious views take precedence over the right of their wives and daughters to shake hands with male business acquaintances, or men in a hundred other religions demanding that their personal religious views be given precedence in order to oppress women in a thousand other ways, it's all the same: Oppression of women masquerading as religious piety, and always demanding that the world accommodate and enable the oppression.
 
