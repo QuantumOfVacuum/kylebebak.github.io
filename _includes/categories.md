@@ -43,7 +43,7 @@
 #### code / jekyll
 * [Mixing Markdown with HTML, Using kramdown](../post/mixing-markdown-html) <sup>2016-03-20</sup>
 * [Implementing Tags and Categories with Jekyll and GitHub Pages](../post/tags-categories-jekyll) <sup>2016-03-10</sup>
-* [Building your GitHub Pages site alongside Your code](../post/site-alongside-code) <sup>2016-03-01</sup>
+* [Building Your Github Pages Site Alongside Your Code](../post/site-alongside-code) <sup>2016-03-01</sup>
 
 #### code / osx
 * [Screencasts and GIFs with Free OSX Software](../post/osx-screencast-gif) <sup>2016-02-13</sup>
