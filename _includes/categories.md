@@ -41,7 +41,7 @@
 * [ESLint, the Configurable Next-Gen (ES6, JSX) JavaScript Linter](../post/eslint) <sup>2016-02-22</sup>
 
 #### code / jekyll
-* [Mixing Markdown with HTML, Using Kramdown](../post/mixing-markdown-html) <sup>2016-03-20</sup>
+* [Mixing Markdown with HTML, Using kramdown](../post/mixing-markdown-html) <sup>2016-03-20</sup>
 * [Implementing Tags and Categories with Jekyll and GitHub Pages](../post/tags-categories-jekyll) <sup>2016-03-10</sup>
 * [Building your GitHub Pages site alongside Your code](../post/site-alongside-code) <sup>2016-03-01</sup>
 
@@ -82,7 +82,7 @@
 
 ### random
 * [The Comments Section of the New York Times](../post/nytimes-comments) <sup>2016-03-18</sup>
-* [The Original Minimalist](../post/thoreau-original-minimalist) <sup>2016-03-15</sup>
+* [The First Minimalist](../post/thoreau-first-minimalist) <sup>2016-03-15</sup>
 * [Some YouTube Gems](../post/youtube-gems) <sup>2016-02-28</sup>
 
 ### science

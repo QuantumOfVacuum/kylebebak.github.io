@@ -23,7 +23,7 @@ I realized grammar checking is more complicated than I thought. LanguageTool is 
 
 ## On Building a Minimalist Grammar Checker
 
-For those that would undertake this endeavor, I think that [minimalism](./thoreau-original-minimalist) should be the guiding principle, with flexibility a distant second.
+For those that would undertake this endeavor, I think that [minimalism](./thoreau-first-minimalist) should be the guiding principle, with flexibility a distant second.
 
 I want a grammar checker that looks for basic errors and makes no assumptions about "style". If you want your computer telling you ___how___ to write you're a terrible writer, and a grammar checker isn't going to help. UPenn's entertaining Language Log goes into this idea [more in depth](http://itre.cis.upenn.edu/~myl/languagelog/archives/005061.html):
 
