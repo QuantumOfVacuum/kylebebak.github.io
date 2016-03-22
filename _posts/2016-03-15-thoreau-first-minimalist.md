@@ -21,7 +21,7 @@ As a kid, I didn't have anything Apple until the iPod came out, so I was late to
 
 The [Unix philosophy](https://en.wikipedia.org/wiki/Unix_philosophy), the closest thing programmers have to a canon, is all about minimalism.
 
-So is the [Zen of Python](https://www.python.org/dev/peps/pep-0020/), a sort of __coding poem/ten commandments__, including this one:
+So is [The Zen of Python](https://www.python.org/dev/peps/pep-0020/), a sort of __coding poem/ten commandments__, including this one:
 
 >There should be one-- and preferably only one --obvious way to do it.
 
@@ -37,4 +37,4 @@ Why do I like footie, and why do I abhor golf? Minimalism is part of it. If you 
 - Processed Food
 - Processed Bands
 
-It's not like Thoreau invented minimalism. The Zen of Python suggests this aesthetic has as much to do with Buddhism as it does with anything else. But Thoreau is different, because he wasn't a fanatic or an ascetic. Reading him, you get the sense that he was into minimalism because it's __practical__, which is the same role minimalism plays in code.
+It's not like Thoreau invented minimalism. Tim Peters' name for his poem, _The Zen of Python_, suggests this aesthetic has as much to do with Buddhism as it does with anything else. But Thoreau is different, because he wasn't a fanatic or an ascetic. Reading him, you get the sense that he was into minimalism because it's __practical__, which is the same role minimalism plays in code.
