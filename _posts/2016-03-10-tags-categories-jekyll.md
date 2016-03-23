@@ -47,7 +47,7 @@ git add -u :/
 git add _includes/tags.html tags/*
 ~~~
 
-The `-e` flag in the shebang line ensures that the hook exits if any of its commands exit with a non-zero exit status. The individual tag pages (not the main tags index) are built using a [system devised by Stephan Groß](http://www.minddust.com/post/tags-and-categories-on-github-pages/).
+The `-e` flag in the shebang line ensures that the hook, and therefore the commit, fail if any of the commands in the hook exit with a non-zero exit status. The individual tag pages (not the main tags index) are built using a [system devised by Stephan Groß](http://www.minddust.com/post/tags-and-categories-on-github-pages/).
 
 ---
 
