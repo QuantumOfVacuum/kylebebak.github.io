@@ -21,11 +21,18 @@ Simply make or copy your own `GitGutter.sublime-settings` in `Packages/User`, an
   "sublimelinter-warning-marks",
   "sublimelinter-error-marks",
   "sublimelinter-warning-gutter-marks",
-  "sublimelinter-error-gutter-marks"
+  "sublimelinter-error-gutter-marks",
+  "lint-underline-illegal",
+  "lint-underline-violation",
+  "lint-underline-warning",
+  "lint-outlines-illegal",
+  "lint-outlines-violation",
+  "lint-outlines-warning",
+  "lint-annotations",
 ]
 // ...
 ~~~
 
-Voilà! GitGutter gets out of SublimeLinter's way, and everyone's happy. If this fix stops working, restarting Sublime Text is usually sufficient to make it work again.
+Voilà! GitGutter gets out of SublimeLinter's way, and everyone's happy. If this fix stops working, restarting Sublime Text will usually make it work again.
 
 ![](https://raw.githubusercontent.com/kylebebak/kylebebak.github.io/master/_assets/img/git_gutter_sublime_linter.png)
