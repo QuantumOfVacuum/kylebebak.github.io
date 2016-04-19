@@ -22,6 +22,7 @@ tags: [sublime-text, dev-hacks]
 | [Jedi](https://github.com/srusskih/SublimeJEDI) | Python snippets and completions. |
 | [Markdown Editing](https://github.com/SublimeText-Markdown/MarkdownEditing) | Powerful Markdown support with better syntax understanding and good color schemes. |
 | [PackageResourceViewer](https://github.com/skuroda/PackageResourceViewer) | Plugin to assist viewing and editing package resources. |
+| [Project Manager](https://github.com/randy3k/Project-Manager) | Without this plugin ST projects are basically useless. |
 | [ScopeHunter](https://github.com/facelessuser/ScopeHunter) | Get the scope under the cursor. |
 | [Side Bar](https://github.com/titoBouzout/SideBarEnhancements) | Provides enhancements to the operations on files and folders available from the side bar. |
 | [SublimeLinter](https://github.com/SublimeLinter/SublimeLinter3) | Interactive code linting framework. <sup>[(1)](#first)</sup> |
