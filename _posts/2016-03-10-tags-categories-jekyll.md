@@ -21,7 +21,7 @@ For example, any HTML snippet in your `_includes` directory can be pulled into y
 
 All pages can declare which __layout__ they "inherit" from, which makes it easy to standardize the look of your site and separate content from presentation.
 
-Finally, Jekyll allows you to use or write your own [plugins](http://jekyllrb.com/docs/plugins/) to  do all kinds of things, like automatically generate content for your site whenever it's rebuilt, serve as custom Liquid tags and filters, etc.
+Finally, Jekyll allows you to use or write your own [plugins](http://jekyllrb.com/docs/plugins/) to  do all kinds of things, like automatically generate content for your site whenever it's rebuilt, create custom Liquid tags and filters, etc.
 
 
 ## Classifying Content

@@ -29,7 +29,7 @@ A friend that's getting into coding asked me for some general advice. I tried to
 
 ## Other Stuff
 
-Why do I like footie, and why do I abhor golf? Minimalism is part of it. If you make minimalism your top criteria, you'll be compelled to disqualify lots of things, many of which are probably unhealthy:
+Why do I like footy, and why do I abhor golf? Minimalism is part of it. If you make minimalism your top criteria, you'll be compelled to disqualify lots of things, many of which are probably unhealthy:
 
 - Golf
 - American Football
