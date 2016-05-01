@@ -11,7 +11,7 @@ custom_css: page
 
 - __questionnaire__ &mdash; a Python package that prompts users to answer a series of questions using a terminal GUI, and returns the answers. questionnaire makes it trivial to ask different questions based on previous answers, and it allows users to go back and answer questions again. It works with Python 2 and 3.
 
-  The package currently has 3 core prompters that can ask __single option/multiple choice__, __multiple option/multiple choice__, and __raw input__ questions. Extending the package is as simple as writing new prompters. [Check it out here](https://github.com/kylebebak/questionnaire).
+  The package currently has 3 core prompters that can ask __multiple choice/single option__, __multiple choice/multiple option__, and __raw input__ questions. Extending the package is as simple as writing new prompters. [Check it out here](https://github.com/kylebebak/questionnaire).
 
 ## Other
 
