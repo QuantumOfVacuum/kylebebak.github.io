@@ -7,7 +7,7 @@ custom_css: page
 
 ## Python
 
-- __py-geohash-any__ &mdash; A minimal Python geohash package designed to use any url-safe encoding. [Here on Github](https://github.com/kylebebak/py-geohash-any).
+- __py-geohash-any__ &mdash; A minimal Python geohash package designed to use any url-safe encoding. [Here on GitHub](https://github.com/kylebebak/py-geohash-any).
 
 - __questionnaire__ &mdash; a Python package that prompts users to answer a series of questions using a terminal GUI, and returns the answers. questionnaire makes it trivial to ask different questions based on previous answers, and it allows users to go back and answer questions again. It works with Python 2 and 3.
 

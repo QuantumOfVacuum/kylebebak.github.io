@@ -7,11 +7,11 @@ tags: [github, markdown, ms-word]
 
 Companies with any technical chops should use online code repositories filled with HTML or something that compiles to HTML for nearly all of their documents.
 
-Most tech companies write their intra-company documents, such as code documentation, in Markdown, and store them on a cloud repo like Github. This provides a single point of access, versioning, and shared editing, and it's online by definition. More non-tech companies should do the same, because it's not difficult and the benefits are huge.
+Most tech companies write their intra-company documents, such as code documentation, in Markdown, and store them on a cloud repo like GitHub. This provides a single point of access, versioning, and shared editing, and it's online by definition. More non-tech companies should do the same, because it's not difficult and the benefits are huge.
 
 The first tech job I had was working at an IT consulting company in Mexico. They were addicted to MS Word and MS Outlook. When I arrived HR sent me a series of emails with URLs and usernames and passwords for Jira, Trello, Google Docs; attached documents with the company calendar, the sick leave and vacation policy; forms that I was to fill out with my contact info and personal bio and return to sender. There was plenty of info they forgot or didn't think to send that I obtained later by asking around. After all, the emails were coming from lots of different people, and coordinating to make sure they didn't miss anything can't have been easy.
 
-Later, when I started using Git and then Github, I realized how clumsy the onboarding process had been. What if HR had just sent me a link to a private Github repo with stuff like this:
+Later, when I started using Git and then GitHub, I realized how clumsy the onboarding process had been. What if HR had just sent me a link to a private GitHub repo with stuff like this:
 
 - all the WiFi networks and passwords
 - instructions on how to use the printers

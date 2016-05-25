@@ -1,7 +1,7 @@
 <section id="categories" markdown="1">
 * [code](#code) 
     * [algorithms](#code--algorithms) <sup>(2)</sup>
-    * [automation](#code--automation) <sup>(1)</sup>
+    * [automation](#code--automation) <sup>(2)</sup>
     * [github](#code--github) <sup>(2)</sup>
     * [homebrew](#code--homebrew) <sup>(1)</sup>
     * [javascript](#code--javascript) <sup>(1)</sup>
@@ -28,6 +28,7 @@
 * [Counting Events in a Moving Time Window](../post/counting-events-in-a-moving-window) <sup>2014-09-20</sup>
 
 #### code / automation
+* [Ansible para Configuration Management](../post/ansible-best-practices) <sup>2016-05-24</sup>
 * [Vagrant, Ansible and GitHub for Automated Development and Deployment](../post/automating-development-deployment) <sup>2016-01-07</sup>
 
 #### code / github
@@ -43,7 +44,7 @@
 #### code / jekyll
 * [Mixing Markdown with HTML, Using kramdown](../post/mixing-markdown-html) <sup>2016-03-20</sup>
 * [Implementing Tags and Categories with Jekyll and GitHub Pages](../post/tags-categories-jekyll) <sup>2016-03-10</sup>
-* [Building Your Github Pages Site Alongside Your Code](../post/site-alongside-code) <sup>2016-03-01</sup>
+* [Building Your GitHub Pages Site Alongside Your Code](../post/site-alongside-code) <sup>2016-03-01</sup>
 
 #### code / osx
 * [Screencasts and GIFs with Free OSX Software](../post/osx-screencast-gif) <sup>2016-02-13</sup>

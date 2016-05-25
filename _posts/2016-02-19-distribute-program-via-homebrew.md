@@ -7,7 +7,7 @@ tags: [homebrew, shell, distribution, github]
 
 I recently packaged a program I wrote called [notes](https://github.com/kylebebak/notes) for distribution via `Homebrew`, following this [excellent tutorial](http://formalfriday.club/2015/01/05/creating-your-own-homebrew-tap-and-formula.html).
 
-To make your package installable via Homebrew, you put it in a Github repo and create a release. Then you create a __tap__, a repo containing at least one __formula__. The formula is a Ruby file pointing to a downloadable tarball of the package, with instructions on how to build and install it.
+To make your package installable via Homebrew, you put it in a GitHub repo and create a release. Then you create a __tap__, a repo containing at least one __formula__. The formula is a Ruby file pointing to a downloadable tarball of the package, with instructions on how to build and install it.
 
 When a user downloads your package, the tarball is saved to `/Library/Caches/Homebrew`. It gets unzipped and, depending on the formula, parts of the package are copied to `/usr/local/Cellar/<pkg>/<version>`. This directory, in the user's __cellar__, is called a __keg__.
 
@@ -53,7 +53,7 @@ end
 
 This `install` method creates a keg with the same directory tree as the one in source code, while ignoring metadata like `README.md` and `LICENSE`, and tests or CI scripts, if I had any. The `prefix.install` method copies the directories into the cellar without polluting the executable namespace under `/usr/local/bin`. The only symlink created by this formula is `/usr/local/bin/notes`.
 
-Once you have your tarball release and your tap on Github, users can install your program with two shell commands:
+Once you have your tarball release and your tap on GitHub, users can install your program with two shell commands:
 
 ~~~sh
 brew tap kylebebak/notes
