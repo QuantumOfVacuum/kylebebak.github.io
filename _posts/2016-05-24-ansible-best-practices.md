@@ -51,7 +51,7 @@ Muchos servidores se agrupan de forma natural:
 - __por ambiente__: development vs. staging vs. production
 - __por función__: api vs. message vs. database...
 
-Los `inventory` files te permiten apuntar a grupos, y heredar `group_vars` para que éstos no se tienen que definir más de una vez. Ve este ejemplo: [inventories/staging](https://github.com/kylebebak/ansible-best-practices/blob/master/resources/staging)
+Los `inventory` files te permiten apuntar a grupos, y heredar `group_vars` para que éstos no se tienen que definir más de una vez. Ve este ejemplo: [inventories/staging](https://github.com/kylebebak/ansible-best-practices/blob/master/resources/staging).
 
 
 
@@ -65,12 +65,12 @@ Manejar __env_vars__ puede ser muy doloroso:
 - Cómo asegurar que los mismos se deployan a todos los servidores? Combinar y setear tus __env_vars__ en el [Ansible environment keyword](http://docs.ansible.com/ansible/playbooks_environment.html), y hacer un rol que lee éstos, crea un archivo de `.env`, y lo copia al target machine. Así sólo tienes que definir __env_vars__ en tus `group_vars`, y los mismos que usan los playbooks de Ansible estarán en tus servidores.
   - [roles/env_vars/tasks/main.yml](https://github.com/kylebebak/ansible-best-practices/blob/master/resources/main.yml)
   - [roles/env_vars/templates/environment.j2](https://github.com/kylebebak/ansible-best-practices/blob/master/resources/environment.j2)
-- Cómo asegurar que están encriptados, para que se puedan meter a version control y así compartirse de forma eficiente con todos los miembros del equipo? Meter __env_vars__ secretos en archivos de __group_vars__ encriptados, usando, por ejemplo, [Ansible Vault](http://docs.ansible.com/ansible/playbooks_vault.html). Sólo tienes que desencriptarlos cuando quieres cambiarlos, o agregar más variables secretos. Puedes usar un Git hook de [pre-commit](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks) para asegurar que estos los archivos con variables secretos no se pueden meter a version control cuando no están encriptados.
+- Cómo asegurar que están encriptados, para que se puedan meter a version control y así compartirse de forma eficiente con todo el equipo? Meter __env_vars__ secretos en archivos de __group_vars__ encriptados, usando, por ejemplo, [Ansible Vault](http://docs.ansible.com/ansible/playbooks_vault.html). Sólo tienes que desencriptar estos archivos cuando quieres cambiarlos. Puedes usar un Git hook de [pre-commit](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks) para rechazar commits que contienen archivos secretos sin encriptar.
   - [inventories/staging](https://github.com/kylebebak/ansible-best-practices/blob/master/resources/staging)
   - [group_vars/all-secret.template.yml](https://github.com/kylebebak/ansible-best-practices/blob/master/resources/all-secret.template.yml)
   - [group_vars/all-secret.yml](https://github.com/kylebebak/ansible-best-practices/blob/master/resources/all-secret.yml)
   - [hooks/pre-commit](https://github.com/kylebebak/ansible-best-practices/blob/master/resources/pre-commit)
-- Cómo hacerlo para que se haga de forma automática, para que nunca pienses en los __env_vars__ otra vez? Definir la ruta al archivo `.env` en el target machine con Ansible, y usar la misma ruta en tus scripts de `upstart` para que los servicios puedan sourcear `.env` cuando corren.
+- Cómo deployar __env_vars__ a tus servidores, y asegurar que todos los procesos tengan acceso a ellos? Definir la ruta al archivo `.env` en el target machine con Ansible, y usar la misma ruta en tus scripts de `upstart` para que los servicios puedan sourcear `.env` cuando corren.
   - [templates/upstart-gunicorn.conf.j2](https://github.com/kylebebak/ansible-best-practices/blob/master/resources/upstart-gunicorn.conf.j2)
 
 
@@ -101,7 +101,7 @@ Para no tener que memorizar los comandos de `ansible-playbook`, o copiar y pegar
 
 Como ejemplo haremos un deploy a los servidores `staging` de `webapp` y `message`, especificando el branch que queremos deployar. Después reiniciaremos los servicios en estos servidores.
 
-El programa usa una librería de Python que escribí, [questionnaire](https://github.com/kylebebak/questionnaire), para poder definir las preguntas, desplegarlas, y devolver los resultados. __questionnaire__ sirve para cualquier encuesta que quieres armar desde el shell. Funciona en Python 2 y 3, y se puede instalar con `pip install questionnaire`.
+El programa usa una librería de Python que escribí, [questionnaire](https://github.com/kylebebak/questionnaire), para poder definir las preguntas, presentarlas, y devolver los resultados. __questionnaire__ sirve para cualquier encuesta que quieres armar desde el shell. Funciona en Python 2 y 3, y se puede instalar con `pip install questionnaire`.
 
 
 ## Unas Mejores Prácticas
