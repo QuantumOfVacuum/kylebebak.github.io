@@ -13,6 +13,10 @@ custom_css: page
 
   The package currently has 3 core prompters that can ask __multiple choice/single option__, __multiple choice/multiple option__, and __raw input__ questions. Extending the package is as simple as writing new prompters. [Check it out here](https://github.com/kylebebak/questionnaire).
 
+## Ansible
+
+- __kylebebak.tmux__ &mdash; An Ansible role for a badass `tmux` installation on Ubuntu. Installable via [Ansible Galaxy](https://github.com/kylebebak/ansible-tmux). Source code [on GitHub](https://github.com/kylebebak/ansible-tmux).
+
 ## Other
 
 - __Notes__ &mdash; Notes for hackers. Notes provides a minimal syntax for quick access, editing capability, and search functionality to all notes under a directory of your choosing. Under your notes directory, you can organize notes into any folder structure you like.
