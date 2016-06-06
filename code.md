@@ -15,7 +15,7 @@ custom_css: page
 
 ## Ansible
 
-- __kylebebak.tmux__ &mdash; An Ansible role for a badass `tmux` installation on Ubuntu. Installable via [Ansible Galaxy](https://github.com/kylebebak/ansible-tmux). Source code [on GitHub](https://github.com/kylebebak/ansible-tmux).
+- __kylebebak.tmux__ &mdash; An Ansible role for a badass `tmux` installation on Ubuntu. Installable via Ansible Galaxy. [Check it out here](https://github.com/kylebebak/ansible-tmux).
 
 ## Other
 
