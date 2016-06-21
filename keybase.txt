@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/kylebebak
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://kylebebak.github.io
+  * I am kylebebak (https://keybase.io/kylebebak) on keybase.
+  * I have a public key with fingerprint 4200 B2E2 B69F 9E45 688B  5EF1 4170 6FCA FA75 227D
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01017ae4ed5ec007deaada7b7a7beefd9aa62fba1bd235738574104b4835e39a84b50a",
+            "fingerprint": "4200b2e2b69f9e45688b5ef141706fcafa75227d",
+            "host": "keybase.io",
+            "key_id": "41706fcafa75227d",
+            "kid": "01017ae4ed5ec007deaada7b7a7beefd9aa62fba1bd235738574104b4835e39a84b50a",
+            "uid": "6c2560b45b12f9d352e0430077286d19",
+            "username": "kylebebak"
+        },
+        "service": {
+            "hostname": "kylebebak.github.io",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1466540319,
+    "expire_in": 157680000,
+    "prev": "025bd8007fc0a13e6f19588c3bc7e95d8d09f75e5661557fff1cd282da568017",
+    "seqno": 10,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.53
+Comment: https://keybase.io/crypto
+
+yMIqAnicrZJbSFRBGMfXSnMXrMCHCgrrtOSSpuc257LdsIKULiBUYkbLzJk5u8fL
+nu2cs5qYBKUUVg+9dMGKIuim9FCBBilqWZKCZGZGRVp0MQMrIgkkm2P1Ej02MAzz
+8f9+833/+e6mTPf4EvyNe/NvnEzrTehuPxf3FBjn06oYZOJKJljFlJCpg5RiYjuh
+EgMzQYblWE6GRCQYEI1lZUwgxFBGMt2E6FiFUOJ1BDmEeQHIggJkkWNFJCoCIIIK
+FREBFjKZjG5Ew8SKWUbUoViRZ1nEEx5Jqq4SEUiKggDROZGTWUnXoA5lwPMypokR
+03YzaHEI2iTLMGmMXkJT5f1D/5/rjk/hJI0HEotEgDheV7EAeMKKAuXKvCJhTnWF
+NrGisIy4tVaWEkQQLGGqMxkaLjc04jrrtvK3JCtsOJE4+tVXzDIdUzNLqSDiODE7
+6AKcypibUUFQ6DcrhIwopn7SjHJi2YYZZYIcVWqO4cI5UZKAyAqcmsmQPTHDIiHD
+VQBZUli63HdIuWsSDxCmIVnXWMgJRNI5FSiKJiBNJirACmZVXQYESBIHgKzrOqdh
+XuExpB9G/WXc7nZHTcqmUAeGKdM2wlHoxC3CVHe07ZzhSfB5khKnuYPm8Xnn/Bm/
+2rGZk1rf8+pLawOzJf+31i3inSVh74nhA+cvbLxSM/Rpy4If91+m52lnrqVmvF6o
+BsxlF8MTt4O3ikjZk4pjUvzU03eFp4PvB0as9KEDX/HNZ4MrZtmHk7ty+rOT6p2i
+NtwzsqY89+OX7Fxfpe/VcNXYsZ7uMu5oSmvjo/q1i1LrGz7kr54MFGzePi9wdP/x
+za3tc9c3qf7u2jwp0HDwQtVopq/G21Y70tqbXNocGZn4PPgi58jVuoeBXVnWRu+h
+scVfdnQWzE/sWDna9KB/w1BXX0vuprd2rG7596Z7Ff6W5n2ByPjWg5v6k/TkDYXb
+iseLz0QGOjPW7T876Oj+VW+uey8PLH38E7HrR8o=
+=aYic
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/kylebebak
+
+==================================================================
