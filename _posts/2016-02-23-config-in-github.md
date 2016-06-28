@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Configuration Files that Deserve GitHub Repos"
-categories: code github
+categories: code git
 tags: [github, sublime-text, dotfiles]
 ---
 

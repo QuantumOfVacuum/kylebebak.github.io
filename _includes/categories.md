@@ -2,7 +2,7 @@
 * [code](#code) 
     * [algorithms](#code--algorithms) <sup>(2)</sup>
     * [automation](#code--automation) <sup>(2)</sup>
-    * [github](#code--github) <sup>(2)</sup>
+    * [git](#code--git) <sup>(3)</sup>
     * [homebrew](#code--homebrew) <sup>(1)</sup>
     * [javascript](#code--javascript) <sup>(1)</sup>
     * [jekyll](#code--jekyll) <sup>(3)</sup>
@@ -31,9 +31,10 @@
 * [Ansible para Configuration Management](../post/ansible-best-practices) <sup>2016-05-24</sup>
 * [Vagrant, Ansible and GitHub for Automated Development and Deployment](../post/automating-development-deployment) <sup>2016-01-07</sup>
 
-#### code / github
+#### code / git
+* [Git Helpers and Other Utility Functions Using pick](../post/git-utility-functions-pick) <sup>2016-06-26</sup>
 * [Configuration Files that Deserve GitHub Repos](../post/config-in-github) <sup>2016-02-23</sup>
-* [Github and Markdown for Company Documents](../post/markdown-for-company-docs) <sup>2016-02-18</sup>
+* [GitHub and Markdown for Company Documents](../post/markdown-for-company-docs) <sup>2016-02-18</sup>
 
 #### code / homebrew
 * [How to Distribute Your Program via Homebrew](../post/distribute-program-via-homebrew) <sup>2016-02-19</sup>
