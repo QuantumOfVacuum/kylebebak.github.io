@@ -13,12 +13,12 @@ Then I read about [pick](https://github.com/thoughtbot/pick) from [thoughtbot](h
 
 I realized that selecting branches and commit hashes would be a __lot__ faster with fuzzy search. So, I wrote [some utility functions](https://github.com/kylebebak/dotfiles/blob/master/dotfiles/.helpers/pick.sh) that invoke pick to do exactly that, and needless to say my usage of and satisfaction with Git have gone up by an order of magnitude =). Here are descriptions of what they do:
 
-- `gbp [command]`: Pick a branch and pass it to `command` (`gbp git checkout`, `gbp git merge`, etc). If `command` is not passed, pick and copy branch name.
+- `gbp [command]`: Pick a branch and pass it to __command__ (__gbp git checkout__, __gbp git merge__, etc). If __command__ is not passed, pick and copy branch name.
 - `gbpf`: Pick a branch, pick a modified file from this branch, and diff it.
-- `ghp [command]`: Pick a past commit and pass it to `command`. If command is not passed, pick and copy commit hash.
+- `ghp [command]`: Pick a past commit and pass it to __command__. If __command__ is not passed, pick and copy commit hash.
 - `ghpf`: Pick a past commit, pick a modified file from this commit, and diff it.
-- `gbc [arg]`: Pick a branch and find out how far ahead or behind (number of commits) it is compared with current branch. If __any__ `arg` is passed, pick both branches.
-- `gbca [arg]`: Like `gbc`, but shows names and hashes of commits.
+- `gbc [arg]`: Pick a branch and find out how far ahead or behind (number of commits) it is compared with current branch. If any __arg__ is passed, pick both branches.
+- `gbca [arg]`: Like __gbc__, but shows names and hashes of commits.
 - `gdp`: Pick a file that has been modified since the last commit, and diff it.
 
 Here are a couple of gifs to show how this works, first with `ghp` and then with `gbca`.
