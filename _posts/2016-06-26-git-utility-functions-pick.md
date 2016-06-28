@@ -7,11 +7,11 @@ tags: [git, shell, dev-hacks, pick, thoughtbot]
 
 ## Git and pick
 
-`git` can be a bit of a pain, especially when passing branches or commit hashes as args. Big projects have lots of branches and have tons of commits. Finding and copying commit hashes to compare commits, for example, is awkward and slow. This made me reluctant to use Git, which meant I wasn't getting nearly as much mileage out of it as I should have been.
+`git` can be a bit of a pain, especially when passing branches or commit hashes as args. Big projects have lots of branches and tons of commits. Finding and copying commit hashes to compare commits, for example, is awkward and slow. In my case, the awkwardness meant I wasn't getting nearly as much mileage out of Git as I should have been.
 
 Then I read about [pick](https://github.com/thoughtbot/pick) from [thoughtbot](https://thoughtbot.com/). It's a command line tool you can use to "fuzzy select anything". Pipe it a list of options and an interface will open, allowing you to fuzzy search the options and send the one you pick to `stdout`.
 
-I realized that selecting branches and commit hashes would be a __lot__ faster with fuzzy search. So, I wrote [some utility functions](https://github.com/kylebebak/dotfiles/blob/master/dotfiles/.helpers/pick.sh) that invoke pick to do exactly that, and needless to say my usage of and satisfaction with Git have gone up by an order of magnitude =). Here are descriptions of what they do:
+I realized that selecting branches and commit hashes would be a __lot__ faster with fuzzy search. So, I wrote [some utility functions](https://github.com/kylebebak/dotfiles/blob/master/dotfiles/.helpers/pick.sh) that invoke pick to do exactly that, and needless to say my usage of and satisfaction with Git have gone up by an order of magnitude =). Here are descriptions of the helper functions.
 
 - `gbp [command]`: Pick a branch and pass it to __command__ (__gbp git checkout__, __gbp git merge__, etc). If __command__ is not passed, pick and copy branch name.
 - `gbpf`: Pick a branch, pick a modified file from this branch, and diff it.
@@ -21,13 +21,11 @@ I realized that selecting branches and commit hashes would be a __lot__ faster w
 - `gbca [arg]`: Like __gbc__, but shows names and hashes of commits.
 - `gdp`: Pick a file that has been modified since the last commit, and diff it.
 
-Here are a couple of gifs to show how this works, first with `ghp` and then with `gbca`.
+The gif below gives an idea of just how effective `pick` can be for these tasks, using `ghpf`. Remember, this function is for first picking a commit, then picking one of the files that has changed since this commit, and diffing the file. At the end, `ghpf` echoes the command it executed.
 
-![pick ghp](https://raw.githubusercontent.com/kylebebak/kylebebak.github.io/master/_assets/img/pick_ghp.gif)
+![pick ghpf](https://raw.githubusercontent.com/kylebebak/kylebebak.github.io/master/_assets/img/pick_ghpf.gif)
 
----
-
-![pick gbca](https://raw.githubusercontent.com/kylebebak/kylebebak.github.io/master/_assets/img/pick_gbca.gif)
+Think of how long it would take to run `git log` and `git diff` and build up that command in your text editor. Using `pick` it took a few seconds.
 
 
 ## Other Helpers
@@ -40,6 +38,6 @@ ps -ef | pick | awk '{print \$2}' | xargs echo -n | pbcopy
 
 That's right... Pick any process on your machine, parse and clean the `PID`, and copy it to the clipboard.
 
-![pick pid](https://raw.githubusercontent.com/kylebebak/kylebebak.github.io/master/_assets/img/pick_pid.gif)
+![pick psp](https://raw.githubusercontent.com/kylebebak/kylebebak.github.io/master/_assets/img/pick_psp.gif)
 
 Basically, `pick` is your friend whenever you need to search a list of anything. For commands that generate big lists, `pick` can be so effective that it changes how you think of and use these commands, which is what happened to me with `git`.
