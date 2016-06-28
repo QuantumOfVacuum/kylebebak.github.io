@@ -21,11 +21,11 @@ I realized that selecting branches and commit hashes would be a __lot__ faster w
 - `gbca [arg]`: Like __gbc__, but shows names and hashes of commits.
 - `gdp`: Pick a file that has been modified since the last commit, and diff it.
 
-The gif below gives an idea of just how effective `pick` can be for these tasks, using `ghpf`. Remember, this function is for first picking a commit, then picking one of the files that has changed since this commit, and diffing the file. At the end, `ghpf` echoes the command it executed.
+The gif below gives an idea of just how effective `pick` can be for these tasks, using `ghpf`. Remember, this function is for first picking a commit, then picking one of the files that has changed since that commit, and diffing the file. At the end, `ghpf` echoes the command it executed.
 
 ![pick ghpf](https://raw.githubusercontent.com/kylebebak/kylebebak.github.io/master/_assets/img/pick_ghpf.gif)
 
-Think of how long it would take to run `git log` and `git diff` and build up that command in your text editor. Using `pick` it took a few seconds.
+Think of how long it would take to run `git log` and `git diff` and build up that command in your text editor. Using `pick` it takes a few seconds.
 
 
 ## Other Helpers
