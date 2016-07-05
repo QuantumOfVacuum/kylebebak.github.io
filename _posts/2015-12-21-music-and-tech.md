@@ -17,11 +17,11 @@ But I think it has, a little, and I aim to prove it via the method of cherry-pic
 
 ---
 
-In 1970 soul was [Al Green](http://www.robertchristgau.com/xg/music/green-76.php). In 2016 soul is [Adele](http://www.newyorker.com/culture/cultural-comment/the-singularity-of-adeles-soul).
+In 1970 soul was [Al Green](http://www.robertchristgau.com/xg/music/green-76.php). In 2016 soul is [Adele](http://www.newyorker.com/culture/cultural-comment/the-singularity-of-adeles-soul). Try fucking while Adele sings "Someone Like You" in the background. I dare you.
 
-In 1965 the biggest act in the world was the Beatles. In 1820 it was Beethoven. In 2016 its Beyoncé, whose hits are written by a [pair of Norwegians armed with Auto-Tune](http://www.newyorker.com/magazine/2012/03/26/the-song-machine).
+In 1965 the biggest act in the world was the Beatles. In 1820 it was Beethoven. In 2016 it's Beyoncé, whose hits are written by luminaries such as [Tor Hermansen and Mikkel Eriksen](http://www.newyorker.com/magazine/2012/03/26/the-song-machine), collectively known as Stargate. My grandma, who smoked 60 cigarettes a day in front of the tv in her nightgown, watched Stargate. Yeah.
 
-In 1965 Palo Alto produced The Grateful Dead and a year later San Francisco produced Sly Stone, musicians that tried to experience life and death, that joined "the fatalism of the physical frontier with the wonder of the psychedelic one". In 2016 SF produces Uber and [120 million dollar mayonnaise](./software-eating-the-world).
+In 1965 Palo Alto produced The Grateful Dead and a year later San Francisco produced Sly Stone, musicians trying to experience life and death, joining "the fatalism of the physical frontier with the wonder of the psychedelic one". In 2016 SF produces Uber and [120 million dollar mayonnaise](./software-eating-the-world).
 
 Ask yourself: 50 years from now, will people regard Beyoncé like they regard the Beatles? Or like they regard Beethoven?
 
