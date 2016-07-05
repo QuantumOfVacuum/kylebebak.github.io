@@ -47,7 +47,7 @@ Here's what the project directory for `SortList` looks like:
 
 ## Distribution via Package Control
 
-  Most of the info in this section comes from [the Package Control docs]()https://packagecontrol.io/docs/submitting_a_package, which are excellent. This is just shorter and based on my experience.
+>Most of the info in this section comes from [the Package Control docs](https://packagecontrol.io/docs/submitting_a_package), which are excellent. This is just shorter and based on my experience.
 
 To make your package downloadable via __Package Control__, fork [package_control_channel](https://github.com/wbond/package_control_channel), and add the following to `repository/<letter>.json`, where `<letter>` is the first letter in the `name` of your package:
 
