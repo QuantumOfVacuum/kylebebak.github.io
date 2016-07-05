@@ -9,7 +9,7 @@
     * [osx](#code--osx) <sup>(1)</sup>
     * [random](#code--random) <sup>(5)</sup>
     * [shell](#code--shell) <sup>(2)</sup>
-    * [sublime-text](#code--sublime-text) <sup>(7)</sup>
+    * [sublime-text](#code--sublime-text) <sup>(8)</sup>
 * [footy](#footy) <sup>(1)</sup>
 * [mexico](#mexico) 
     * [restaurantes](#mexico--restaurantes) <sup>(2)</sup>
@@ -62,6 +62,7 @@
 * [A Custom Shell Function (userbin) for Simplifying Development of CL Tools](../post/userbin) <sup>2016-02-04</sup>
 
 #### code / sublime-text
+* [Writing and Distributing Sublime Text Packages](../post/writing-sublime-text-packages) <sup>2016-07-03</sup>
 * [Setting Up the Seti UI Theme in Sublime Text](../post/seti-ui) <sup>2016-03-06</sup>
 * [Getting GitGutter to Play Nice with SublimeLinter](../post/git-gutter) <sup>2016-03-04</sup>
 * [How to Quickly Cycle Between Sublime Text Color Schemes](../post/cycle-color-theme) <sup>2016-03-03</sup>

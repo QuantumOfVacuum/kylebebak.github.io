@@ -14,12 +14,11 @@ Then I read about [pick](https://github.com/thoughtbot/pick) from [thoughtbot](h
 Looking at the gif on pick's README, I realized selecting branches and commit hashes would be a __lot__ faster with fuzzy search, so I wrote [some utility functions](https://github.com/kylebebak/dotfiles/blob/master/dotfiles/.helpers/pick.sh) that invoke pick to do exactly that. Since then my usage of and satisfaction with Git have gone up drastically. Here are descriptions of the helper functions.
 
 - `gbp [command]`: Pick a branch and pass it to __command__ (__gbp git checkout__, __gbp git merge__, etc). If __command__ is not passed, pick and copy branch name.
-- `gbpf`: Pick a branch, pick a modified file from this branch, and diff it.
+- `gbpf [-s]`: Pick a branch, pick a modified file from this branch, and diff it. If `-s` is passed, invoke `git show` on the file.
 - `ghp [command]`: Pick a past commit and pass it to __command__. If __command__ is not passed, pick and copy commit hash.
-- `ghpf`: Pick a past commit, pick a modified file from this commit, and diff it.
-- `gbc [arg]`: Pick a branch and find out how far ahead or behind (number of commits) it is compared with current branch. If any __arg__ is passed, pick both branches.
-- `gbca [arg]`: Like __gbc__, but shows names and hashes of commits.
-- `gdp`: Pick a file that has been modified since the last commit, and diff it.
+- `ghpf [-s]`: Pick a commit, pick a modified file from this commit, and diff it. If `-s` is passed, invoke `git show` on the file.
+- `gbc [-b]`: Pick a branch and find out how far ahead or behind (number of commits) it is compared with the current branch. If __-b__ is passed, pick both branches.
+- `gbca [-b]`: Like __gbc__, but shows names and hashes of commits.
 
 The gif below gives an idea of just how effective `pick` can be for these tasks, using `ghpf`. Remember, this function is for first picking a commit, then picking one of the files that has changed since that commit, and diffing the file. At the end, `ghpf` echoes the command it executed.
 

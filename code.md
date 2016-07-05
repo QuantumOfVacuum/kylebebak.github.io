@@ -13,9 +13,18 @@ custom_css: page
 
   The package currently has 3 core prompters that can ask __multiple choice/single option__, __multiple choice/multiple option__, and __raw input__ questions. Extending the package is as simple as writing new prompters. [Check it out here](https://github.com/kylebebak/questionnaire).
 
+
+## Sublime Text
+
+- __SortList__ &mdash; [A cross-language plugin](https://github.com/kylebebak/sublime_sort_list) for sorting items in comma-separated lists. Handles lists without opening and closing list delimiters, and lists with trailing commas. Preserves lists' quote style (single vs. double).
+
+- __auto-save__ &mdash; [A plugin](https://github.com/jamesfzhang/auto-save) that automatically saves the current file after every modification. Not mine, but I wrote decent chunk of the API.
+
+
 ## Ansible
 
 - __kylebebak.tmux__ &mdash; An Ansible role for a badass `tmux` installation on Ubuntu. Installable via Ansible Galaxy. [Check it out here](https://github.com/kylebebak/ansible-tmux).
+
 
 ## Other
 
