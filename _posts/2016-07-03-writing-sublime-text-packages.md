@@ -5,6 +5,8 @@ categories: code sublime-text
 tags: [sublime-text, package-control, sublime-plugins, python]
 ---
 
+I wrote this post after finishing my first ST plugin, a simple chunk of code that [sorts comma-separted lists](https://github.com/kylebebak/sublime_sort_list).
+
 ## Writing the Plugin
 
 A Sublime Text plugin consists of, at the very least, a Python module with a class that inherits from one of the `sublime_plugin` classes, like `TextCommand`. If you want to expose settings that the user can modify, you will need a `.sublime-settings` file. The convention is to name it `<package_name>.sublime-settings`. Users can override it by simply placing a file with the same name in their `Packages/User` directory.
