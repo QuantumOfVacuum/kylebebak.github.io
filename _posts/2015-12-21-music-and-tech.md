@@ -17,7 +17,7 @@ But I think it has, a little, and I aim to prove it via the method of cherry-pic
 
 ---
 
-In 1970 soul was [Al Green](http://www.robertchristgau.com/xg/music/green-76.php). In 2016 soul is [Adele](http://www.newyorker.com/culture/cultural-comment/the-singularity-of-adeles-soul). Try fucking while Adele sings "Someone Like You" in the background. I dare you.
+In 1970 soul was [Al Green](http://www.robertchristgau.com/xg/music/green-76.php). In 2016 soul is [Adele](http://www.newyorker.com/culture/cultural-comment/the-singularity-of-adeles-soul). Try fucking while Adele sings "Someone Like You" in the background.
 
 In 1965 the biggest act in the world was the Beatles. In 1820 it was Beethoven. In 2016 it's Beyoncé, whose hits are written by luminaries such as [Tor Hermansen and Mikkel Eriksen](http://www.newyorker.com/magazine/2012/03/26/the-song-machine), collectively known as Stargate. My grandma, who smoked 60 cigarettes a day in front of the tv in her nightgown, watched Stargate.
 
