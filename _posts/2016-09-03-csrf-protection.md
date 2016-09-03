@@ -9,12 +9,12 @@ tags: [security, csrf, django]
 
 Cross-site request forgery is when malicious `siteB.com` tricks a user into making a request against `siteA.com`. Also known as __session riding__, it takes advantage of the fact that the user's browser passes along siteA's cookies in the request to `siteA.com`, regardless of where the request originated. If siteA is just looking at the session cookie to see if the user is logged, it will treat the request as valid.
 
-The danger is when siteB executes an "unsafe" request (not idempotent) against siteA, for example to post something to the user's profile, or send a message to another user, or whatever. CSRF protection is a reliable method to ensure the request __really__ did originate with `siteA.com`, preventing siteB from getting the user to make requests against siteA.
+The danger is when siteB executes an "unsafe" (not idempotent) request against siteA, for example to post something to the user's profile, or send a message to another user, or whatever. CSRF protection is a reliable method to ensure the request __really__ did originate with `siteA.com`, preventing siteB from getting the user to make requests against siteA.
 
 
 ## How to protect against CSRF?
 
-There are explanations of varying quality out there. Many gloss over the details and seem to imply that setting a secret cookie on the browser and having the browser submit the cookie on each request is sufficient. But this is exactly how sessions work, [and sessions do nothing to prevent CSRF](https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)#Prevention_measures_that_do_NOT_work).
+There are explanations of varying quality out there. Many gloss over the details and seem to imply that setting a secret cookie on the browser and having the browser submit the cookie with requests is sufficient. But this is exactly how sessions work, [and sessions do nothing to prevent CSRF](https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)#Prevention_measures_that_do_NOT_work).
 
 The posts that finally helped me "get it" were [this](http://security.stackexchange.com/questions/47198/is-djangos-built-in-csrf-protection-enough) and [this](https://cloudunder.io/blog/csrf-token/).
 
@@ -46,4 +46,4 @@ This pattern is like the first one, except that no cookie is used. Instead, the 
 
 The only difference is that the __session_csrftoken__ is stored in a database record, by the server, instead of in a cookie, by the browser. It is no more difficult to implement. But it is a little more secure.
 
-Because it relies on a record in a DB instead of a cookie, it's not vulnerable to cookie forcing. While it shouldn't be possible for one site to edit cookies set by another site, XSS, for example, breaks this assumption. That said, as mentioned in one of the posts I link to, if your site is vulnerable to XSS then CSRF is probably the least of your worries.
+Because it relies on a DB record instead of a cookie, it's not vulnerable to cookie forcing. While it shouldn't be possible for one site to edit cookies set by another site, there are attacks, like XSS, that break this assumption. That said, as mentioned in one of the posts I link to, if your site is vulnerable to XSS then CSRF is probably the least of your worries.
