@@ -2,7 +2,7 @@
 layout: post
 title: "How CSRF protection works"
 categories: code security
-tags: [security, csrf, django]
+tags: [security, web, csrf, django]
 ---
 
 ## What is CSRF?
