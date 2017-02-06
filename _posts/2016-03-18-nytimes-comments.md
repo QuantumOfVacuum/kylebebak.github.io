@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "The Comments Section of the New York Times"
 categories: random
 tags: [nytimes, web-2.0, comments, news]

@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: 'Exponential Navigation, and Chaining Sublime Text API Calls'
 categories: code sublime-text
 tags: [sublime-text, dev-hacks]

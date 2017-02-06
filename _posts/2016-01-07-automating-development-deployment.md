@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "Vagrant, Ansible and GitHub for Automated Development and Deployment"
 categories: code automation
 tags: [vagrant, ansible, github, dev-hacks, automation]

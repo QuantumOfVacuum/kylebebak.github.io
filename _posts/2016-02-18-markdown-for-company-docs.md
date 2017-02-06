@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "GitHub and Markdown for Company Documents"
 categories: code git
 tags: [github, markdown, ms-word]

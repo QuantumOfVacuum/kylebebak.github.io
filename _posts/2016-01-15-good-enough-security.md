@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "Good Enough Security, Backup, Encryption"
 categories: code random
 tags: [security, backup, lastpass]

@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "Sublime Text Packages I've Used"
 categories: code sublime-text
 tags: [sublime-text, dev-hacks]

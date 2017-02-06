@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "How CSRF protection works"
 categories: code security
 tags: [security, web, csrf, django]

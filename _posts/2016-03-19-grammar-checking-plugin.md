@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "My Short-Lived Plan to Write a Grammar-Checking Plugin for Sublime Text"
 categories: code random
 tags: [sublime-text, grammar, linting]

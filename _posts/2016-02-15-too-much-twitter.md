@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "Too Much Twitter"
 categories: code random
 tags: [twitter]

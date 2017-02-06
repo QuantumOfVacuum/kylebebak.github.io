@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "Mixing Markdown with HTML, Using kramdown"
 categories: code jekyll
 tags: [markdown, jekyll, kramdown, parsers]

@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "El Tapatío"
 categories: mexico restaurantes
 tags: [mexico-city, food]

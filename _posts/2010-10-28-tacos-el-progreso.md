@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "Tacos el Progreso"
 categories: mexico restaurantes
 tags: [mexico-city, food, tacos]

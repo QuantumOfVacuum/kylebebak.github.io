@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "Implementing Tags and Categories with Jekyll and GitHub Pages"
 categories: code jekyll
 tags: [github, github-pages, jekyll, git, markdown]

@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "Building Your GitHub Pages Site Alongside Your Code"
 categories: code jekyll
 tags: [github, github-pages, jekyll]

@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "Some YouTube Gems"
 categories: random
 tags: [youtube, booze]

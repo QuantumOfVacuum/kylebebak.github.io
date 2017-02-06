@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "Screencasts and GIFs with Free OSX Software"
 categories: code osx
 tags: [tutorials, osx]

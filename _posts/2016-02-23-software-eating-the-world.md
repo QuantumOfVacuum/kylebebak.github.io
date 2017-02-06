@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "Things Software Doesn't Eat, and Software Not Worth Eating"
 categories: code random
 tags: [startups, food]

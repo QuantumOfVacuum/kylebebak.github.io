@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "Writing and Distributing Sublime Text Packages"
 categories: code sublime-text
 tags: [sublime-text, package-control, sublime-plugins, python]

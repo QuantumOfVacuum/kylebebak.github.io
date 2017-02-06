@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "Git Helpers and Other Utility Functions Using pick"
 categories: code git
 tags: [git, shell, dev-hacks, pick, thoughtbot]

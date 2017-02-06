@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "The First Minimalist"
 categories: random
 tags: [thoreau, philosophy, minimalism]

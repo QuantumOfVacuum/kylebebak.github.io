@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "Add Bash and Zsh Tab Completion to Your Shell Script"
 categories: code shell
 tags: [shell, ui, software-design]

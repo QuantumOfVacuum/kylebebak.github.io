@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "Ansible para Configuration Management"
 categories: code automation
 tags: [mexico-city, ansible, github, automation, talks]

@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "Counting Events in a Moving Time Window"
 categories: code algorithms
 tags: [algorithms, discrete-event-simulation]
