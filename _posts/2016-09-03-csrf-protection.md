@@ -8,7 +8,7 @@ tags: [security, web, csrf, django]
 
 ## What is CSRF?
 
-Cross-site request forgery is when malicious `siteB.com` tricks a user into making a request against `siteA.com`. Also known as __session riding__, it takes advantage of the fact that the user's browser passes along siteA's cookies in the request to `siteA.com`, regardless of where the request originated. If siteA is just looking at the session cookie to see if the user is logged, it will treat the request as valid.
+Cross-site request forgery is when malicious `siteB.com` tricks a user into making a request against `siteA.com`. Also known as __session riding__, it takes advantage of the fact that the user's browser passes along siteA's cookies in the request to `siteA.com`, regardless of where the request originated. If siteA is just looking at the session cookie to see if the user is logged in, it will treat the request as valid.
 
 The danger is when siteB executes an "unsafe" (not idempotent) request against siteA, for example to post something to the user's profile, or send a message to another user, or whatever. CSRF protection is a reliable method to ensure the request __really__ did originate with `siteA.com`, preventing siteB from getting the user to make requests against siteA.
 
