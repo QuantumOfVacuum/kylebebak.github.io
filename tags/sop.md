@@ -1,6 +1,6 @@
 ---
 layout: tag
-tag: api
-permalink: /tag/api/
+tag: sop
+permalink: /tag/sop/
 custom_css: tag
 ---

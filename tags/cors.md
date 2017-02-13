@@ -1,6 +1,6 @@
 ---
 layout: tag
-tag: drf
-permalink: /tag/drf/
+tag: cors
+permalink: /tag/cors/
 custom_css: tag
 ---

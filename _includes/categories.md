@@ -1,7 +1,6 @@
 <section id="categories" markdown="1">
 * [code](#code) 
     * [algorithms](#code--algorithms) <sup>(2)</sup>
-    * [api](#code--api) <sup>(1)</sup>
     * [automation](#code--automation) <sup>(2)</sup>
     * [git](#code--git) <sup>(3)</sup>
     * [homebrew](#code--homebrew) <sup>(1)</sup>
@@ -28,9 +27,6 @@
 #### code / algorithms
 * [Clustering Location History Records: How and Why](../post/clustering-location-history-records) <sup>2015-12-03</sup>
 * [Counting Events in a Moving Time Window](../post/counting-events-in-a-moving-window) <sup>2014-09-20</sup>
-
-#### code / api
-* [Build your API with DRF](../post/DRF-for-APIs) <sup>2016-09-10</sup>
 
 #### code / automation
 * [Ansible para Configuration Management](../post/ansible-best-practices) <sup>2016-05-24</sup>
@@ -63,8 +59,8 @@
 * [Good Enough Security, Backup, Encryption](../post/good-enough-security) <sup>2016-01-15</sup>
 
 #### code / security
-* [SOP and CORS](../post/sop-cors) <sup>2016-09-07</sup>
-* [How CSRF protection works](../post/csrf-protection) <sup>2016-09-03</sup>
+* [SOP and CORS, and how CSRF Protection Depends on SOP](../post/sop-cors) <sup>2016-09-07</sup>
+* [How CSRF Protection Works](../post/csrf-protection) <sup>2016-09-03</sup>
 
 #### code / shell
 * [Add Bash and Zsh Tab Completion to Your Shell Script](../post/enabling-tab-completion) <sup>2016-02-19</sup>
