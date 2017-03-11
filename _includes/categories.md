@@ -8,7 +8,7 @@
     * [jekyll](#code--jekyll) <sup>(3)</sup>
     * [osx](#code--osx) <sup>(1)</sup>
     * [random](#code--random) <sup>(5)</sup>
-    * [security](#code--security) <sup>(2)</sup>
+    * [security](#code--security) <sup>(1)</sup>
     * [shell](#code--shell) <sup>(2)</sup>
     * [sublime-text](#code--sublime-text) <sup>(8)</sup>
 * [footy](#footy) <sup>(1)</sup>
@@ -59,7 +59,6 @@
 * [Good Enough Security, Backup, Encryption](../post/good-enough-security) <sup>2016-01-15</sup>
 
 #### code / security
-* [SOP and CORS, and how CSRF Protection Depends on SOP](../post/sop-cors) <sup>2016-09-07</sup>
 * [How CSRF Protection Works](../post/csrf-protection) <sup>2016-09-03</sup>
 
 #### code / shell
