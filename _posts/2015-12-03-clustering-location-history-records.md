@@ -45,12 +45,12 @@ Here's how it works. In the first pass through the data, each record is compared
 
 ~~~py
 visit = None
-for each record in records:
-# records sorted from oldest to newest
-  if visit and visit.distance_to(record) <= R:
-    visit.add(record)
-  else:
-    visit = Visit(record)
+for record in records:
+    # records sorted from oldest to newest
+    if visit and visit.distance_to(record) <= R:
+        visit.add(record)
+    else:
+        visit = Visit(record)
 ~~~
 
 Next, potential visits with fewer than `N` constituent records are discarded. The remaining visits have pointers to their first and last records, which allows the second pass through the data to focus only on the unclustered records. From each sequence of records linking one visit to another, a trip is instantiated.
