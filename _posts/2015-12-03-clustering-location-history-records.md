@@ -44,13 +44,18 @@ We also exploit our classification scheme: we are looking for an alternating seq
 Here's how it works. In the first pass through the data, each record is compared to the most recently instantiated __potential visit__, whose latitude and longitude are the average coordinates of the records it contains. If the record is within a distance `R` of the visit, it gets added to the visit, and the visit's latitude and longitude are recalculated to reflect the addition of the record. If the record is not within `R` of the visit, a new potential visit is instantiated containing only this record. In Python:
 
 ~~~py
-visit = None
-for record in records:
+visits = [] # potential visits
+visit = Visit(records[0])
+
+for record in records[1:]:
     # records sorted from oldest to newest
-    if visit and visit.distance_to(record) <= R:
+    if visit.distance_to(record) <= R:
         visit.add(record)
     else:
-        visit = Visit(record)
+        visits.append(visit)
+        visit = Visit(record) # instantiate new potential visit
+
+visits.append(visit) # append last visit
 ~~~
 
 Next, potential visits with fewer than `N` constituent records are discarded. The remaining visits have pointers to their first and last records, which allows the second pass through the data to focus only on the unclustered records. From each sequence of records linking one visit to another, a trip is instantiated.
