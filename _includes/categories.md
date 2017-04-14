@@ -15,7 +15,7 @@
 * [mexico](#mexico) 
     * [restaurantes](#mexico--restaurantes) <sup>(2)</sup>
 * [music](#music) <sup>(1)</sup>
-* [random](#random) <sup>(3)</sup>
+* [random](#random) <sup>(4)</sup>
 * [science](#science) <sup>(1)</sup>
 
 </section>
@@ -90,6 +90,7 @@
 * [Music, Money, and Tech](../post/music-and-tech) <sup>2015-12-21</sup>
 
 ### random
+* [Technology Might Ruin Democracy](../post/fake-news-machine-learning) <sup>2017-04-13</sup>
 * [The Comments Section of the New York Times](../post/nytimes-comments) <sup>2016-03-18</sup>
 * [The First Minimalist](../post/thoreau-first-minimalist) <sup>2016-03-15</sup>
 * [Some YouTube Gems](../post/youtube-gems) <sup>2016-02-28</sup>
