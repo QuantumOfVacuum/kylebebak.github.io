@@ -19,7 +19,7 @@ The priority is differentiation, and it may be causing a sort of Cambrian explos
 
 
 ## Fake News
-There are incentives for news organizations to target smaller niches, which means we can expect political news to get more diverse, and thus more polarized. This doesn't bode well for establishing political consensus, but I don't see that as fatal to democracy. The rise of news with little or no basis in fact is also part of increasing diversity, which is more worrying.
+There are incentives for news organizations to target smaller niches, which means we can expect political news to get more diverse, and thus more polarized. This doesn't bode well for establishing political consensus, but I don't see that as fatal to democracy. But the rise of news with little or no basis in fact is also part of increasing diversity, which is more worrying.
 
 Taking after President Trump, let's call it fake news. It didn't take long for the [world's](https://www.wired.com/2017/02/veles-macedonia-fake-news/) [tech entrepreneurs](https://www.nytimes.com/2017/01/18/us/fake-news-hillary-clinton-cameron-harris.html) to see the potential in fake news. Forays into journalism made by Macedonian teenagers or an American college grad looking to pay off his loans make for fascinating reads, but their primary subject is opportunism rather than electioneering.
 
