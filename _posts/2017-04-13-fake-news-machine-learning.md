@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: "Technology Might Ruin Democracy"
 categories: random
-tags: [politics, machine-learning, society, news, fake-news]
+tags: [politics, machine-learning, news, fake-news]
 ---
 
 
@@ -13,9 +13,9 @@ Like many people, I was thinking about this problem after the 2016 election. The
 ## News
 60 years ago, people got most of their information from a handful of newspapers and magazines. News was comparatively uncontroversial, because that was better for business. Today, as technology removes distribution costs, even smaller players can attract a global readership. This makes carving out a niche, for example an ideological niche, a much more viable strategy, because there are billions of potential readers.
 
-Another driving factor is the increasing number of options. With specialized tech news, political news, soccer news, and fake news (not the kind you're thinking of; I mean the Onion; I'll get back to the other kind) all a click away, there's less need for sources with broad but bland perspectives, like CNN.
+Another driving force is the increasing number of options. With specialized tech news, political news, soccer news, and fake news (not the kind you're thinking of; I mean the Onion; I'll get back to the other kind) all a click away, there's less need for sources with broad but bland perspectives, like CNN.
 
-The priority is differentiation, and it may be causing a sort of Cambrian explosion of news phyla. The trend reinforces itself. Content targets smaller niches of readers, readers get a taste for specialized content, content targets yet smaller niches...
+The priority is differentiation, and it may be causing a sort of Cambrian explosion of news phyla. The trend reinforces itself. Content targets smaller niches of readers, readers get a taste for specialized content, content targets yet smaller niches.
 
 
 ## Fake News
