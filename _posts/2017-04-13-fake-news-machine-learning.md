@@ -39,6 +39,6 @@ Here's where things get scary.
 
 If there are already bots whose speech is real enough to offend people, soon there will be bots whose speech is real enough to mislead people.
 
-Once the average person can be misled by a bot, it will become extremely cheap to mislead huge numbers of people. This invalidates democracy as a system of government.
+Once the average person can be misled by a bot, it will become extremely cheap to mislead huge numbers of people. __Free bots = free noise__. This invalidates democracy as a system of government.
 
 I'm sure there are governments working on this right now. I bet there are startups working on it. What do you think?
