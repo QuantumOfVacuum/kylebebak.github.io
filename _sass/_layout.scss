@@ -185,7 +185,7 @@
 
 .post-link {
   display: block;
-  font-size: 20px;
+  font-size: $base-font-size * 1.25;
 }
 
 
@@ -237,7 +237,7 @@ h1, .post-title {
 
 .post-navigation {
   margin-top: 1em;
-  font-size: 14px;
+  font-size: $small-font-size;
   display: block;
   width: auto;
   overflow: hidden;

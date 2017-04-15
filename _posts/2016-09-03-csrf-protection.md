@@ -10,9 +10,14 @@ tags: [security, web, csrf, django]
 
 Cross-site request forgery is when you visit `evil.com`, and `evil.com` makes a request against `A.com` without your knowledge. It's trivial for `evil.com` to do this: it just includes some JS in the page that makes a request against `A.com`. If you're logged in to `A.com` when the request gets made, bad things can happen if `A.com` doesn't have CSRF protection.
 
-Also known as __session riding__, CSRF takes advantage of the fact that your browser passes along __A__'s cookies in the request to `A.com`, regardless of where the request originated. If __A__'s request validation consists only of checking the session cookie to see if you're logged in, it will treat the request from __evil__ as valid!
+Also known as __session riding__, CSRF takes advantage of the fact that your browser passes along __A__'s cookies in the request to `A.com`, regardless of where the request originated. If __A__'s request validation consists only of checking the session cookie to see if you're logged in, it will treat the request from __evil__ as valid! __\*\*__
 
 So if __evil__ executes an "unsafe" request against __A__, for example to post something to your profile, or send a message to your friend, __A__ will oblige. CSRF protection is a reliable method to ensure the request __really__ did originate with `A.com`, preventing any evil site from making unsafe requests against __A__.
+
+>__\*\*__ If you think __this is unsafe__, and you're wondering __why browsers do this automatically__:
+
+>1. you're right
+>2. read [this](http://127.0.0.1:4000/post/browser-security-worse-is-better)
 
 
 ## How to protect against CSRF?
