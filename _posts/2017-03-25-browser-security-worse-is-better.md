@@ -1,73 +1,102 @@
 ---
 layout: post
 comments: true
-title: "Cookies and CSRF: How Web Browsers Take the Worse is Better Approach to Security"
+title: "Web Browsers Take the Worse is Better Approach to Security"
 categories: code security
 tags: [security, web, sop, cors, cookies, csrf]
 ---
 
-## The Browser makes writing web apps easy
+## Worse Is Better
+Check out [this essay](https://www.dreamsongs.com/RiseOfWorseIsBetter.html). What Jeff Atwood calls the money shot:
 
-You have 
+>However, I believe that worse-is-better, even in its strawman form, has better survival characteristics than the-right-thing, and that the New Jersey approach when used for software is a better approach than the MIT approach.
 
-https://www.jwz.org/doc/worse-is-better.html
+What exactly is meant by __worse-is-better__ and __the-right-thing__ is [open to discussion](http://yosefk.com/blog/what-worse-is-better-vs-the-right-thing-is-really-about.html), but the essence is that evolutionary fitness is a good criteria for selecting a design philosophy.
 
-http://programmers.stackexchange.com/questions/216605/how-do-web-servers-enforce-the-same-origin-policy
-
-
->The same origin policy is a wholly client-based restriction, and is primarily engineered to protect users, not services.
-
->You're asking for a server-side mechanism to distinguish between requests made by my program (which can send anything) and requests made by a browser that has a page loaded from a permitted origin. It simply can't be done
+I think the people who implemented security in web browsers knew about this criteria, and they decided __worse-is-better__ was indeed better.
 
 
->The same-origin policy was invented because it prevents code from one website from accessing credential-restricted content on another site.
+## JS and SOP
+The web wasn't envisioned as a platform for applications. But soon after graphical web browsers appeared, people realized that the web could offer immersive, dynamic experiences. Netscape founder Marc Andreesen proposed a "glue language" that could be written into HTML and interpreted by the browser as necessary to realizing this vision. The result was JavaScript.
 
-vulnerabilities are required by web standards
-less secure and more adoption, or secure and obscure
+"Magic" cookies were introduced a year before JavaScript, to help add state to the stateless HTTP protocol. In HTTP, each request-response cycle stands on its own. When the cycle finishes the connection is terminated, and neither the client nor the server is required to remember anything about it. 
 
+This is a huge limitation. Without a persistence mechanism for the browser, there's no way for a server to know if a string of requests are coming from the same client. In other words, no sessions. Cookies overcome this in a simple way. The server can tell the client to create a cookie with the `Set-Cookie` response header, and the browser complies. The cookie knows the `domain` for which it was set, and the browser will now send it along with any request to that domain. This way, the server can check the session cookie bundled with the request to associate the request with a user.
 
-http://security.stackexchange.com/questions/97825/is-cors-helping-in-anyway-against-cross-site-forgery
+JS allows clients to manipulate cookies and read their values. But this raises an obvious security problem: what happens if you log in to `A`, then you go to `B`, and JS running on `B` reads `A`'s session cookie? Even before AJAX requests, it was trivial for `B` to save your session cookie on its server, and boom, your session just got hijacked.
 
-
->All the SOP does is prevent the response from being read by another domain (aka origin). This is irrelevant to whether a CSRF attack is successful or not.
-
-
->All CORS does is relax the SOP when it is active. It does not increase security, it simply allows some exceptions to take place.
+This sort of scenario motivated the __same-origin policy__. The SOP is implemented __by browsers__. It protects users by not allowing a script running on `B` to read any of `A`'s content, which includes cookies set by `A`.
 
 
->So if you have http://data.example.org you can set response headers to allow http://site.example.com to make AJAX requests and retrieve data from your API.
+### iframe
+The SOP also ensures the `iframe` element can't be used to read content from another domain. Without the SOP, if `A` has an iframe that embeds content from `bank`, and you're logged in to `bank`, JS running on `A` could just parse the DOM embedded in the iframe and read your account information.
+
+The SOP means that the even though your browser renders `bank`'s content within `A`, the browser won't let JS see anything in the iframe. Even methods such as [getImageData](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/getImageData), which extracts the color of each pixel in a rectangular region of the window, have to be disabled if any content in the current window was loaded from a different domain.
+
+Note: as a developer, you can control whether other sites can load your site in an iframe by using the [X-Frame-Options](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options) response header.
 
 
-## What does it protect against?
+### AJAX
+Eventually Microsoft gave JS the ability to perform asynchronous HTTP requests. The SOP comes into play here in much the same way it does with the iframe. Imagine you visit `A`. Unbeknownst to you, some JS running on `A` sends a GET request to `bank` and reads your account info in the response. Then it immediately POSTs your account info to some endpoint controlled by `A`.
 
-### EVERYTHING
-Without SOP, evil.com has JS that makes a GET request against `bank.com/account_info`. Cookies are sent automatically, including the auth cookie for `bank.com`. `bank.com` obliges, returns the contents of `bank.com/account_info`, evil.com reads the contents, game over
-
-So, SOP will allow the browser to make the request, but it won't allow it to READ the response.
-
-Relation to CSRF: without SOP, JS from siteB makes AJAX GET request against a page on siteA, which has form with embedded CSRF token in hidden form field. siteB can read response, parse DOM tree, find token, and then make a POST request against siteB with token inserted in body. Voila, CSRF protection implemented by siteA is broken.
+Because JS APIs keep expanding to keep pace with demands for fancier web apps, enforcing the SOP requires constant vigilance. [There are lots of subtleties](https://blogs.msdn.microsoft.com/ieinternals/2009/08/28/same-origin-policy-part-1-no-peeking/).
 
 
-## It's only necessary in the browser
-The browser is promiscuous, it visits lots of sites. When people wanted to make sites more interesting, they introduced JS, and now many of these sites are really applications. Without SOP, all of these applications could read each other's data and modify each other's state!
+## CORS
+So, what happens if your API runs on `api.com` and your site is on `site.com`? You want users visiting your site to be able to consume your API, but the SOP prevents `site` from reading API responses.
 
-In mobile, it's not necessary, because you don't run multiple applications that share the same context/environment.
-
-For example, [AsyncStorage](https://facebook.github.io/react-native/docs/asyncstorage.html) in React Native is global to the application, but it's not shared between applications. Mobile apps are sandboxed, while web apps aren't, because they all run in the same context (your browser).
+You can use the [Access-Control-Allow-Origin](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS#Access-Control-Allow-Origin) response header to tell browsers that JS running on `site` has access to your API's resources. In other words, you can use this header to override the SOP if it's getting in your way.
 
 
-This is why cookies were implemented in browsers in 1995. Without cookies or other browser storage APIs, maintaining state across requests, for example to keep a user logged in, was difficult and prone to error. You might keep connections open for as long as you wanted sessions to be active, wasting a bunch of memory on your server, or you might try putting the session id in the query string, which is [insecure for many reasons](https://security.stackexchange.com/questions/14093/why-is-passing-the-session-id-as-url-parameter-insecure).
+## XSS
+How can an attacker get around the SOP? Let's say he wants to read your account info from `bank`. Because of the SOP, using JS to do this won't work, __unless the JS is running on bank.com__.
 
-With mobile apps, you have access to all of the OS APIs, as opposed to only the APIs exposed by the browser. OS APIs include those for persisting things, which means cookies are uneccessary -- you can persist a session token on the device and add it to request headers of every request.
+If the attacker can get `bank` to run some malicious JS on its page, the SOP is bypassed. Getting `bank` to run this JS is what cross-site scripting is all about. This might be done, for example, by taking advantage of an insecure public comments section. Imagine comments are saved to a DB, and rendered in a list when the page is loaded.
+
+If the comments aren't validated or encoded, they could contain <script>...</script> tags filled with malicious JS that gets executed by the browser for any visitor that loads the page. Maybe this JS reads the visitor's account info and POSTs it via AJAX to an endpoint the attacker controls.
+
+[XSS vulnerabilities are very dangerous and very common](https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)).
 
 
+## CSRF
+One thing the SOP doesn't prevent is cross-site request forgery. This is because browsers don't stop JS running on one domain from making a request against another domain, they only prevent JS from reading the response.
 
-To see why cookies are useful, imagine a site that does sessions without cookies, now that the [Web Storage API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API) is implemented by most browsers. The app could use JS to persist a session id to local storage, then read it back and pass it to the server with every request.
+It's perfectly kosher for JS running on `A` to hit `B` with a POST request, even if this request might have unpleasant side effects for a user of `B`. Because `B`s cookies get sent along with the request, if a user is logged into `B`, `B` will treat the request as though it came from a logged in user.
+
+Every site that uses session cookies is vulnerable to CSRF. This means the vast majority of web apps. [Preventing it](/post/csrf-protection) is not trivial, especially if you're not using a framework.
+
+The obvious way to avoid this mess would have been "same-site" cookies, that only get sent to the same domain that set them. These wouldn't work as tracking cookies, but they would be just fine for most session cookies. Strangely, no such cookie existed until Google introduced the `SameSite` cookie in 2016, in Chrome 51. Few sites use `SameSite` cookies, even if "cross-domain" cookies are unnecessary, because the latter variety was the only option for more than 20 years. This gives you an idea of how browser vendors approach security.
+
+
+## Insecure by Design
+Your data would be safer if JS didn't have so many privileges, but web apps would be less interactive, ads would be less relevant, Facebook and Google wouldn't know every last thing about you...
+
+In other words, [it works this way for a reason](https://www.owasp.org/images/9/90/Web_Security_Fundamentally_Broken.pdf).
+
+>vulnerabilities are required by web standards... less secure and more adoption, or secure and obscure...
+
+The market is right, evolution is right, worse-is-better is better.
+
+
+## This a only problem in the browser
+The browser is promiscuous, it visits lots of sites. Many of these sites are really applications, which means you have a bunch of __applications that share an environment (your browser)__. They're sandboxed from your OS, but not from each other.
+
+With mobile apps this isn't an issue.
+
+For example, [AsyncStorage](https://facebook.github.io/react-native/docs/asyncstorage.html) in React Native is global to the application, but it's not shared between applications. 
+
+
+## Cookies illustrate the big difference between mobile apps and web apps
+Without cookies, maintaining state across requests in web apps is difficult and prone to error.
+
+With mobile apps, you have access to the OS APIs, as opposed to only those exposed by the browser. The OS lets you persist things, which means cookies are unnecessary -- you can persist a session token on the device and add it to request headers of every request.
+
+Now that the [Web Storage API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API) is implemented by most browsers, you might wonder if it could replace cookies. Imagine sessions. After login, the client could write the session id to local storage, then read it back and pass it to the server with every request.
 
 But unless your site is an SPA, this is much easier said than done. What happens if a user clicks on a link to go to a different page? His browser doesn't know about your custom auth protocol, and it's not going to pass the session id with the request. You would need JS to run on every page in your site to do that for him.
 
+In a mobile app, this is essentially what you do, but it's easy, because developers have control over everything that happens when a user navigates from one screen to another, including the requests that are made. In a web app, unless you hack the browser's behavior with JS, clicking a link always has the same effect:
+  - the browser issues a plain GET request to the URL in the href attribute
+  - the browser renders a new page with the response content
 
-
-In a mobile app, this is essentially what you do, but it's easy, because developers have control over everything that happens when a user navigates from one screen to another, including the requests that are made. In a web app, unless you hack the browser's behavior with JS, clicking a link makes the browser issue a plain GET request to the URL.
-
-So, to recap, cookies allow you to persist  this is why cookies exist.
+Security is easier with mobile apps because each app is sandboxed, and developers have total control over the request-response cycle. This makes mobile apps easier to build than web apps, at least in my experience. But web offers a richness and ease of connectivity that mobile can only dream of, which is why it will continue to be the world's premier application platform for the foreseeable future.

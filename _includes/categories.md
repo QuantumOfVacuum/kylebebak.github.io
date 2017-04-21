@@ -59,7 +59,7 @@
 * [Good Enough Security, Backup, Encryption](../post/good-enough-security) <sup>2016-01-15</sup>
 
 #### code / security
-* [Cookies and CSRF: How Web Browsers Take the Worse is Better Approach to Security](../post/browser-security-worse-is-better) <sup>2017-03-25</sup>
+* [Web Browsers Take the Worse is Better Approach to Security](../post/browser-security-worse-is-better) <sup>2017-03-25</sup>
 * [Authentication and CSRF Protection in Django Rest Framework](../post/django-rest-framework-auth-csrf) <sup>2017-03-20</sup>
 * [How CSRF Protection Works](../post/csrf-protection) <sup>2016-09-03</sup>
 

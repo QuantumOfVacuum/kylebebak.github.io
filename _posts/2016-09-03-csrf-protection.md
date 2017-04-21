@@ -17,7 +17,7 @@ So if __evil__ executes an "unsafe" request against __A__, for example to post s
 >__\*\*__ If you think __this is unsafe__, and you're wondering __why browsers do this automatically__:
 
 >1. you're right
->2. read [this](http://127.0.0.1:4000/post/browser-security-worse-is-better)
+>2. read [this](/post/browser-security-worse-is-better)
 
 
 ## How to protect against CSRF?
