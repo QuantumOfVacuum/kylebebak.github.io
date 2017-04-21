@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: "Web Browsers Take the Worse is Better Approach to Security"
 categories: code security
-tags: [security, web, sop, cors, cookies, csrf]
+tags: [security, web, sop, cors, cookies, csrf, xss]
 ---
 
 ## Worse Is Better
@@ -55,7 +55,7 @@ If the attacker can get `bank` to run some malicious JS on its page, the SOP is 
 
 If the comments aren't validated or encoded, they could contain <script>...</script> tags filled with malicious JS that gets executed by the browser for any visitor that loads the page. Maybe this JS reads the visitor's account info and POSTs it via AJAX to an endpoint the attacker controls.
 
-[XSS vulnerabilities are very dangerous and very common](https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)).
+[XSS vulnerabilities are very dangerous and very common](https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)). Here's a [decidedly innovative example](/post/self-inflicted-xss).
 
 
 ## CSRF
