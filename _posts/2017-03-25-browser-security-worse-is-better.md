@@ -11,27 +11,27 @@ Check out [this essay](https://www.dreamsongs.com/RiseOfWorseIsBetter.html). Wha
 
 >However, I believe that worse-is-better, even in its strawman form, has better survival characteristics than the-right-thing, and that the New Jersey approach when used for software is a better approach than the MIT approach.
 
-What exactly is meant by __worse-is-better__ and __the-right-thing__ is [open to discussion](http://yosefk.com/blog/what-worse-is-better-vs-the-right-thing-is-really-about.html), but the essence is that evolutionary fitness is a good criteria for selecting a design philosophy.
+What exactly is meant by __worse-is-better__ and __the-right-thing__ is [open to discussion](http://yosefk.com/blog/what-worse-is-better-vs-the-right-thing-is-really-about.html), but the essence is that reproductive fitness is a good criteria for selecting a design philosophy.
 
 I think the people who implemented security in web browsers knew about this criteria, and they decided __worse-is-better__ was indeed better.
 
 
 ## JS and SOP
-The web wasn't envisioned as a platform for applications. But soon after graphical web browsers appeared, people realized that the web could offer immersive, dynamic experiences. Netscape founder Marc Andreesen proposed a "glue language" that could be written into HTML and interpreted by the browser as necessary to realizing this vision. The result was JavaScript.
+The web wasn't envisioned as a platform for applications. But when graphical web browsers appeared, people realized that the web could offer immersive, dynamic experiences. Netscape founder Marc Andreesen proposed a "glue language" that could be written into HTML and interpreted by the browser as necessary to realizing this vision. The result was JavaScript.
 
-"Magic" cookies were introduced a year before JavaScript, to help add state to the stateless HTTP protocol. In HTTP, each request-response cycle stands on its own. When the cycle finishes the connection is terminated, and neither the client nor the server is required to remember anything about it. 
+"Magic" cookies were introduced a year before JavaScript, to add state to the stateless HTTP protocol. In HTTP, each request-response cycle stands on its own. When the cycle finishes the connection is terminated, and neither the client nor the server is required to remember anything about it. 
 
-This is a huge limitation. Without a persistence mechanism for the browser, there's no way for a server to know if a string of requests are coming from the same client. In other words, no sessions. Cookies overcome this in a simple way. The server can tell the client to create a cookie with the `Set-Cookie` response header, and the browser complies. The cookie knows the `domain` for which it was set, and the browser will now send it along with any request to that domain. This way, the server can check the session cookie bundled with the request to associate the request with a user.
+So under HTTP as originally conceived, there's no way for a server to know if a string of requests are coming from the same client. In other words, no sessions. Cookies overcome this in a simple way. The server can tell the client to create a cookie with the `Set-Cookie` response header, and the browser complies. The cookie knows the `domain` for which it was set, and the browser sends it along with any request to that domain. The server can check the session cookie bundled with the request and associate the request with a user.
 
-JS allows clients to manipulate cookies and read their values. But this raises an obvious security problem: what happens if you log in to `A`, then you go to `B`, and JS running on `B` reads `A`'s session cookie? Even before AJAX requests, it was trivial for `B` to save your session cookie on its server, and boom, your session just got hijacked.
+JS allows clients to manipulate cookies and read their values. But this raises an obvious security issue: what happens if you log in to `bank`, then you go to `A`, and JS running on `A` reads `bank`'s session cookie? Even without AJAX requests, it would be trivial for `A` to save your session cookie on its server, and boom, your session just got hijacked.
 
-This sort of scenario motivated the __same-origin policy__. The SOP is implemented __by browsers__. It protects users by not allowing a script running on `B` to read any of `A`'s content, which includes cookies set by `A`.
+This sort of scenario motivated the __same-origin policy__. The SOP is implemented __by browsers__. It protects users by not allowing a script running on `A` to read content from any other domain, which includes cookies set by another domain.
 
 
 ### iframe
-The SOP also ensures the `iframe` element can't be used to read content from another domain. Without the SOP, if `A` has an iframe that embeds content from `bank`, and you're logged in to `bank`, JS running on `A` could just parse the DOM embedded in the iframe and read your account information.
+The SOP also ensures the `iframe` element can't be abused to read content from another domain. Without the SOP, if `A` has an iframe that embeds content from `bank`, and you're logged in to `bank`, JS running on `A` could just parse the DOM embedded in the iframe and read your account information.
 
-The SOP means that the even though your browser renders `bank`'s content within `A`, the browser won't let JS see anything in the iframe. Even methods such as [getImageData](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/getImageData), which extracts the color of each pixel in a rectangular region of the window, have to be disabled if any content in the current window was loaded from a different domain.
+The SOP means that the even though your browser renders `bank`'s content within `A`, the browser won't let JS see anything in the iframe. Even methods such as [getImageData](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/getImageData), which extracts the color of each pixel in a rectangular region of a canvas, have to be disabled if any images in the current window were loaded from a different domain.
 
 Note: as a developer, you can control whether other sites can load your site in an iframe by using the [X-Frame-Options](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options) response header.
 
@@ -45,7 +45,7 @@ Because JS APIs keep expanding to keep pace with demands for fancier web apps, e
 ## CORS
 So, what happens if your API runs on `api.com` and your site is on `site.com`? You want users visiting your site to be able to consume your API, but the SOP prevents `site` from reading API responses.
 
-You can use the [Access-Control-Allow-Origin](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS#Access-Control-Allow-Origin) response header to tell browsers that JS running on `site` has access to your API's resources. In other words, you can use this header to override the SOP if it's getting in your way.
+You can use the [Access-Control-Allow-Origin](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS#Access-Control-Allow-Origin) response header to tell browsers that JS running on `site` has access to your API's resources, even though they come from a different domain. In other words, you can use this header to override the SOP if it's getting in your way.
 
 
 ## XSS
@@ -59,9 +59,9 @@ If the comments aren't validated or encoded, they could contain <script>...</scr
 
 
 ## CSRF
-One thing the SOP doesn't prevent is cross-site request forgery. This is because browsers don't stop JS running on one domain from making a request against another domain, they only prevent JS from reading the response.
+One thing the SOP doesn't prevent is cross-site request forgery. This is because browsers don't stop JS running on one domain from making a request against another domain, they only prevent reading of the response.
 
-It's perfectly kosher for JS running on `A` to hit `B` with a POST request, even if this request might have unpleasant side effects for a user of `B`. Because `B`s cookies get sent along with the request, if a user is logged into `B`, `B` will treat the request as though it came from a logged in user.
+It's perfectly kosher for JS running on `A` to hit `bank` with a POST request, even if this request might have unpleasant side effects for a user of `bank`. Because `bank`s cookies get sent along with the request, if a user is logged into `bank`, `bank` will treat the request as though it came from a logged in user.
 
 Every site that uses session cookies is vulnerable to CSRF. This means the vast majority of web apps. [Preventing it](/post/csrf-protection) is not trivial, especially if you're not using a framework.
 
@@ -95,7 +95,7 @@ Now that the [Web Storage API](https://developer.mozilla.org/en-US/docs/Web/API/
 
 But unless your site is an SPA, this is much easier said than done. What happens if a user clicks on a link to go to a different page? His browser doesn't know about your custom auth protocol, and it's not going to pass the session id with the request. You would need JS to run on every page in your site to do that for him.
 
-In a mobile app, this is essentially what you do, but it's easy, because developers have control over everything that happens when a user navigates from one screen to another, including the requests that are made. In a web app, unless you hack the browser's behavior with JS, clicking a link always has the same effect:
+In a mobile app, this is essentially what you do, but it's easy, because developers have control over everything that happens when a user navigates from one screen to another, including the requests that are made. In a web app, unless you use JS to hack the browser's behavior, clicking a link always has the same effect:
   - the browser issues a plain GET request to the URL in the href attribute
   - the browser renders a new page with the response content
 
