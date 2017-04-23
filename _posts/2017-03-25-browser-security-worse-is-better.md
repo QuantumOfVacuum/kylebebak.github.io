@@ -31,7 +31,7 @@ This sort of scenario motivated the __same-origin policy__. The SOP is implement
 ### iframe
 The SOP also ensures the `iframe` element can't be abused to read content from another domain. Without the SOP, if `A` has an iframe that embeds content from `bank`, and you're logged in to `bank`, JS running on `A` could just parse the DOM embedded in the iframe and read your account information.
 
-The SOP means that the even though your browser renders `bank`'s content within `A`, the browser won't let JS see anything in the iframe. Even methods such as [getImageData](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/getImageData), which extracts the color of each pixel in a rectangular region of a canvas, have to be disabled if any images in the current window were loaded from a different domain.
+The SOP means that even though your browser renders `bank`'s content within `A`, the browser won't let JS see anything in the iframe. 
 
 Note: as a developer, you can control whether other sites can load your site in an iframe by using the [X-Frame-Options](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options) response header.
 
@@ -39,7 +39,7 @@ Note: as a developer, you can control whether other sites can load your site in 
 ### AJAX
 Eventually Microsoft gave JS the ability to perform asynchronous HTTP requests. The SOP comes into play here in much the same way it does with the iframe. Imagine you visit `A`. Unbeknownst to you, some JS running on `A` sends a GET request to `bank` and reads your account info in the response. Then it immediately POSTs your account info to some endpoint controlled by `A`.
 
-Because JS APIs keep expanding to keep pace with demands for fancier web apps, enforcing the SOP requires constant vigilance. [There are lots of subtleties](https://blogs.msdn.microsoft.com/ieinternals/2009/08/28/same-origin-policy-part-1-no-peeking/).
+Because JS APIs keep expanding to keep pace with demands for fancier web apps, enforcing the SOP requires constant vigilance. Here's an example occasioned by the addition of the `canvas` element: [getImageData](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/getImageData), which extracts the color of each pixel in a rectangular region of a canvas, is disabled if any images in the current window were loaded from a different domain. [There are lots of subtleties](https://blogs.msdn.microsoft.com/ieinternals/2009/08/28/same-origin-policy-part-1-no-peeking/).
 
 
 ## CORS
@@ -61,11 +61,11 @@ If the comments aren't validated or encoded, they could contain <script>...</scr
 ## CSRF
 One thing the SOP doesn't prevent is cross-site request forgery. This is because browsers don't stop JS running on one domain from making a request against another domain, they only prevent reading of the response.
 
-It's perfectly kosher for JS running on `A` to hit `bank` with a POST request, even if this request might have unpleasant side effects for a user of `bank`. Because `bank`s cookies get sent along with the request, if a user is logged into `bank`, `bank` will treat the request as though it came from a logged in user.
+It's perfectly kosher for JS running on `A` to hit `bank` with a POST request, even if this request might have unpleasant side effects for a user of `bank`. Because `bank`'s cookies get sent along with the request, if a user is logged into `bank`, `bank` will treat the request as though it came from a logged in user.
 
 Every site that uses session cookies is vulnerable to CSRF. This means the vast majority of web apps. [Preventing it](/post/csrf-protection) is not trivial, especially if you're not using a framework.
 
-The obvious way to avoid this mess would have been "same-site" cookies, that only get sent to the same domain that set them. These wouldn't work as tracking cookies, but they would be just fine for most session cookies. Strangely, no such cookie existed until Google introduced the `SameSite` cookie in 2016, in Chrome 51. Few sites use `SameSite` cookies, even if "cross-domain" cookies are unnecessary, because the latter variety was the only option for more than 20 years. This gives you an idea of how browser vendors approach security.
+The obvious way to avoid this mess is "same-site" cookies: cookies that only get sent when the domain in the address bar matches the domain that set the cookies. These wouldn't work as tracking cookies, but they would be just fine for most session cookies. Strangely, no such cookie existed until Google introduced the `SameSite` cookie in 2016, in Chrome 51. Few sites use `SameSite` cookies, even if "cross-domain" cookies are unnecessary, because the latter variety was the only option for more than 20 years. This gives you an idea of how browser vendors approach security.
 
 
 ## Insecure by Design
