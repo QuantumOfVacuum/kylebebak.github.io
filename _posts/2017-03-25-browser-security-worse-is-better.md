@@ -63,9 +63,9 @@ One thing the SOP doesn't prevent is cross-site request forgery. This is because
 
 It's perfectly kosher for JS running on `A` to hit `bank` with a POST request, even if this request might have unpleasant side effects for a user of `bank`. Because `bank`'s cookies get sent along with the request, if a user is logged into `bank`, `bank` will treat the request as though it came from a logged in user.
 
-Every site that uses session cookies is vulnerable to CSRF. This means the vast majority of web apps. [Preventing it](/post/csrf-protection) is not trivial, especially if you're not using a framework.
+Every site that uses session cookies must protect against CSRF. This means the vast majority of web apps. [Doing so](/post/csrf-protection) is not trivial, especially if you're not using a framework.
 
-The obvious way to avoid this mess is "same-site" cookies: cookies that only get sent when the domain in the address bar matches the domain that set the cookies. These wouldn't work as tracking cookies, but they would be just fine for most session cookies. Strangely, no such cookie existed until Google introduced the `SameSite` cookie in 2016, in Chrome 51. Few sites use `SameSite` cookies, even if "cross-domain" cookies are unnecessary, because the latter variety was the only option for more than 20 years. This gives you an idea of how browser vendors approach security.
+The obvious way to avoid the CSRF mess is "same-site" cookies: cookies that only get sent when the domain in the address bar matches the domain that set the cookies. These wouldn't work as tracking cookies, but they would be just fine for most session cookies. Strangely, no such cookie existed until Google introduced the `SameSite` cookie in 2016, in Chrome 51. Few sites use `SameSite` cookies, even if "cross-domain" cookies are unnecessary, because the latter variety was the only option for more than 20 years. This gives you an idea of how browser vendors approach security.
 
 
 ## Insecure by Design
