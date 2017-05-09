@@ -16,6 +16,8 @@ custom_css: page
 
 ## Sublime Text
 
+- __Requester__ &mdash; [A simple, powerful HTTP client](https://github.com/kylebebak/Requester) built on top of [Requests](http://docs.python-requests.org/en/master/). Like having Postman in your text editor.
+
 - __SortList__ &mdash; [A cross-language plugin](https://github.com/kylebebak/sublime_sort_list) for sorting items in comma-separated lists. Handles lists without opening and closing list delimiters, and lists with trailing commas. Preserves lists' quote style (single vs. double).
 
 - __auto-save__ &mdash; [A plugin](https://github.com/jamesfzhang/auto-save) that automatically saves the current file after every modification. Not mine, but I wrote decent chunk of the API.
