@@ -75,7 +75,7 @@
 * [How to Quickly Cycle Between Sublime Text Color Schemes](../post/cycle-color-theme) <sup>2016-03-03</sup>
 * [Exponential Navigation, and Chaining Sublime Text API Calls](../post/exponential-navigation) <sup>2016-02-24</sup>
 * [SublimeLinter for Code Linting in Any Language](../post/sublime-linter) <sup>2016-02-21</sup>
-* [Sublime Text Packages I've Used](../post/useful-packages) <sup>2016-02-20</sup>
+* [Useful Sublime Text Packages](../post/useful-sublime-text-packages) <sup>2016-02-20</sup>
 * [Live HTML and Markdown Preview in Sublime Text with auto-save](../post/auto-save) <sup>2016-02-18</sup>
 
 ### footy
