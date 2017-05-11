@@ -19,10 +19,10 @@ Here are some particularly useful packages.
 | [Emmet](https://github.com/sergeche/emmet-sublime) | Awesome shortcuts for writing HTML and CSS. |
 | [FileHistory](https://github.com/FichteFoll/FileHistory) | Keep track of files which have been recently closed, as well as files that have been recently accessed. |
 | [GitGutter](https://github.com/jisaacks/GitGutter) | See lines that have changed since previous commit in ST gutter. |
-| [GitSavvy](https://github.com/divman/GitSavvy) | Near perfect Git and GitHub integration. |
+| [GitSavvy](https://github.com/divmain/GitSavvy) | Near perfect Git and GitHub integration. |
 | [Jedi](https://github.com/srusskih/SublimeJEDI) | Python snippets and completions. |
 | [Markdown Editing](https://github.com/SublimeText-Markdown/MarkdownEditing) | Powerful Markdown support with better syntax understanding and good color schemes. |
-| [open-url](https://github.com/noahcoad/open-url/tree/master) | Open files, directories, URLs, and perform web searches for terms, from within ST. |
+| [open-url](https://github.com/noahcoad/open-url) | Open files, directories, URLs, and perform web searches for terms, from within ST. |
 | [PackageResourceViewer](https://github.com/skuroda/PackageResourceViewer) | Extract packages into your Packages directory, so you can view and edit them. |
 | [Project Manager](https://github.com/randy3k/Project-Manager) | Without this package ST projects are basically useless. |
 | [Requester](https://github.com/kylebebak/Requester) | HTTP client built on top of popular Requests library. |
