@@ -15,7 +15,8 @@ def parse_filename(filename, ext='.md'):
         try:
             datetime.datetime.strptime(date, '%Y-%m-%d')
         except Exception:
-            raise ValueError("The date prefix for {} is INVALID".format(filename)) from None
+            print('The date prefix for {} is INVALID'.format(filename))
+            return [None, None]
 
         return [date, file]
     return [None, None]

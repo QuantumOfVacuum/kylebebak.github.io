@@ -7,10 +7,12 @@
     * [javascript](#code--javascript) <sup>(1)</sup>
     * [jekyll](#code--jekyll) <sup>(3)</sup>
     * [osx](#code--osx) <sup>(1)</sup>
-    * [random](#code--random) <sup>(5)</sup>
+    * [random](#code--random) <sup>(6)</sup>
+    * [react](#code--react) <sup>(1)</sup>
     * [security](#code--security) <sup>(4)</sup>
     * [shell](#code--shell) <sup>(2)</sup>
     * [sublime-text](#code--sublime-text) <sup>(8)</sup>
+    * [testing](#code--testing) <sup>(1)</sup>
 * [footy](#footy) <sup>(1)</sup>
 * [mexico](#mexico) 
     * [restaurantes](#mexico--restaurantes) <sup>(2)</sup>
@@ -52,11 +54,15 @@
 * [Screencasts and GIFs with Free OSX Software](../post/osx-screencast-gif) <sup>2016-02-13</sup>
 
 #### code / random
+* [3 Environments: Development, Staging, and Production](../post/development-staging-production) <sup>2017-06-04</sup>
 * [My Short-Lived Plan to Write a Grammar-Checking Plugin for Sublime Text](../post/grammar-checking-plugin) <sup>2016-03-19</sup>
 * [Things Software Doesn't Eat, and Software Not Worth Eating](../post/software-eating-the-world) <sup>2016-02-23</sup>
 * [MS Word is Terrible](../post/ms-word-is-terrible) <sup>2016-02-18</sup>
 * [Too Much Twitter](../post/too-much-twitter) <sup>2016-02-15</sup>
 * [Good Enough Security, Backup, Encryption](../post/good-enough-security) <sup>2016-01-15</sup>
+
+#### code / react
+* [Caching a React SPA](../post/react-caching-an-spa) <sup>2017-08-10</sup>
 
 #### code / security
 * [Self-inflicted XSS](../post/self-inflicted-xss) <sup>2017-04-21</sup>
@@ -77,6 +83,9 @@
 * [SublimeLinter for Code Linting in Any Language](../post/sublime-linter) <sup>2016-02-21</sup>
 * [Useful Sublime Text Packages](../post/useful-sublime-text-packages) <sup>2016-02-20</sup>
 * [Live HTML and Markdown Preview in Sublime Text with auto-save](../post/auto-save) <sup>2016-02-18</sup>
+
+#### code / testing
+* [Cargo Cult Testing](../post/cargo-cult-testing) <sup>2017-05-21</sup>
 
 ### footy
 * [Voting for the 2015 Ballon d'or](../post/ballon-dor-2015) <sup>2016-01-14</sup>

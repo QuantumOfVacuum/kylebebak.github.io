@@ -9,7 +9,7 @@ Code and rants about other stuff, like music and footy. The site itself is gener
 Via `bundle` and `pip`. From the root directory, run `bundle`, and `pip install -r requirements.txt`.
 
 
-## Continuous Integration
+## Build and Testing
 Done via Git hooks. These live in [_hooks](_hooks), and are deployed to `.git/hooks`, like this:
 
 ~~~sh
