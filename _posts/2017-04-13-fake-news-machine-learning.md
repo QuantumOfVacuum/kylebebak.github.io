@@ -36,8 +36,6 @@ Now read a bit about [Tay](https://en.wikipedia.org/wiki/Tay_(bot)), whom you've
 
 Here's where things get scary.
 
-If there are already bots whose speech is real enough to offend people, soon there will be bots whose speech is real enough to mislead people.
-
-Once the average person can be misled by a bot, it becomes extremely cheap to mislead huge numbers of people. Bots = free noise. This invalidates democracy as a system of government.
+If there are already bots whose speech is real enough to offend people, soon there will be bots whose speech is real enough to mislead people. If the average person can be misled by a bot, noise is free. Electioneering is scalable.
 
 I'm sure there are governments working on this right now. I bet there are startups working on it. What do you think?

@@ -7,8 +7,6 @@ custom_css: page
 
 ## Python
 
-- __py-geohash-any__ &mdash; A minimal Python geohash package designed to use any url-safe encoding. [Here on GitHub](https://github.com/kylebebak/py-geohash-any).
-
 - __questionnaire__ &mdash; a Python package that prompts users to answer a series of questions using a terminal GUI, and returns the answers. questionnaire makes it trivial to ask different questions based on previous answers, and it allows users to go back and answer questions again. It works with Python 2 and 3.
 
   The package currently has 3 core prompters that can ask __multiple choice/single option__, __multiple choice/multiple option__, and __raw input__ questions. Extending the package is as simple as writing new prompters. [Check it out here](https://github.com/kylebebak/questionnaire).
@@ -17,8 +15,6 @@ custom_css: page
 ## Sublime Text
 
 - __Requester__ &mdash; [A simple, powerful HTTP client](https://github.com/kylebebak/Requester) built on top of [Requests](http://docs.python-requests.org/en/master/). Like having Postman in your text editor.
-
-- __SortList__ &mdash; [A cross-language plugin](https://github.com/kylebebak/sublime_sort_list) for sorting items in comma-separated lists. Handles lists without opening and closing list delimiters, and lists with trailing commas. Preserves lists' quote style (single vs. double).
 
 - __auto-save__ &mdash; [A plugin](https://github.com/jamesfzhang/auto-save) that automatically saves the current file after every modification. Not mine, but I wrote decent chunk of the API.
 
