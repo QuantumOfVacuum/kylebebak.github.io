@@ -19,12 +19,12 @@ If someone sees this question and knows the answer they're probably a good engin
 At a high level, there are just two constraints with code.
 
 ### 1. People Create It
-This requires an environment that's optimized for __developers__. Devs want an environment with a tight feedback loop, where the delay between changing code and seeing the effects is short; they want an environment that __exposes__ the code that powers it. They want an environment over which they have control, which means it runs on their machines, and as few other machines as possible. We'll call this environment __development__.
+This requires an environment that's optimized for __developers__. Devs want an environment with a tight feedback loop, where the delay between changing code and seeing the effects is short; they want an environment that exposes the code that powers it. They want an environment they control, which means it runs on their machines, and as few other machines as possible. We'll call this environment development.
 
 ### 2. People Use It
-This requires an environment that's optimized for __users__. It could be __development__, but optimizing for developers __and__ users doesn't work. Users want a robust environment backed by as many machines as needed to accommodate them and another million users, and that __hides__ the code that powers it. We'll call this environment __production__.
+This requires an environment that's optimized for __users__. It could be development, but optimizing for developers __and__ users doesn't work. Users want a robust environment backed by as many machines as needed to accommodate them and another million users, and that hides the code that powers it. We'll call this environment production.
 
-Finally, users want a production environment __that doesn't break__. But with only two environments this isn't possible. Because dev and prod are necessarily different, devs can't be sure code that works in dev will work in prod. It has to be tested first. This is done in an environment that's as similar as possible to production (but cheaper to maintain). This one is called __staging__.
+Finally, users want a production environment __that doesn't break__. But with only two environments this isn't possible. Because dev and prod are necessarily different, devs can't be sure code that works in dev will work in prod. It has to be tested first. This is done in an environment that's as similar as possible to production (but cheaper to maintain). This one is called staging.
 
 ---
 

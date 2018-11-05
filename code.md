@@ -12,29 +12,22 @@ custom_css: page
   The package currently has 3 core prompters that can ask __multiple choice/single option__, __multiple choice/multiple option__, and __raw input__ questions. Extending the package is as simple as writing new prompters. [Check it out here](https://github.com/kylebebak/questionnaire).
 
 
+## JavaScript
+
+- __react-dropzone-uploader__ &mdash; [customizable HTML5 file dropzone and uploader for React](https://github.com/fortana-co/react-dropzone-uploader), with progress indicators, upload cancellation and restart, and minimal dependencies.
+
+
 ## Sublime Text
 
 - __Requester__ &mdash; [A simple, powerful HTTP client](https://github.com/kylebebak/Requester) built on top of [Requests](http://docs.python-requests.org/en/master/). Like having Postman in your text editor.
 
-- __auto-save__ &mdash; [A plugin](https://github.com/jamesfzhang/auto-save) that automatically saves the current file after every modification. Not mine, but I wrote decent chunk of the API.
-
-
-## Ansible
-
-- __kylebebak.tmux__ &mdash; An Ansible role for a badass `tmux` installation on Ubuntu. Installable via Ansible Galaxy. [Check it out here](https://github.com/kylebebak/ansible-tmux).
+- __open-url__ &mdash; [A plugin](https://github.com/noahcoad/open-url) to quickly open files, folders, web URLs or other URLs from anywhere in Sublime Text.
 
 
 ## Other
 
-- __Notes__ &mdash; Notes for hackers. Notes provides a minimal syntax for quick access, editing capability, and search functionality to all notes under a directory of your choosing. Under your notes directory, you can organize notes into any folder structure you like.
-  
-  The default extension for notes is [`.md`](http://daringfireball.net/projects/markdown/). The extension is not part of notes' syntax. Notes supports tab completion and wildcard matching, which makes finding notes a cinch. Combined with a text editor and a Markdown plugin, Notes gives you the best of various worlds:
+- __Notes__ &mdash; Notes for hackers. Notes provides a minimal syntax for quick access, editing capability, and search functionality to all notes under a directory of your choosing. notes).
 
-  - the __speed__ and __efficiency__ of a real text editor
-  - the __semantics__ and __portability__ of a markup language
-  - a __stylized editor__ with __file organization__, a la Evernotes
-  
-  Place your notes directory in your Dropbox or an online Git repo to get syncing, versioning, and access from everywhere. [Check it out here](https://github.com/kylebebak/notes).
 
 - __Location History__ &mdash; Unless you've disabled location services on your phone, Google (or Apple or Microsoft) is probably [tracking your location](http://www.howtogeek.com/195647/googles-location-history-is-still-recording-your-every-move/), in Google's case once a minute and accurate to 5 or 10 meters. There used to be an API for accessing this data, but now the best you can do is download your raw location history for a range of dates as KML or JSON via Google Takeout. I did this, ran a clustering algorithm on the data to create visit, location and trip instances, and put them in a database.
 
